@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  "Morbi a Semper"
+title:  "eXpressive Internet Architecture (XIA) (2010-now)"
 date:   2014-08-31 14:36:23
+permalink: /eXpressive-Internet-Architecture.html
+
 ---
 
 <span class="image featured"><img src="/images/pic03.jpg" alt=""></span>
