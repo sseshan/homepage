@@ -4,6 +4,7 @@ title:  "Content-Aware Networking (2008-2012)"
 date:   2008-09-07 14:36:23
 permalink: /Content-Aware-Networking.html
 categories: Duis
+tags: project
 ---
 <span class="image featured"><img src="/images/Content-Aware-Networking.jpg" alt=""></span>
 Different users on the Internet often access the same content. This results in the same data being transferred repeatedly over the network, leading to inefficient resource usage. Many diverse systems have explored how to eliminate this redundant content from network links. These range from traditional Web caches and content distribution networks to recent work on “WAN optimizers” (systems that strip duplicate strings from network packets that have appeared in earlier packets).

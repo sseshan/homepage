@@ -3,6 +3,7 @@ layout: post
 title:  "Chaotic Wireless (2005-2010)"
 date:   2005-11-30 14:36:23
 permalink: /Chaotic-Wireless.html
+tags: project
 ---
 <span class="image featured"><img src="/images/pic02.jpg" alt=""></span>
 Before 2005, the bulk of the research done by the wireless networking community focused on topics such as sensor networks, mesh networks and ad hoc networks. However, the commercial use of wireless networking largely used 802.11 technology with access point-based infrastructure. The problems with such networks were largely ignored since most deployments of 802.11 networks had been in campus-like environments, where experts carefully managed deployments. However, home users with little computer expertise were rapidly deploying 802.11 and other wireless technologies. The resulting dense deployment of wireless networks differed from past dense campus-like deployments in two important ways:
