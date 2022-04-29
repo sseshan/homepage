@@ -1,0 +1,4821 @@
+%!
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%DocumentFonts: (atend)
+%%EndComments
+%
+% FrameMaker PostScript Prolog 3.0, for use with FrameMaker 3.0
+% Copyright (c) 1986,87,89,90,91 by Frame Technology Corporation.
+% All rights reserved.
+%
+% Known Problems:
+%	Due to bugs in Transcript, the 'PS-Adobe-' is omitted from line 1
+/FMversion (3.0) def 
+% Set up Color vs. Black-and-White
+	/FMPrintInColor systemdict /colorimage known
+		systemdict /currentcolortransfer known or def
+% Uncomment this line to force b&w on color printer
+%   /FMPrintInColor false def
+/FrameDict 195 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} def
+	} if
+/FMVERSION {
+	FMversion ne {
+		/Times-Roman findfont 18 scalefont setfont
+		100 100 moveto
+		(FrameMaker version does not match postscript_prolog!)
+		dup =
+		show showpage
+		} if
+	} def 
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/organgle FMLOCAL
+	/orgfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne dup {setmanualfeed} if
+	/manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	/yscale exch def
+	/xscale exch def
+	currenttransfer cvlit /orgxfer exch def
+	currentscreen cvlit /orgproc exch def
+	/organgle exch def /orgfreq exch def
+	setpapername 
+	manualfeed {true} {papersize} ifelse 
+	{manualpapersize} {false} ifelse 
+	{desperatepapersize} if
+	end 
+	} def 
+	/pagesave FMLOCAL
+	/orgmatrix FMLOCAL
+	/landscape FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch neg translate pop 
+		}
+		{pop pop}
+		ifelse
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+	} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin
+	array /fillvals exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fy translate 
+	rotate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	} bind def
+/FMENDEPSF {
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	/FMdicttop countdictstack 1 add def 
+	statusdict begin stopped end 
+	countdictstack -1 FMdicttop {pop end} for 
+	} def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped pop 
+		end
+		} if
+	} def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+/freq dpi 18.75 div 8 div round dup 0 eq {pop 1} if 8 mul dpi exch div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setpattern {
+	 /bwidth  exch def
+	 /bpside  exch def
+	 /bstring exch def
+	 /onbits 0 def  /offbits 0 def
+	 freq sangle landscape {90 add} if 
+		{/y exch def
+		 /x exch def
+		 /xindex x 1 add 2 div bpside mul cvi def
+		 /yindex y 1 add 2 div bpside mul cvi def
+		 bstring yindex bwidth mul xindex 8 idiv add get
+		 1 7 xindex 8 mod sub bitshift and 0 ne
+		 {/onbits  onbits  1 add def 1}
+		 {/offbits offbits 1 add def 0}
+		 ifelse
+		}
+		setscreen
+	 {} settransfer
+	 offbits offbits onbits add div FMsetgray
+	/graymode false def
+	} bind def
+/grayness {
+	FMsetgray
+	graymode not {
+		/graymode true def
+		orgxfer cvx settransfer
+		orgfreq organgle orgproc cvx setscreen
+		} if
+	} bind def
+	/HUE FMLOCAL
+	/SAT FMLOCAL
+	/BRIGHT FMLOCAL
+	/Colors FMLOCAL
+FMPrintInColor 
+	
+	{
+	/HUE 0 def
+	/SAT 0 def
+	/BRIGHT 0 def
+	% array of arrays Hue and Sat values for the separations [HUE BRIGHT]
+	/Colors   
+	[[0    0  ]    % black
+	 [0    0  ]    % white
+	 [0.00 1.0]    % red
+	 [0.37 1.0]    % green
+	 [0.60 1.0]    % blue
+	 [0.50 1.0]    % cyan
+	 [0.83 1.0]    % magenta
+	 [0.16 1.0]    % comment / yellow
+	 ] def
+      
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/K { 
+		Colors exch get dup
+		0 get /HUE exch store 
+		1 get /BRIGHT exch store
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} def
+	/FMsetgray { 
+		/SAT exch 1.0 exch sub store 
+		  HUE 0 eq BRIGHT 0 eq and
+			{1.0 SAT sub setgray}
+			{HUE SAT BRIGHT sethsbcolor} 
+		  ifelse
+		} bind def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/FMsetgray {setgray} bind def
+	/K { 
+		pop
+		} def
+	}
+ifelse
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setpattern} 
+	{grayness}
+	ifelse
+	} bind def
+/V { 
+	gsave eofill grestore
+	} bind def
+/N { 
+	stroke
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+	/rad FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	newpath
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rad arcto
+	x2 y2 x2 y1 rad arcto
+	x2 y1 x1 y1 rad arcto
+	x1 y1 x1 y2 rad arcto
+	closepath
+	16 {pop} repeat
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath fill
+	grestore
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	stroke
+	grestore
+	} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 4 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+	dup 
+	8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+	/proc1 FMLOCAL
+	/proc2 FMLOCAL
+	/newproc FMLOCAL
+/Fmcc {
+    /proc2 exch cvlit def
+    /proc1 exch cvlit def
+    /newproc proc1 length proc2 length add array def
+    newproc 0 proc1 putinterval
+    newproc proc1 length proc2 putinterval
+    newproc cvx
+} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch Fmcc settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/bitmapsave save def 
+	colorsetup
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	translate rotate scale /h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	colorsetup
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} {is} {is} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip} {gip} {bip} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        
+        /is w string def
+        
+        ws 0 w getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {ip gip bip w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+        translate rotate scale /h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+%%EndProlog
+%%BeginSetup
+(3.0) FMVERSION
+1 1 612 792 0 1 13 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Italic FMFONTDEFINE
+2 0 /Times-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 .1 FMFILL
+2 .3 FMFILL
+3 .5 FMFILL
+4 .7 FMFILL
+5 .9 FMFILL
+6 .97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 .9 FMFILL
+18 .7 FMFILL
+19 .5 FMFILL
+20 .3 FMFILL
+21 .1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+72 32.67 540 42.67 R
+7 X
+0 K
+V
+0 12 Q
+0 X
+(Page 1 of 17) 479.71 34.67 T
+72 72 540 720 R
+7 X
+V
+0 18 Q
+0 X
+(RAID-II: Design and Implementation of a Lar) 90.33 708 T
+(ge Scale Disk) 422.75 708 T
+(Array Controller) 242.3 686 T
+0 14 Q
+(1) 362.71 693.2 T
+1 11 Q
+(R. H. Katz, P) 91.56 656.67 T
+(. M. Chen, A. L. Drapeau, E. K. Lee, K. Lutz, E. L. Miller) 148.13 656.67 T
+(, S. Seshan, D. A. Patterson) 398.99 656.67 T
+0 F
+(Computer Science Division) 245.27 644.67 T
+(Electrical Engineering and Computer Science Department) 178.31 632.67 T
+(University of California, Berkeley) 230.63 620.67 T
+(Berkeley) 261.04 608.67 T
+(, CA 94720) 299.99 608.67 T
+1 10 Q
+-0.11 (Abstract:) 72 581.33 P
+0 F
+-0.11 (W) 111.59 581.33 P
+-0.11 (e describe the implementation of a lar) 120.22 581.33 P
+-0.11 (ge scale disk array controller and subsystem incorporating over 100) 270.37 581.33 P
+0.48 (high performance 3.5" disk drives. It is designed to provide 40 MB/s sustained performance and 40 GB capacity in) 72 570.33 P
+0.22 (three 19" racks. The array controller forms an integral part of a \336le server that attaches to a Gb/s local area network.) 72 559.33 P
+1.84 (The controller implements a high bandwidth interconnect between an interleaved memory) 72 548.33 P
+1.84 (, an XOR calculation) 450.08 548.33 P
+0.8 (engine, the network interface \050HIPPI\051, and the disk interfaces \050SCSI\051. The system is now functionally operational,) 72 537.33 P
+0.28 (and we are tuning its performance. W) 72 526.33 P
+0.28 (e review the design decisions, history) 223.6 526.33 P
+0.28 (, and lessons learned from this three year) 374.26 526.33 P
+(university implementation ef) 72 515.33 T
+(fort to construct a truly) 187.31 515.33 T
+1 F
+(lar) 281.96 515.33 T
+(ge scale system assembly) 293.26 515.33 T
+0 F
+(.) 393.36 515.33 T
+2 16 Q
+(1. Intr) 72 484.33 T
+(oduction) 115.24 484.33 T
+0 11 Q
+0.36 (Over the past dozen years, the University VLSI research community has under) 72 461.67 P
+0.36 (gone a dramatic evolution.) 421.75 461.67 P
+0.74 (A VLSI system was originally de\336ned as a \322complete system on a single integrated circuit chip.\323 Given) 72 448.67 P
+0.05 (the level of circuit complexity at the time, few truly interesting systems could actually be reduced to a sin-) 72 435.67 P
+0.53 (gle chip. They needed to be surrounded with considerable support circuitry for memory and interfaces to) 72 422.67 P
+-0.09 (subsystems like a workstation backplane. Initially) 72 409.67 P
+-0.09 (, this system context was provided by placing the custom) 289.95 409.67 P
+1.58 (VLSI on wire-wrap boards. As the community\325) 72 396.67 P
+1.58 (s design experience grew) 289.26 396.67 P
+1.58 (, the VLSI \322systems\323 became) 404.02 396.67 P
+0.1 (complex enough to span multiple chips, placed and interconnected on printed circuit boards. Now the sys-) 72 383.67 P
+0.68 (tems we design are signi\336cantly more complicated, requiring more complex packaging. They span mod-) 72 370.67 P
+(ules, printed circuit boards, and racks. W) 72 357.67 T
+(e call such systems) 251.44 357.67 T
+1 F
+(lar) 338.1 357.67 T
+(ge scale system assemblies) 350.51 357.67 T
+0 F
+(.) 468.6 357.67 T
+0.51 (VLSI systems building at Berkeley provides an illustration of the community\325) 99 344.67 P
+0.51 (s evolution. Between) 446.52 344.67 P
+0.14 (1978 and 1981, Patterson, S\216quin, and their students developed the Berkeley RISC chips. These were true) 72 331.67 P
+1.48 (single chip systems, with just enough of a surrounding context to run some benchmark test programs.) 72 318.67 P
+0.91 (SOAR came next, developed by Patterson and his students between 1981 and 1984. They expanded the) 72 305.67 P
+-0 (system from a single chip to a complete microcomputer wire-wrap board and a run-time Smalltalk system.) 72 292.67 P
+-0.02 (The SPUR multiprocessor project, from 1984 to 1987, took the system concept one step further) 99 279.67 P
+-0.02 (. The) 517.44 279.67 P
+0.44 (processing element was a CMOS chip set: a CPU, an FPU co-processor) 72 266.67 P
+0.44 (, and an integrated cache control-) 391.34 266.67 P
+1.49 (ler/memory manager) 72 253.67 P
+1.49 (. In conjunction with the chips, a lar) 164.73 253.67 P
+1.49 (ge printed circuit board was designed for the) 333.36 253.67 P
+-0.11 (cache memory and bus interfaces. Substantial amounts of software were also developed: a distributed mul-) 72 240.67 P
+0.29 (tiprocessor operating system, Sprite, a C compiler) 72 227.67 P
+0.29 (, and a parallel LISP system. Patterson and Katz led the) 293 227.67 P
+0.63 (hardware development, Hodges supervised the integrated circuit designs, Ousterhout directed the operat-) 72 214.67 P
+(ing system development, and Hil\336nger oversaw the compiler and LISP system implementations.) 72 201.67 T
+0.89 (Our most recent project is RAID-II, a lar) 99 188.67 P
+0.89 (ge scale system assembly that implements a high perfor-) 284.46 188.67 P
+1.43 (mance disk array and \336le server) 72 175.67 P
+1.43 (. The design and construction of RAID-II began in 1989 under Katz\325) 218.57 175.67 P
+1.43 (s) 535.73 175.67 P
+1.06 (direction, and is now reaching its completion. Like much of the research community) 72 162.67 P
+1.06 (, we have replaced) 455.07 162.67 P
+0.6 (custom VLSI design with commercially available high speed programmable logic devices. W) 72 149.67 P
+0.6 (e\325ve under-) 489.07 149.67 P
+-0.06 (taken signi\336cant mechanical design, to support the construction of an assembly able to hold more than 100) 72 136.67 P
+0.49 (small formfactor disk drives and numerous printed circuit boards for disk controllers, network interfaces,) 72 123.67 P
+72 97 540 117.09 C
+72 104.99 203.98 104.99 2 L
+0.25 H
+2 Z
+0 X
+0 K
+N
+0 0 612 792 C
+0 8 Q
+0 X
+0 K
+(1.) 72 94.33 T
+0 10 Q
+(Research supported by DARP) 82 90.33 T
+(A/NASA Contract NAG2-591 and the California MICRO Program in conjunction) 201.27 90.33 T
+(with Array T) 72 79.33 T
+(echnology Corp., DEC, HP) 123.48 79.33 T
+(, IBM, Intel, Seagate, StorageT) 231.75 79.33 T
+(ek, Sun, and Thinking Machines.) 355.96 79.33 T
+FMENDPAGE
+%%EndPage: "1" 2
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(2) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+0.85 (and their interconnect. Our hardware design ef) 72 712.67 P
+0.85 (fort has focused on building a lar) 281.64 712.67 P
+0.85 (ge, double-sided printed) 431.8 712.67 P
+0.38 (circuit board in surface mount technology that integrates several commercially available subsystems. The) 72 699.67 P
+(distributed \336le services are being developed within Sprite [Lee 92].) 72 686.67 T
+0.66 (This paper describes the design context, goals, and constraints for RAID-II, a disk array controller) 99 673.67 P
+0.01 (that interfaces a \336le server with a Gb/s local area network. The rest of the paper is or) 72 660.67 P
+0.01 (ganized as follows. In) 443.56 660.67 P
+-0.05 (Section 2, we describe the design context for RAID-II, including disk arrays and gigabit networks. Section) 72 647.67 P
+1.47 (3 covers the RAID-II architecture. Section 4 describes the implementation details, including the board) 72 634.67 P
+0.34 (design and fabrication of the disk array racks. Section 5 describes the software elements of the controller) 72 621.67 P
+0.34 (.) 537.25 621.67 P
+0.73 (The lessons we have learned so far and the project\325) 72 608.67 P
+0.73 (s design history are reviewed in Section 6. Our sum-) 302.78 608.67 P
+(mary) 72 595.67 T
+(, conclusions, and future plans are given in Section 7.) 93.86 595.67 T
+2 16 Q
+(2. Network-Attached Storage) 72 563.33 T
+0 11 Q
+0.17 (In this section, we brie\337y review the context that in\337uenced the design of RAID-I. W) 72 540.67 P
+0.17 (e describe redundant) 448.76 540.67 P
+0.14 (arrays of inexpensive disks \050RAID\051 and the major interfaces supported by the controller: the SCSI storage) 72 527.67 P
+0.42 (device interface and the HIPPI high bandwidth channel interface. W) 72 514.67 P
+0.42 (e also discuss the Ultranet Gb/s local) 375.13 514.67 P
+0.12 (area network and lessons we learned from our \336rst prototype. More details on the underlying technologies) 72 501.67 P
+(can be found in [Katz 92].) 72 488.67 T
+2 14 Q
+(2.1.  Redundant Arrays of Inexpensive Disks) 72 465.67 T
+0 11 Q
+-0.08 (RAIDs \050) 72 451.67 P
+1 F
+-0.08 (Redundant Arrays of Inexpensive Disks) 109.45 451.67 P
+0 F
+-0.08 (\051 are disk system or) 282.45 451.67 P
+-0.08 (ganizations that store redundant data to) 367.99 451.67 P
+1.95 (achieve high availability) 72 438.67 P
+1.95 (. Methods that improve availability through data redundancy always sacri\336ce) 183.19 438.67 P
+0.07 (some storage capacity and write bandwidth. Alternative RAID or) 72 425.67 P
+0.07 (ganizations tradeof) 358.86 425.67 P
+0.07 (f between availability) 442.63 425.67 P
+0.07 (,) 537.25 425.67 P
+0.06 (I/O performance, and the redundancy overhead [Patterson 88]. The or) 72 412.67 P
+0.06 (ganization best suited for high avail-) 378.91 412.67 P
+-0.16 (ability and high I/O operation and data rate is the parity array \050RAID Level 5\051. W) 72 399.67 P
+-0.16 (e describe it and the SCSI) 426.97 399.67 P
+(device interface next.) 72 386.67 T
+2 12 Q
+(RAID Level 5: Interleaved Parity) 72 365 T
+0 11 Q
+-0.18 (The array is partitioned into independent recovery groups of N data disks each. Parity is computed bit-wise) 72 351.67 P
+-0.12 (horizontally across the data disks, and is stored on an N+1st parity disk. If a single disk fails, a given bit on) 72 338.67 P
+0.74 (the failed drive can be reconstituted from the bits on the surviving disks, by maintaining the appropriate) 72 325.67 P
+(sense of the parity) 72 312.67 T
+(. The redundancy overhead is only 1/\050N+1\051 bit for each data bit.) 151.53 312.67 T
+0.55 (For each written data bit, the parity bit must also be updated. The old data bits are read, the dif) 99 299.67 P
+0.55 (fer-) 524.15 299.67 P
+1.05 (ence between them and the new bits is computed, the old parity is read, and parity bits associated with) 72 286.67 P
+-0.17 (changed data bits are complemented. A logical write becomes four physical I/Os. Thus, the array write rate) 72 273.67 P
+0.51 (is reduced to 25% of a conventional disk system. The Log Structured File System developed at Berkeley) 72 260.67 P
+0.13 (circumvents this problem by treating disk as an append-only medium to which lar) 72 247.67 P
+0.13 (ge segments are written.) 432.82 247.67 P
+(Parity can be computed in advance for these lar) 72 234.67 T
+(ge, stripe-oriented writes [Rosenblum 91].) 280.49 234.67 T
+2 12 Q
+(Small Computer System Interface) 72 213 T
+0 11 Q
+0.79 (SCSI is the storage interface supported by small formfactor disk drives. It views a disk drive as a linear) 72 199.67 P
+1.24 (byte stream; its detailed structure in terms of sectors, tracks, and cylinders is not visible. The interface) 72 186.67 P
+1.32 (de\336nes a high-level message-based protocol for communications among initiators \050masters\051 and tar) 72 173.67 P
+1.32 (gets) 522.3 173.67 P
+1.11 (\050slaves\051. Initiators manage multiple simultaneous operations. T) 72 160.67 P
+1.11 (ar) 354.94 160.67 P
+1.11 (gets explicitly notify the initiator when) 363.27 160.67 P
+(they are ready to transmit data or when they need to throttle transfers.) 72 147.67 T
+2 14 Q
+(2.2.  Gigabit Networks and Diskless Super) 72 124.67 T
+(computers) 322.85 124.67 T
+0 11 Q
+0.17 (It is now becoming possible to extend the workstation client-server model to higher performance environ-) 72 110.67 P
+-0.02 (ments, integrating supercomputer) 72 97.67 P
+-0.02 (, workstations, and storage services on a very high performance network.) 218.91 97.67 P
+0 (A key goal of RAID-II is to demonstrate the feasibility of) 72 84.67 P
+1 F
+0 (diskless super) 328.02 84.67 P
+0 (computers) 388.95 84.67 P
+0 F
+0 (. The network is rapidly) 434.72 84.67 P
+(emer) 72 71.67 T
+(ging as the \322backplane\323 of high performance systems.) 93.76 71.67 T
+FMENDPAGE
+%%EndPage: "2" 3
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(3) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+2 12 Q
+0 X
+(High Performance Parallel Interface) 72 712 T
+0 11 Q
+1.19 (The High Performance Parallel Interface, HIPPI, is a high speed unidirectional point-to-point interface.) 72 698.67 P
+-0.19 (T) 72 685.67 P
+-0.19 (wo-way communications requires two HIPPI channels, one for commands and write data \050the) 77.94 685.67 P
+1 F
+-0.19 (write chan-) 489.84 685.67 P
+(nel) 72 672.67 T
+0 F
+(\051 and one for status and read data \050the) 85.43 672.67 T
+1 F
+(r) 253.53 672.67 T
+(ead channel) 257.39 672.67 T
+0 F
+(\051. Data is transmitted at a nominal rate of 800 Mb/s.) 310.79 672.67 T
+0.15 (HIPPI implements a simple data transfer protocol. The source asserts a request signal to gain access) 99 659.67 P
+0.19 (to the channel. A connection signal grants it the channel. The source begins the transfer when the destina-) 72 646.67 P
+(tion asserts ready) 72 633.67 T
+(, providing simple \337ow control.) 147.56 633.67 T
+0.76 (The minimum unit of data transfer is the) 99 620.67 P
+1 F
+0.76 (burst) 285.71 620.67 P
+0 F
+0.76 ( of 1 to 256 words. The destination must be able to) 308.3 620.67 P
+1.32 (accept a full burst if it asserts ready) 72 607.67 P
+1.32 (. The burst is sent as a continuous stream of words, one per clock) 236.4 607.67 P
+0.75 (period, and continues as long as the channel burst signal is asserted. When this is unasserted, the sender) 72 594.67 P
+(transmits a CRC checksum for the whole burst.) 72 581.67 T
+2 12 Q
+(UltraNetwork) 72 560 T
+0 11 Q
+0.44 (The UltraNetwork is a hub-based Gb/s network. The hubs provide the high speed interconnect for packet) 72 546.67 P
+0.68 (routing. They are connected by unidirectional) 72 533.67 P
+1 F
+0.68 (serial links) 279.58 533.67 P
+0 F
+0.68 (, used in pairs. If optical \336ber is chosen for the) 328.78 533.67 P
+0.39 (links, data can be transmitted at rates of up to 250 Mb/s and distances to 4 Km. Higher speed is achieved) 72 520.67 P
+(by interleaving transmissions over multiple serial links.) 72 507.67 T
+0.25 (Computers are connected to the network in two dif) 99 494.67 P
+0.25 (ferent ways: through) 324.12 494.67 P
+1 F
+0.25 (host adapters) 418.52 494.67 P
+0 F
+0.25 ( and) 478.28 494.67 P
+1 F
+0.25 (hub-r) 500.13 494.67 P
+0.25 (esi-) 524.14 494.67 P
+0.61 (dent adapters) 72 481.67 P
+0 F
+0.61 (. A host-based adapter resides within a workstation backplane. The adapter contains an on-) 132.72 481.67 P
+(board microprocessor and performs direct memory accesses, just like any other peripheral controller) 72 468.67 T
+(.) 512.27 468.67 T
+0.11 (A dif) 99 455.67 P
+0.11 (ferent approach is needed for supercomputers and the RAID-II controller) 121.8 455.67 P
+0.11 (. These connect to the) 443.45 455.67 P
+0.66 (network through HIPPI interfaces, not standard backplanes. The hub-resident adapters place the network) 72 442.67 P
+(interface to the Ultranet within the hub itself.) 72 429.67 T
+2 14 Q
+(2.3.  RAID-I Pr) 72 406.67 T
+(ototype and Experiences) 163.85 406.67 T
+0 11 Q
+0.25 (RAID-I, the \336rst RAID prototype, consisted of a SUN 4/280 \336le server with 128 MB of memory) 72 392.67 P
+0.25 (, four In-) 500.14 392.67 P
+-0.16 (terphase dual SCSI channel host bus adapters, and 32 340 MB 5.25" W) 72 379.67 P
+-0.16 (ren-IV disk drives \0504 drives on each) 382.92 379.67 P
+(of 8 SCSI channels\051.) 72 366.67 T
+0.05 (While we had hoped the design would be disk limited, [Chervenak 91] discovered numerous perfor-) 99 353.67 P
+0.08 (mance bottlenecks. The most serious is the server) 72 340.67 P
+0.08 (\325) 290.81 340.67 P
+0.08 (s memory system, which limited application throughput) 293.87 340.67 P
+-0.2 (to only 2.3 MB/s. I/O operations caused excessive memory-to-memory copies and cache \337ushes. The array) 72 327.67 P
+-0.23 (did better on small random reads, achieving nearly 300 per second before the server becomes CPU-limited.) 72 314.67 P
+0.4 (Other bottlenecks include the VME backplane \050about 15 MB/s\051, bandwidth on the disk controller \0504 MB/) 72 301.67 P
+-0.1 (s\051, and overheads associated with the SCSI protocol. Nevertheless, RAID-I provided an indispensable test-) 72 288.67 P
+(bed for experimenting with algorithms for data striping, reconstruction, and hot spare management.) 72 275.67 T
+2 16 Q
+(3. RAID-II Ar) 72 243.33 T
+(chitectur) 168.97 243.33 T
+(e) 229.96 243.33 T
+2 14 Q
+(3.1.  Design Goals and Constraints) 72 218.67 T
+0 11 Q
+0.95 (RAID-II is a HIPPI-attached high performance \336le server that interfaces a SCSI-based disk array to the) 72 204.67 P
+0 (Ultranet. It packages over 100 IBM 3.5" disk drives \050320 MB capacity \321 1.2 GB drives are now available) 72 191.67 P
+1.36 (in an identical formfactor\051 in the space of three 19" racks, providing approximately 40 GB of storage.) 72 178.67 P
+1.43 (While the Ultranet provides high bandwidth, its latency is actually worse than slower speed networks.) 72 165.67 P
+(RAID-II also supports Ethernet for small transfers where network latency dominates service time.) 72 152.67 T
+-0.24 (T) 99 139.67 P
+-0.24 (o minimize the design ef) 104.94 139.67 P
+-0.24 (fort, we used commercially available components when possible. Thinking) 212.4 139.67 P
+0.08 (Machines \050TMC\051 provided a board set for the HIPPI channel interface. Array T) 72 126.67 P
+0.08 (echnology \050A) 421.46 126.67 P
+0.08 (TC\051 provided) 480.42 126.67 P
+1.56 (a VME-based multiple SCSI string board. W) 72 113.67 P
+1.56 (e designed the controller to provide very high bandwidth) 277.92 113.67 P
+(between the network \050HIPPI\051, disk \050SCSI\051, and memory interfaces.) 72 100.67 T
+0.77 (The major hardware design is the) 99 87.67 P
+1 F
+0.77 (XBUS car) 253.1 87.67 P
+0.77 (d) 297.7 87.67 P
+0 F
+0.77 (, a crossbar that connects the HIPPI boards, multiple) 303.19 87.67 P
+-0.14 (VME busses, and an interleaved, multiported semiconductor memory) 72 74.67 P
+-0.14 (. It provides the high bandwidth data-) 375.75 74.67 P
+FMENDPAGE
+%%EndPage: "3" 4
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(4) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+1.54 (path between the network and the disks. It is controlled by an external \336le server through a memory-) 72 354.04 P
+(mapped control register interface. A block diagram for the controller is shown in Figure 1.) 72 341.04 T
+2 14 Q
+(3.2.  Contr) 72 318.04 T
+(oller Ar) 135.48 318.04 T
+(chitectur) 182.24 318.04 T
+(e) 235.61 318.04 T
+2 12 Q
+(Contr) 72 295.37 T
+(oller Overview) 102.43 295.37 T
+0 11 Q
+1.26 (The XBUS card implements an 8-by-8 32-bit wide crossbar bus. All crossbar transfers involve the on-) 72 282.04 P
+-0.22 (board memory as either the source or the destination of the transfer) 72 269.03 P
+-0.22 (. The ports are designed to burst transfer) 363.99 269.03 P
+-0 (at 50 MB/s, and sustain transfers of 40 MB/s. The crossbar provides an aggregate bandwidth of 400 MB/s.) 72 256.03 P
+0.72 (The controller memory is allocated eight of the crossbar ports. Data is interleaved across the eight) 99 243.03 P
+-0.2 (banks in 32-word interleave units. Although the crossbar is designed to move lar) 72 230.03 P
+-0.2 (ge blocks to/from memory) 423.71 230.03 P
+-0.2 (and the network and disk interfaces, it is still possible to access a single word when necessary) 72 217.03 P
+-0.2 (. The external) 479.69 217.03 P
+(\336le server can access the on-board memory through the XBUS card\325) 72 204.03 T
+(s VME control interface.) 372.22 204.03 T
+0.71 (T) 99 191.03 P
+0.71 (wo of the remaining eight ports are dedicated as interfaces to the TMC I/O bus \050HIPPIS/HIPPID) 104.94 191.03 P
+0.97 (busses\051. The HIPPI board set also interfaces to this bus. Since these XBUS ports are unidirectional, the) 72 178.03 P
+(controller is limited to a sustained transfer to/from the network of 40 MB/s.) 72 165.03 T
+-0.16 (Four additional ports are used to connect the XBUS board to four single-board multi-string disk con-) 99 152.03 P
+0.2 (trollers via the industry standard VME bus. Because of the physical packaging of the array) 72 139.03 P
+0.2 (, 15 to 30 disks) 472.34 139.03 P
+0.28 (can be attached to each disk controller) 72 126.03 P
+0.28 (, in \336ve rows of three to six disks each. Thus, 60 to 120 disk drives) 241.64 126.03 P
+(can be connected to each XBUS card.) 72 113.03 T
+0.24 (Of the remaining two ports, one is dedicated for special hardware to compute the parity for the disk) 99 100.03 P
+1.12 (array) 72 87.03 P
+1.12 (. The last port links the XBUS board to the external \336le server) 93.85 87.03 P
+1.12 (. It provides access to the on-board) 379.8 87.03 P
+0.62 (memory as well as the board\325) 72 74.03 P
+0.62 (s control registers \050through the board\325) 204.19 74.03 P
+0.62 (s control bus\051. This makes it possible) 372.99 74.03 P
+72 63 540 720 C
+72 361.37 539.86 720 C
+72 361.37 539.86 720 R
+7 X
+0 K
+V
+140 521.17 500.83 521.17 2 L
+1 H
+2 Z
+10 X
+N
+495.83 667.03 535.83 697.87 R
+7 X
+V
+0.5 H
+0 X
+N
+0 12 Q
+(LINK) 505 687 T
+488.67 660.87 528.67 691.7 R
+7 X
+V
+0 X
+N
+(LINK) 497.83 680.83 T
+481.29 655.53 521.29 686.37 R
+7 X
+V
+0 X
+N
+(LINK) 490.46 675.5 T
+2 X
+90 450 40.83 38.75 390.67 491.75 G
+1 H
+90 450 40.83 38.75 390.67 491.75 A
+3 X
+90 450 40.83 38.75 353.5 491.75 G
+90 450 40.83 38.75 353.5 491.75 A
+4 X
+90 450 40.83 38.75 316.33 491.75 G
+90 450 40.83 38.75 316.33 491.75 A
+5 X
+90 450 40.83 38.75 264.17 491.75 G
+90 450 40.83 38.75 264.17 491.75 A
+473.5 650.2 513.5 681.03 R
+7 X
+V
+0.5 H
+0 X
+N
+(LINK) 482.67 670.17 T
+465.5 644.87 505.5 675.7 R
+7 X
+V
+0 X
+N
+(LINK) 474.67 664.83 T
+240.5 482.37 291.33 521.53 R
+7 X
+V
+0 X
+N
+274 524.5 274 504.2 2 L
+1 H
+N
+(8 Port Interleaved) 282.72 673.7 T
+(Memory \050128 MByte\051) 272.38 661.7 T
+267.38 592.03 384.05 640.37 R
+0.5 H
+N
+(8 x 8 x 32-bit) 293.88 619.53 T
+(Crossbar) 304.88 607.53 T
+274.05 652.87 274.05 640.37 2 L
+N
+288.21 652.87 288.21 640.37 2 L
+N
+303.21 652.87 303.21 640.37 2 L
+N
+318.21 652.87 318.21 640.37 2 L
+N
+332.88 653.2 332.88 640.7 2 L
+N
+347.05 653.2 347.05 640.7 2 L
+N
+362.05 653.2 362.05 640.7 2 L
+N
+377.05 653.2 377.05 640.7 2 L
+N
+(VME) 259.88 558.53 T
+256.55 554.37 289.05 569.37 R
+N
+(VME) 295.38 558.53 T
+292.05 554.37 324.55 569.37 R
+N
+(VME) 332.05 558.53 T
+328.71 554.37 361.21 569.37 R
+N
+(VME) 368.38 558.53 T
+365.05 554.37 397.55 569.37 R
+N
+274.88 592.03 274.88 569.53 2 L
+N
+374.05 592.03 374.05 569.53 2 L
+N
+312.38 592.03 312.38 569.53 2 L
+N
+338.21 592.03 338.21 569.53 2 L
+N
+(VME) 411.72 597.2 T
+408.38 593.03 440.88 608.03 R
+N
+(XOR) 412.38 626.87 T
+408.22 622.7 440.72 637.7 R
+N
+384.05 634.53 414.05 634.53 2 L
+N
+384.05 604.53 414.05 604.53 2 L
+N
+243.21 634.53 267.38 634.53 2 L
+N
+242.38 608.7 267.38 608.7 2 L
+N
+242.38 625.37 253.21 625.37 2 L
+10 X
+N
+253.21 625.37 253.21 579.53 2 L
+11 X
+N
+253.21 598.7 242.38 598.7 2 L
+10 X
+N
+260.71 579.53 260.71 569.53 2 L
+11 X
+N
+299.05 579.53 299.05 569.53 2 L
+N
+351.55 579.53 351.55 569.37 2 L
+N
+390.71 579.37 390.71 569.37 2 L
+N
+403.71 626.37 403.71 579.37 2 L
+N
+403.71 626.87 414.21 626.87 2 L
+10 X
+N
+403.71 595.37 413.71 595.37 2 L
+N
+212.05 546.53 448.72 687.37 R
+7 X
+V
+0 X
+N
+(8 Port Interleaved) 290.72 665.7 T
+(Memory \050128 MB\051) 287.71 653.7 T
+275.38 584.03 392.05 632.37 R
+N
+(8-by-8 by 32-bit) 294.88 611.53 T
+(Crossbar) 312.88 599.53 T
+282.05 644.87 282.05 632.37 2 L
+N
+296.21 644.87 296.21 632.37 2 L
+N
+311.21 644.87 311.21 632.37 2 L
+N
+326.21 644.87 326.21 632.37 2 L
+N
+340.88 645.2 340.88 632.7 2 L
+N
+355.05 645.2 355.05 632.7 2 L
+N
+370.05 645.2 370.05 632.7 2 L
+N
+385.05 645.2 385.05 632.7 2 L
+N
+(VME) 267.88 550.53 T
+264.55 546.37 297.05 561.37 R
+N
+(VME) 303.38 550.53 T
+300.05 546.37 332.55 561.37 R
+N
+(VME) 340.05 550.53 T
+336.71 546.37 369.21 561.37 R
+N
+(VME) 376.38 550.53 T
+373.05 546.37 405.55 561.37 R
+N
+282.88 584.03 282.88 561.53 2 L
+N
+382.05 584.03 382.05 561.53 2 L
+N
+320.38 584.03 320.38 561.53 2 L
+N
+346.21 584.03 346.21 561.53 2 L
+N
+(VME) 418.88 589.2 T
+415.55 585.03 448.05 600.03 R
+N
+(XOR) 420.38 618.87 T
+416.22 614.7 448.72 629.7 R
+N
+392.05 626.53 415.83 626.53 2 L
+N
+392.05 596.53 415.83 596.53 2 L
+N
+(HIPPIS) 214.4 618.03 T
+212.05 613.87 253.71 628.87 R
+N
+(HIPPD) 214.57 593.37 T
+212.05 589.2 253.71 604.2 R
+N
+253.33 626.53 275.38 626.53 2 L
+N
+253.33 600.7 275.38 600.7 2 L
+N
+253.33 617.37 261.21 617.37 2 L
+10 X
+N
+261.21 617.37 261.21 571.53 2 L
+11 X
+N
+261.21 571.53 405.83 571.53 2 L
+10 X
+N
+261.21 590.7 253.33 590.7 2 L
+N
+268.71 571.53 268.71 561.53 2 L
+11 X
+N
+307.05 571.53 307.05 561.53 2 L
+N
+359.55 571.53 359.55 561.37 2 L
+N
+398.71 571.37 398.71 561.37 2 L
+N
+405.88 618.37 405.88 571.37 2 L
+N
+405.88 618.87 416.38 618.87 2 L
+10 X
+N
+405.88 587.37 415.88 587.37 2 L
+N
+1 F
+0 X
+(XBUS) 218.88 673.37 T
+(Car) 218.88 661.37 T
+(d) 237.1 661.37 T
+109.88 626.91 149.17 664.06 R
+7 X
+V
+0 X
+N
+0 F
+(HIPPIS) 112.38 642.63 T
+120.02 602.48 161.81 639.63 R
+7 X
+V
+0 X
+N
+(HIPPID) 122.52 618.2 T
+186.67 668.67 186.67 558.67 2 L
+3 H
+N
+162.5 611.2 185.83 611.2 2 L
+2 H
+N
+150.83 642.87 196.67 642.87 2 L
+N
+210.83 621.2 199.17 621.2 2 L
+N
+210.83 597.03 186.67 597.03 2 L
+N
+112.21 615.7 120 611.2 112.21 606.7 3 L
+0 Z
+N
+86.67 611.2 119 611.2 2 L
+2 Z
+N
+83.63 652.53 75.83 657.03 83.63 661.53 3 L
+0 Z
+N
+110 657.03 76.83 657.03 2 L
+2 Z
+N
+(HIPPI) 77.5 631.2 T
+233.25 465.53 284.08 504.7 R
+7 X
+V
+0.5 H
+0 X
+N
+(A) 248.41 493.87 T
+(TC) 255.74 493.87 T
+(5 SCSI) 242.58 481.87 T
+(Channels) 237.42 469.87 T
+240.25 465.53 240.25 438.87 2 L
+7 X
+V
+0 X
+N
+249.92 465.53 249.92 438.7 2 L
+7 X
+V
+0 X
+N
+269.58 465.03 269.58 438.7 2 L
+7 X
+V
+0 X
+N
+278.75 465.03 278.75 438.7 2 L
+7 X
+V
+0 X
+N
+259.92 465.53 259.92 438.7 2 L
+7 X
+V
+0 X
+N
+500.83 592.03 449.17 592.03 2 L
+10 X
+N
+0 X
+(Control) 409.34 563.7 T
+(Bus) 418.33 551.7 T
+101.67 706.2 525.84 706.2 2 L
+N
+472.5 706.2 472.5 662 2 L
+N
+(Ethernet) 193.5 708.7 T
+1 F
+(\050Contr) 237.13 708.7 T
+(ol and Low Latency T) 268.67 708.7 T
+(ransfers\051) 372.63 708.7 T
+0 F
+(TMC) 117.5 653.7 T
+(TMC) 128 629.03 T
+275.38 644.87 390.38 680.7 R
+N
+470.83 704.5 474.17 707.83 1.67 RR
+V
+0 Z
+N
+74 367.17 538.17 430.83 R
+7 X
+V
+2 F
+0 X
+(Figur) 74 422.83 T
+(e 1:) 102.44 422.83 T
+1 F
+(RAID-II Or) 123.75 422.83 T
+(ganization as Originally Designed) 178.92 422.83 T
+0 10 Q
+0.91 (A high bandwidth crossbar interconnection ties the network interface \050HIPPI\051 to the disk controllers \050A) 74 412.17 P
+0.91 (TC\051 via a) 498.61 412.17 P
+0.28 (multiported memory system. Hardware to perform the parity calculation is associated with the memory system. An) 74 402.17 P
+0.52 (internal control bus provides access to the crossbar ports, while external point-to-point VME links provide control) 74 392.17 P
+0.55 (paths to the surrounding SCSI and HIPPI interface boards. Due to printed circuit board manufacturing dif) 74 382.17 P
+0.55 (\336culties,) 504.02 382.17 P
+(the actual prototype was scaled down to a 4-by-8 crossbar with 32 MB of memory) 74 372.17 T
+(.) 402.56 372.17 T
+1 12 Q
+(High Bandwidth) 78.42 683.29 T
+(T) 95.25 671.29 T
+(ransfers) 101.26 671.29 T
+198.33 662 198.33 552.83 2 L
+3 H
+2 Z
+N
+0 F
+(LINK) 243.33 507 T
+288.67 538.67 288.67 522 2 L
+1 H
+N
+264.17 516.17 290.83 542 2 L
+N
+282.5 545.33 282.5 534.5 2 L
+N
+525 660.12 525 495.75 2 L
+11 X
+N
+524.38 495.75 392.71 495.75 2 L
+10 X
+N
+0 10 Q
+0 X
+(HIPPIS Bus) 146.67 546.58 T
+(HIPPID Bus) 176.46 534.58 T
+452.5 631.2 492.5 662.03 R
+7 X
+V
+0.5 H
+0 X
+N
+0 12 Q
+(Server) 457.5 637.53 T
+(File) 463.82 649.53 T
+533.34 666.37 533.34 487.62 2 L
+1 H
+11 X
+N
+533.13 487.42 428.75 487.42 2 L
+10 X
+N
+175.5 676.5 175.5 566.5 2 L
+0 X
+N
+0 10 Q
+(VME) 173.33 678.67 T
+175.83 655.33 149.17 655.33 2 L
+N
+175 623.67 161.67 623.67 2 L
+N
+315.83 545.33 315.83 529.5 2 L
+N
+352.5 545.33 352.5 529.5 2 L
+N
+389.17 545.33 389.17 531.17 2 L
+N
+516.75 655.75 516.75 503.25 2 L
+11 X
+N
+516.88 502.62 356.25 502.62 2 L
+10 X
+N
+508.75 650.12 508.75 511.17 2 L
+11 X
+N
+508.13 511.17 290.63 511.17 2 L
+10 X
+N
+0 X
+(Four A) 286.46 443.25 T
+(TC/Link Board Pairs) 313.95 443.25 T
+120.37 568.74 160.37 599.58 R
+7 X
+V
+0.5 H
+0 X
+N
+0 12 Q
+(LINK) 127.67 581.21 T
+160.63 584.5 175 584.5 2 L
+1 H
+N
+140 568.67 140 521.17 2 L
+11 X
+N
+500.83 644.5 500.83 521.17 2 L
+N
+0 10 Q
+0 X
+(VME Ribbon) 446.11 477.83 T
+(Cable Segments) 440.84 467.83 T
+(Control Paths) 445.83 457.83 T
+72 63 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "4" 5
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(5) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+0.67 (for \336le server software, running of) 72 712.67 P
+0.67 (f of the controller) 226.45 712.67 P
+0.67 (, to access network headers and \336le meta-data in the) 305.2 712.67 P
+(controller cache.) 72 699.67 T
+2 12 Q
+(XBUS Cr) 72 678 T
+(ossbar) 120.75 678 T
+0 11 Q
+-0.09 (The XBUS is a synchronous multiplexed \050address/data\051 crossbar) 72 664.67 P
+-0.09 (-based interconnect that uses a centralized) 355.25 664.67 P
+1.78 (strict priority-based arbitration scheme. All paths to memory can be recon\336gured on a cycle-by-cycle) 72 651.67 P
+(basis. Each of the eight 32-bit XBUS ports operates at a cycle time of 80 ns.) 72 638.67 T
+0.17 (The XBUS supports reads and write transactions. During each XBUS transaction, 1 to 16 words are) 99 625.67 P
+-0.04 (transferred over the interconnect. Each transaction consists of an arbitration phase, an address phase, and a) 72 612.67 P
+1.35 (data phase. If there is no contention for memory) 72 599.67 P
+1.35 (, the arbitration and address phases each take a single) 293.53 599.67 P
+0.83 (cycle; data is then transferred at the rate of one word per cycle. The memory may arbitrarily insert wait) 72 586.67 P
+0.98 (cycles during the address and data cycles to compensate for DRAM access latencies and refreshes. The) 72 573.67 P
+0.86 (shortest XBUS transaction is a single word write, which takes three cycles, one each for the arbitration,) 72 560.67 P
+(address, and data phases.) 72 547.67 T
+1.23 (While contention for memory modules is a concern, actual contention is infrequent. Most XBUS) 99 534.67 P
+-0.21 (ports perform lar) 72 521.67 P
+-0.21 (ge sequential accesses. When they do con\337ict, the loser of the arbitration deterministically) 145.83 521.67 P
+0.23 (follows the winner around the memory modules, avoiding further con\337icts.Each XBUS port buf) 72 508.67 P
+0.23 (fers 1 KB) 496.83 508.67 P
+(of data to/from the XBUS to even out \337uctuations.) 72 495.67 T
+0.83 (Before deciding upon the XBUS, we carefully considered using a single wide bus-based intercon-) 99 482.67 P
+1.09 (nect. Its main attraction was conceptual simplicity) 72 469.67 P
+1.09 (. However) 298.44 469.67 P
+1.09 (, because we decided to limit the design to) 344.85 469.67 P
+0.35 (TTL/CMOS technology) 72 456.67 P
+0.35 (, we were limited to a bus cycle time of approximately 80 ns. T) 177.53 456.67 P
+0.35 (o sustain 40 MB/s) 459.29 456.67 P
+-0.13 (over each of the two HIPPI ports \05040 MB/s of reads and 40 MB/s of writes\051, we need a bus bandwidth of at) 72 443.67 P
+1.18 (least 200 MB/s: 80 MB/s for the reads \05040 MB/s into and 40 MB/s out of memory\051 and 120 MB/s for) 72 430.67 P
+1.32 (writes \050same as for reads plus 40 MB/s to compute the parity\051. Since we cannot realistically expect to) 72 417.67 P
+0.89 (achieve a bus utilization greater than 70-80 percent, this implied that the bus would have to be 256-bits) 72 404.67 P
+(wide with a peak bandwidth of 400 MB/s.) 72 391.67 T
+-0.17 (Unfortunately) 99 378.67 P
+-0.17 (, the number of FIFO and transceiver chips required to implement such a wide bus port) 159.92 378.67 P
+0.87 (is huge. While we could have used a small number of time-multiplexed 256-bit ports, interfaced to nar-) 72 365.67 P
+-0.09 (rower 32-bit and 64-bit busses, the result would have been a more complex system. Eventually) 72 352.67 P
+-0.09 (, the 256-bit) 486.78 352.67 P
+(bus was abandoned in favor of a crossbar) 72 339.67 T
+(-based interconnection scheme, the XBUS.) 253.31 339.67 T
+2 12 Q
+(Pr) 72 318 T
+(ocessing) 84.44 318 T
+0 11 Q
+0.02 (It may seem strange that there is no processor within the XBUS card. Actually) 72 304.67 P
+0.02 (, the con\336guration of Figure) 416.34 304.67 P
+0.62 (1 contains no less than seven microprocessors: one in each of the HIPPI interface boards, one in each of) 72 291.67 P
+-0.05 (the A) 72 278.67 P
+-0.05 (TC boards, and one in the \336le server) 94.83 278.67 P
+-0.05 (. The processors within the HIPPI boards handle some of the net-) 253.75 278.67 P
+0.51 (work processing normally performed within the server) 72 265.67 P
+0.51 (. The processors within the disk interfaces manage) 314.29 265.67 P
+0.72 (the low level details of managing the SCSI interfaces. The \336le server CPU must do most of the conven-) 72 252.67 P
+0.3 (tional \336le system processing. Since it is executing \336le server code, the \336le server needs access only to the) 72 239.67 P
+-0.24 (\336le system meta-data, not user data. This makes its possible to locate the \336le server cache within the XBUS) 72 226.67 P
+(card, close to the network and disk interfaces.) 72 213.67 T
+2 12 Q
+(Performance and Scaling Strategy) 72 192 T
+0 11 Q
+1.29 (Since a single XBUS card is limited to 40 MByte/second, our strategy for scaling is to interleave data) 72 178.67 P
+0.93 (transfers across multiple XBUS card. These can share a common HIPPI interface through the TMC I/O) 72 165.67 P
+0.42 (busses. T) 72 152.67 P
+0.42 (wo XBUS boards can sustain 80 MB/s, more fully utilizing the available bandwidth of the serv-) 112.54 152.67 P
+(er) 72 139.67 T
+(\325) 80.94 139.67 T
+(s HIPPI interface.) 84 139.67 T
+0.89 (This architecture performs well for lar) 99 126.67 P
+0.89 (ge data transfers requiring high bandwidth. But it is not the) 271.38 126.67 P
+1.55 (best for small transfers, where latency dominates performance more than transfer bandwidth.Thus, the) 72 113.67 P
+0.68 (Sprite group has or) 72 100.67 P
+0.68 (ganized the server software to accept remote \336le system requests over a conventional) 157.76 100.67 P
+(network, like Ethernet, as well as the Ultranet.) 72 87.67 T
+FMENDPAGE
+%%EndPage: "5" 6
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(6) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+2 16 Q
+0 X
+(4. RAID-II Implementation) 72 709.33 T
+2 14 Q
+(4.1.  Disk Array Subsystem) 72 684.67 T
+0 11 Q
+0.03 (Our goal was to create an experimental prototype that could be built within the project schedule, yet prove) 72 670.67 P
+0.82 (serviceable for the duration of the research project and beyond. This led us to several critical packaging) 72 657.67 P
+1.57 (decisions. T) 72 644.67 P
+1.57 (wo disk packaging orientations commonly found in disk arrays are the \322wall of disks,\323 in) 125.9 644.67 P
+0.04 (which the drives are mounted in a single vertical plane within a 19" chassis, and the horizontal \322shelves of) 72 631.67 P
+(disks.\323 W) 72 618.67 T
+(e chose the latter scheme, illustrated in Figure 2.) 114.45 618.67 T
+0.37 ( Our main motivation was to take make ef) 99 605.67 P
+0.37 (fective use of the depth of a standard 19" rack. A wall of) 286.68 605.67 P
+0.19 (disks does this only to the extent that the drive housing has depth in its longest dimension. As drive form-) 72 592.67 P
+0.77 (factors shrink to 3.5" and below) 72 579.67 P
+0.77 (, this dimension also shrinks. Less of the rack depth is used in a wall of) 215.7 579.67 P
+0.03 (disks. For our design, the shelf approach give us a high capacity per square foot. Based on the highest cur-) 72 566.67 P
+0.56 (rently available capacity 3.5" drives, our shelf design yields a capacity of 72 1.2 GB drives in a 5 ft. 19") 72 553.67 P
+(chassis. The total storage is 86.4 GB, an ef) 72 540.67 T
+(\336ciency of 2.34 GB/ft) 259.46 540.67 T
+0 9 Q
+(3) 355.89 545.07 T
+0 11 Q
+(.) 360.38 540.67 T
+2.36 (W) 99 527.67 P
+2.36 (e accomplished power distribution within the RAID-II chassis with embedded power supply) 108.49 527.67 P
+0.13 (shelves \050see the disk racks in Figure 3\051. Each power supply shelf serves four drive shelves, two above and) 72 514.67 P
+-0.14 (two below) 72 501.67 P
+-0.14 (. This symmetric arrangement minimizes the need to cable high current, low voltage power from) 117.22 501.67 P
+0.02 (the supply to the drive. T) 72 488.67 P
+0.02 (o provide a measure of fault isolation, each drive shelf is powered by an indepen-) 181.81 488.67 P
+-0.07 (dent AC-DC power converter) 72 475.67 P
+-0.07 (, so a power supply shelf holds four power supplies. Each of these supplies is) 201.63 475.67 P
+0.06 (independently fused. If one should fail, it cannot af) 72 462.67 P
+0.06 (fect its neighbors via the AC distribution system. Simi-) 296.88 462.67 P
+-0.15 (larly) 72 449.67 P
+-0.15 (, a power supply drives four strings on a disk shelf. Each of these is independently fused and switched,) 91.42 449.67 P
+0.38 (to minimize fault propagation in the DC distribution system. Finally each drive is individually fused, fur-) 72 436.67 P
+(ther isolating power faults, thus protecting the system from the failure of a single drive.) 72 423.67 T
+-0.07 (A secondary goal of the subsystem is to support the servicing of the disk array when a drive fails. T) 99 410.67 P
+-0.07 (o) 534.51 410.67 P
+0.63 (allow users to insert and remove drives from the array) 72 397.67 P
+0.63 (, without tools or special knowledge, we made the) 314.64 397.67 P
+0.48 (disk drive the basic \336eld replacable unit. W) 72 384.67 P
+0.48 (e package the drives in a housing that allows simple insertion) 265.47 384.67 P
+-0.23 (and removal from the array) 72 371.67 P
+-0.23 (. The SCSI bus connection, power connection, SCSI address, and a spindle sync) 190.58 371.67 P
+0.44 (signal are connected from the drive to two connectors mounted on our drive housing assembly) 72 358.67 P
+0.44 (. This sub-) 492.43 358.67 P
+72 63 540 720 C
+72 63 539.86 342.49 C
+224.58 189.66 465.42 326.33 R
+1 H
+2 Z
+0 X
+0 K
+N
+223.75 120 464.58 125.83 R
+N
+257.58 284.67 315.58 318.67 R
+0.5 H
+N
+302.08 318.67 302.08 285.17 2 L
+N
+305.83 292.42 308.33 309.17 1.25 RR
+N
+311.33 293.67 313.08 307.17 0.88 RR
+N
+290.83 318.67 290.83 284.92 2 L
+N
+290.58 284.92 301.83 318.92 R
+6 X
+V
+0 X
+N
+261.58 289.67 286.33 314.92 12.38 RR
+4 X
+V
+0 X
+N
+287.58 282.67 302.08 284.42 R
+7 X
+V
+0 X
+N
+316.83 284.92 318.33 288.17 R
+7 X
+V
+0 X
+N
+316.58 315.42 318.08 318.67 R
+7 X
+V
+0 X
+N
+304.83 286.42 314.83 287.17 R
+7 X
+V
+0 X
+N
+304.58 316.42 314.58 317.17 R
+7 X
+V
+0 X
+N
+321.58 284.92 379.58 318.92 R
+N
+366.08 318.92 366.08 285.42 2 L
+N
+369.83 292.67 372.33 309.42 1.25 RR
+N
+375.33 293.92 377.08 307.42 0.88 RR
+N
+354.83 318.92 354.83 285.17 2 L
+N
+354.58 285.17 365.83 319.17 R
+6 X
+V
+0 X
+N
+325.58 289.92 350.33 315.17 12.38 RR
+4 X
+V
+0 X
+N
+351.58 282.92 366.08 284.67 R
+7 X
+V
+0 X
+N
+380.83 285.17 382.33 288.42 R
+7 X
+V
+0 X
+N
+380.58 315.67 382.08 318.92 R
+7 X
+V
+0 X
+N
+368.83 286.67 378.83 287.42 R
+7 X
+V
+0 X
+N
+368.58 316.67 378.58 317.42 R
+7 X
+V
+0 X
+N
+384.96 285.04 442.96 319.04 R
+N
+429.46 319.04 429.46 285.54 2 L
+N
+433.21 292.79 435.71 309.54 1.25 RR
+N
+438.71 294.04 440.46 307.54 0.88 RR
+N
+418.21 319.04 418.21 285.29 2 L
+N
+417.96 285.29 429.21 319.29 R
+6 X
+V
+0 X
+N
+388.96 290.04 413.71 315.29 12.38 RR
+4 X
+V
+0 X
+N
+414.96 283.04 429.46 284.79 R
+7 X
+V
+0 X
+N
+444.21 285.29 445.71 288.54 R
+7 X
+V
+0 X
+N
+443.96 315.79 445.46 319.04 R
+7 X
+V
+0 X
+N
+432.21 286.79 442.21 287.54 R
+7 X
+V
+0 X
+N
+431.96 316.79 441.96 317.54 R
+7 X
+V
+0 X
+N
+451.08 296.17 457.08 308.67 R
+7 X
+V
+0 X
+N
+456.83 299.42 460.58 305.92 R
+5 X
+V
+0 X
+N
+230.58 207.17 242.08 319.17 R
+5 X
+V
+0 X
+N
+233.08 201.66 240.08 206.66 R
+1 X
+V
+0 X
+N
+258.08 241.66 316.08 275.66 R
+N
+302.58 275.66 302.58 242.16 2 L
+N
+306.33 249.41 308.83 266.16 1.25 RR
+N
+311.83 250.66 313.58 264.16 0.88 RR
+N
+291.33 275.66 291.33 241.91 2 L
+N
+291.08 241.91 302.33 275.91 R
+6 X
+V
+0 X
+N
+262.08 246.66 286.83 271.91 12.38 RR
+4 X
+V
+0 X
+N
+288.08 239.66 302.58 241.41 R
+7 X
+V
+0 X
+N
+317.33 241.91 318.83 245.16 R
+7 X
+V
+0 X
+N
+317.08 272.41 318.58 275.66 R
+7 X
+V
+0 X
+N
+305.33 243.41 315.33 244.16 R
+7 X
+V
+0 X
+N
+305.08 273.41 315.08 274.16 R
+7 X
+V
+0 X
+N
+322.08 241.91 380.08 275.91 R
+N
+366.58 275.91 366.58 242.41 2 L
+N
+370.33 249.66 372.83 266.41 1.25 RR
+N
+375.83 250.91 377.58 264.41 0.88 RR
+N
+355.33 275.91 355.33 242.16 2 L
+N
+355.08 242.16 366.33 276.16 R
+6 X
+V
+0 X
+N
+326.08 246.91 350.83 272.16 12.38 RR
+4 X
+V
+0 X
+N
+352.08 239.91 366.58 241.66 R
+7 X
+V
+0 X
+N
+381.33 242.16 382.83 245.41 R
+7 X
+V
+0 X
+N
+381.08 272.66 382.58 275.91 R
+7 X
+V
+0 X
+N
+369.33 243.66 379.33 244.41 R
+7 X
+V
+0 X
+N
+369.08 273.66 379.08 274.41 R
+7 X
+V
+0 X
+N
+385.46 242.04 443.46 276.04 R
+N
+429.96 276.04 429.96 242.54 2 L
+N
+433.71 249.79 436.21 266.54 1.25 RR
+N
+439.21 251.04 440.96 264.54 0.88 RR
+N
+418.71 276.04 418.71 242.29 2 L
+N
+418.46 242.29 429.71 276.29 R
+6 X
+V
+0 X
+N
+389.46 247.04 414.21 272.29 12.38 RR
+4 X
+V
+0 X
+N
+415.46 240.04 429.96 241.79 R
+7 X
+V
+0 X
+N
+444.71 242.29 446.21 245.54 R
+7 X
+V
+0 X
+N
+444.46 272.79 445.96 276.04 R
+7 X
+V
+0 X
+N
+432.71 243.79 442.71 244.54 R
+7 X
+V
+0 X
+N
+432.46 273.79 442.46 274.54 R
+7 X
+V
+0 X
+N
+451.58 253.16 457.58 265.66 R
+7 X
+V
+0 X
+N
+457.33 256.41 461.08 262.91 R
+5 X
+V
+0 X
+N
+257.58 201.16 315.58 235.16 R
+N
+302.08 235.16 302.08 201.66 2 L
+N
+305.83 208.91 308.33 225.66 1.25 RR
+N
+311.33 210.16 313.08 223.66 0.88 RR
+N
+290.83 235.16 290.83 201.41 2 L
+N
+290.58 201.41 301.83 235.41 R
+6 X
+V
+0 X
+N
+261.58 206.16 286.33 231.41 12.38 RR
+4 X
+V
+0 X
+N
+287.58 199.16 302.08 200.91 R
+7 X
+V
+0 X
+N
+316.83 201.41 318.33 204.66 R
+7 X
+V
+0 X
+N
+316.58 231.91 318.08 235.16 R
+7 X
+V
+0 X
+N
+304.83 202.91 314.83 203.66 R
+7 X
+V
+0 X
+N
+304.58 232.91 314.58 233.66 R
+7 X
+V
+0 X
+N
+321.58 201.41 379.58 235.41 R
+N
+366.08 235.41 366.08 201.91 2 L
+N
+369.83 209.16 372.33 225.91 1.25 RR
+N
+375.33 210.41 377.08 223.91 0.88 RR
+N
+354.83 235.41 354.83 201.66 2 L
+N
+354.58 201.66 365.83 235.66 R
+6 X
+V
+0 X
+N
+325.58 206.41 350.33 231.66 12.38 RR
+4 X
+V
+0 X
+N
+351.58 199.41 366.08 201.16 R
+7 X
+V
+0 X
+N
+380.83 201.66 382.33 204.91 R
+7 X
+V
+0 X
+N
+380.58 232.16 382.08 235.41 R
+7 X
+V
+0 X
+N
+368.83 203.16 378.83 203.91 R
+7 X
+V
+0 X
+N
+368.58 233.16 378.58 233.91 R
+7 X
+V
+0 X
+N
+384.96 201.54 442.96 235.54 R
+N
+429.46 235.54 429.46 202.04 2 L
+N
+433.21 209.29 435.71 226.04 1.25 RR
+N
+438.71 210.54 440.46 224.04 0.88 RR
+N
+418.21 235.54 418.21 201.79 2 L
+N
+417.96 201.79 429.21 235.79 R
+6 X
+V
+0 X
+N
+388.96 206.54 413.71 231.79 12.38 RR
+4 X
+V
+0 X
+N
+414.96 199.54 429.46 201.29 R
+7 X
+V
+0 X
+N
+444.21 201.79 445.71 205.04 R
+7 X
+V
+0 X
+N
+443.96 232.29 445.46 235.54 R
+7 X
+V
+0 X
+N
+432.21 203.29 442.21 204.04 R
+7 X
+V
+0 X
+N
+431.96 233.29 441.96 234.04 R
+7 X
+V
+0 X
+N
+451.08 212.66 457.08 225.16 R
+7 X
+V
+0 X
+N
+456.83 215.91 460.58 222.41 R
+5 X
+V
+0 X
+N
+437.53 304.42 449.08 301.17 437.56 297.81 437.54 301.12 4 Y
+V
+210.58 300.17 437.55 301.12 2 L
+N
+0 12 Q
+(SCSI String 1) 143.08 296.17 T
+(Blower) 167.08 183.16 T
+217.29 198.59 228.58 202.67 221.17 193.23 219.23 195.91 4 Y
+V
+205.58 186.16 219.24 195.9 2 L
+N
+287.58 128.25 302.08 140.5 R
+7 X
+V
+0 X
+N
+316.83 128 318.33 131.25 R
+7 X
+V
+0 X
+N
+291.58 130.25 299.33 138.25 3.88 RR
+N
+257.33 128 301.83 144 R
+N
+301.83 128.25 315.33 130.5 R
+N
+304.33 130.75 307.58 135.75 R
+N
+309.83 130.5 313.08 133 R
+N
+0 90 3.25 3.5 302.42 136.5 A
+0 90 10 9.17 302.25 133.33 A
+289.17 141.25 301.58 151.91 R
+6 X
+V
+0 X
+N
+350.33 127.96 364.83 140.21 R
+7 X
+V
+0 X
+N
+379.58 127.71 381.08 130.96 R
+7 X
+V
+0 X
+N
+354.33 129.96 362.08 137.96 3.88 RR
+N
+320.08 127.71 364.58 143.71 R
+N
+364.58 127.96 378.08 130.21 R
+N
+367.08 130.46 370.33 135.46 R
+N
+372.58 130.21 375.83 132.71 R
+N
+0 90 3.25 3.5 365.17 136.21 A
+0 90 10 9.17 365 133.04 A
+351.92 140.96 364.33 151.62 R
+6 X
+V
+0 X
+N
+415.08 127.21 429.58 139.46 R
+7 X
+V
+0 X
+N
+444.33 126.96 445.83 130.21 R
+7 X
+V
+0 X
+N
+419.08 129.21 426.83 137.21 3.88 RR
+N
+384.83 126.96 429.33 142.96 R
+N
+429.33 127.21 442.83 129.46 R
+N
+431.83 129.71 435.08 134.71 R
+N
+437.33 129.46 440.58 131.96 R
+N
+0 90 3.25 3.5 429.92 135.46 A
+0 90 10 9.17 429.75 132.29 A
+416.67 140.21 429.08 150.87 R
+6 X
+V
+0 X
+N
+230.38 142.07 241.68 154.57 R
+5 X
+V
+0 X
+N
+231.78 144.27 240.28 152.97 4.25 RR
+1 X
+V
+0 X
+N
+231.68 126.86 240.48 141.86 R
+7 X
+V
+0 X
+N
+451.08 126.86 457.08 144.16 R
+7 X
+V
+0 X
+N
+456.83 134.91 460.78 141.41 R
+5 X
+V
+0 X
+N
+73.33 65.32 535 108.65 R
+7 X
+V
+2 F
+0 X
+(Figur) 73.33 100.65 T
+(e 2) 101.77 100.65 T
+0 F
+(:) 116.09 100.65 T
+1 F
+(RAID-II Disk Shelves) 122.42 100.65 T
+0 10 Q
+-0.11 (The \336gure show the disk shelves used in the RAID-II prototype. Drives are placed \337at in a 3-by-3 orientation on the) 73.33 89.99 P
+0.77 (shelf. This is in contrast to the \322wall of disks,\323 in which drives are placed on one face of the rack. For 3.5" disk) 73.33 79.99 P
+(drives, shelves yield a higher storage capacity per cubic foot than the disk wall.) 73.33 69.99 T
+72 63 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "6" 7
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(7) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+-0.09 (plate is designed to \337oat to ensure smooth engagement with the mating connectors on the shelf SCSI back-) 72 381.18 P
+(plane. The backplane provides geographic addressing for the drive) 72 368.18 T
+2 14 Q
+(4.2.  XBUS Card) 72 345.18 T
+2 12 Q
+(Physical Design) 72 322.51 T
+0 11 Q
+1.28 (The XBUS card is the single most complex printed circuit board every designed at Berkeley) 72 309.18 P
+1.28 (. It makes) 494.42 309.18 P
+0.87 (extensive use of surface mount technology) 72 296.18 P
+0.87 (. W) 263.3 296.18 P
+0.87 (e chose surface mount to achieve high component density) 279.15 296.18 P
+-0.09 (and to minimize interconnect lengths, especially in the crossbar) 72 283.18 P
+-0.09 (. T) 349.83 283.18 P
+-0.09 (o further increase density) 361.18 283.18 P
+-0.09 (, we partitioned) 471.54 283.18 P
+0.5 (the design into a main board and four \050identical\051 daughter cards \050see Figure 4\051. The daughter cards inter-) 72 270.18 P
+-0.22 (face between the crossbar and the VME interfaces necessary to interface to the A) 72 257.18 P
+-0.22 (TC string boards. This has) 424.6 257.18 P
+-0.14 (the advantage of using the vertical space above and below the main board, In addition, it simpli\336es the lay-) 72 244.18 P
+(out task, since the daughter card physical design is done once and used four times.) 72 231.18 T
+1.62 (W) 99 218.18 P
+1.62 (e designed the boards using RACAL) 108.49 218.18 P
+1.62 (\325) 277.02 218.18 P
+1.62 (s printed circuit board software. While the design of the) 280.08 218.18 P
+0.7 (daughter card proceeded fairly smoothly using 8 mil lines and spaces, the complexity of the XBUS card) 72 205.18 P
+0.4 (eventually exceeded RACAL) 72 192.18 P
+0.4 (\325) 201.15 192.18 P
+0.4 (s ability to handle it. W) 204.2 192.18 P
+0.4 (e were forced to wait one month for beta releases to) 308.45 192.18 P
+(\336x the software limitations.) 72 179.18 T
+-0.14 (T) 99 166.18 P
+-0.14 (able 1 summarizes some critical statistics of the two boards we designed, the XBUS and the daugh-) 104.94 166.18 P
+-0.02 (ter cards, and compares these with our previous \322most complicated board,\323 the SPUR CPU board. In addi-) 72 153.18 P
+2.63 (tion, we show the statistics for the original 8-Port version of the XBUS card, which could not be) 72 140.18 P
+-0.21 (successfully constructed by our board fabricator because of poor yields on blind vias. Blind vias make con-) 72 127.18 P
+0.12 (nections between internal layers without taking space on the top and bottom routing layers. W) 72 114.18 P
+0.12 (ithout them,) 486.77 114.18 P
+1.41 (we were forced to reduce the complexity of the board, to reduce the pins/in) 72 101.18 P
+0 9 Q
+1.16 (2) 420.51 105.58 P
+0 11 Q
+1.41 (. Nevertheless, the 4-port) 425 101.18 P
+0.93 (board still has dramatically increased pin densities and number of holes on the board. This is remains a) 72 88.18 P
+-0.03 (good measure of the evolving complexity of the board-level systems the community is now able to design.) 72 75.18 P
+72 63 540 720 C
+72.97 388.51 539.03 720 C
+73.89 387.74 536.84 442.53 R
+7 X
+0 K
+V
+2 12 Q
+0 X
+(Figur) 73.89 434.53 T
+(e 3:) 102.33 434.53 T
+1 F
+(RAID-II Har) 123.64 434.53 T
+(dwar) 184.8 434.53 T
+(e Racks) 209.02 434.53 T
+0 10 Q
+0.77 (The RAID-II hardware rack contains a SUN-4/280 host at the bottom, a TMC chassis in the middle, and a VME) 73.89 423.86 P
+0.63 (backplane at the top. The TMC chassis holds the HIPPI interface board set, RAID-II XBUS card\050s\051, and a VME-) 73.89 413.86 P
+0.18 (VME link board to allow the host to control the boards in the chassis. The VME backplane is partitioned into inde-) 73.89 403.86 P
+(pendent 2-slot segments for interfacing the disk drives.) 73.89 393.86 T
+257.37 702.58 257.64 452.14 2 L
+1 H
+2 Z
+N
+257.64 452.14 383.64 452.14 2 L
+N
+383.64 452.14 383.64 702.58 2 L
+N
+383.39 702.89 257.39 702.89 2 L
+N
+266.64 542.14 374.64 614.14 R
+3 X
+V
+0.5 H
+0 X
+N
+266.64 623.14 374.64 686.14 R
+3 X
+V
+1 H
+0 X
+N
+284.89 464.64 356.89 527.64 R
+3 X
+V
+0.5 H
+0 X
+N
+269.9 549.8 272.49 604.55 R
+7 X
+V
+0 X
+N
+307.65 544.68 310.18 612.18 R
+7 X
+V
+0 X
+N
+345.05 544.93 347.57 612.43 R
+7 X
+V
+0 X
+N
+274.32 627.84 281.82 682.84 R
+7 X
+V
+0 X
+N
+286.57 627.84 294.07 682.84 R
+7 X
+V
+0 X
+N
+298.81 627.84 306.31 682.84 R
+7 X
+V
+0 X
+N
+311.06 627.84 318.56 682.84 R
+7 X
+V
+0 X
+N
+323.3 627.84 330.8 682.84 R
+7 X
+V
+0 X
+N
+335.55 627.84 343.05 682.84 R
+7 X
+V
+0 X
+N
+347.79 627.84 355.29 682.84 R
+7 X
+V
+0 X
+N
+360.04 628.14 368.14 682.54 R
+7 X
+V
+0 X
+N
+279.9 543.64 287.65 613.89 R
+7 X
+V
+0 X
+N
+290.15 543.39 297.9 613.64 R
+7 X
+V
+0 X
+N
+350.9 597.14 369.65 597.14 2 L
+1 H
+N
+370.15 650.89 369.9 597.14 2 L
+N
+357.65 651.39 357.9 565.89 2 L
+N
+358.15 565.89 350.15 565.89 2 L
+N
+348.78 587.01 349.53 607.26 R
+0.5 H
+N
+348.53 557.01 349.28 577.26 R
+N
+342.53 557.26 343.28 577.51 R
+N
+340.65 597.14 321.9 597.14 2 L
+1 H
+N
+321.65 597.89 321.65 650.89 2 L
+N
+333.9 651.64 333.65 566.14 2 L
+N
+357.15 651.39 350.9 660.64 2 L
+N
+364.15 660.64 370.15 651.39 2 L
+N
+339.65 660.64 333.9 651.39 2 L
+N
+341.9 566.14 334.65 566.14 2 L
+N
+270.4 562.89 261.15 562.89 2 L
+N
+260.15 562.39 260.15 489.89 2 L
+N
+260.9 490.14 303.15 490.14 2 L
+N
+304.15 468.05 306.65 522.72 R
+7 X
+V
+0.5 H
+0 X
+N
+342.28 587.26 343.03 607.51 R
+N
+304.28 587.76 305.03 608.01 R
+7 X
+V
+0 X
+N
+311.78 588.01 312.53 608.26 R
+7 X
+V
+0 X
+N
+304.28 557.26 305.03 577.51 R
+7 X
+V
+0 X
+N
+312.53 557.26 313.28 577.51 R
+7 X
+V
+0 X
+N
+321.4 651.64 327.9 660.89 2 L
+1 H
+N
+0 12 Q
+(Sun-4 Host) 297.08 455.68 T
+(TMC Chassis) 312.32 531.47 T
+(A) 290.42 689.29 T
+(TC Chassis) 297.75 689.29 T
+147.14 451.57 246.77 671.42 R
+N
+148.35 648.6 244 651.6 R
+5 X
+V
+0.5 H
+0 X
+N
+154.08 653.85 175 663.35 R
+5 X
+V
+0 X
+N
+184.09 654.35 205.02 663.85 R
+5 X
+V
+0 X
+N
+214.11 654.1 235.03 663.6 R
+5 X
+V
+0 X
+N
+148.29 628.82 243.93 631.82 R
+5 X
+V
+0 X
+N
+154.01 634.07 174.94 643.57 R
+5 X
+V
+0 X
+N
+184.03 634.57 204.95 644.07 R
+5 X
+V
+0 X
+N
+214.04 634.32 234.96 643.82 R
+5 X
+V
+0 X
+N
+147.57 604.99 243.22 607.99 R
+14 X
+V
+0 X
+N
+148.25 586.78 243.9 589.78 R
+5 X
+V
+0 X
+N
+153.98 592.03 174.9 601.53 R
+5 X
+V
+0 X
+N
+183.99 592.53 204.92 602.03 R
+5 X
+V
+0 X
+N
+214.01 592.28 234.93 601.78 R
+5 X
+V
+0 X
+N
+148.25 567.14 243.9 570.14 R
+5 X
+V
+0 X
+N
+153.98 572.39 174.9 581.89 R
+5 X
+V
+0 X
+N
+183.99 572.89 204.92 582.39 R
+5 X
+V
+0 X
+N
+214.01 572.64 234.93 582.14 R
+5 X
+V
+0 X
+N
+148.62 610.89 170.34 624.64 R
+14 X
+V
+0 X
+N
+172.5 610.89 196.37 624.64 R
+14 X
+V
+0 X
+N
+198.49 611.21 219.5 624.24 R
+14 X
+V
+0 X
+N
+222.61 611.92 244.33 624.24 R
+14 X
+V
+0 X
+N
+148.29 547.42 243.93 550.42 R
+5 X
+V
+0 X
+N
+154.01 552.67 174.94 562.17 R
+5 X
+V
+0 X
+N
+184.03 553.17 204.95 562.67 R
+5 X
+V
+0 X
+N
+214.04 552.92 234.96 562.42 R
+5 X
+V
+0 X
+N
+148.75 527.6 244.4 530.6 R
+5 X
+V
+0 X
+N
+154.48 532.85 175.4 542.35 R
+5 X
+V
+0 X
+N
+184.49 533.35 205.41 542.85 R
+5 X
+V
+0 X
+N
+214.51 533.1 235.43 542.6 R
+5 X
+V
+0 X
+N
+148.72 482.71 244.36 485.71 R
+5 X
+V
+0 X
+N
+154.45 487.96 175.37 497.46 R
+5 X
+V
+0 X
+N
+184.46 488.46 205.38 497.96 R
+5 X
+V
+0 X
+N
+214.47 488.21 235.4 497.71 R
+5 X
+V
+0 X
+N
+148 463.07 243.65 466.07 R
+5 X
+V
+0 X
+N
+153.73 468.32 174.65 477.82 R
+5 X
+V
+0 X
+N
+183.75 468.82 204.67 478.32 R
+5 X
+V
+0 X
+N
+213.76 468.57 234.68 478.07 R
+5 X
+V
+0 X
+N
+(Disk Shelf) 84.71 650.71 T
+(1) 157.59 615.14 T
+(2) 184.01 615.14 T
+(3) 207.59 614.42 T
+(4) 232.59 614.42 T
+149.13 502.89 244.78 505.89 R
+14 X
+V
+0 X
+N
+149.46 508.07 171.18 521.82 R
+14 X
+V
+0 X
+N
+173.35 508.07 197.21 521.82 R
+14 X
+V
+0 X
+N
+199.34 508.38 220.34 521.42 R
+14 X
+V
+0 X
+N
+223.46 509.1 245.18 521.42 R
+14 X
+V
+0 X
+N
+(5) 158.43 512.31 T
+(6) 184.86 512.31 T
+(7) 208.43 511.6 T
+(8) 233.43 511.6 T
+(1) 138.14 650.38 T
+(2) 138.14 632.38 T
+(3) 138.14 594.17 T
+(4) 138.14 578.38 T
+(5) 138.14 553.17 T
+(6) 138.14 533.38 T
+(7) 138.3 487.28 T
+(8) 138.3 466.57 T
+(Power Shelf) 81.87 610.14 T
+393.83 451.49 493.46 671.35 R
+1 H
+N
+395.04 648.53 490.69 651.53 R
+5 X
+V
+0.5 H
+0 X
+N
+400.77 653.78 421.69 663.28 R
+5 X
+V
+0 X
+N
+430.79 654.28 451.71 663.78 R
+5 X
+V
+0 X
+N
+460.8 654.03 481.72 663.53 R
+5 X
+V
+0 X
+N
+394.98 628.74 490.62 631.74 R
+5 X
+V
+0 X
+N
+400.7 633.99 421.63 643.49 R
+5 X
+V
+0 X
+N
+430.72 634.49 451.64 643.99 R
+5 X
+V
+0 X
+N
+460.73 634.24 481.65 643.74 R
+5 X
+V
+0 X
+N
+394.26 604.92 489.91 607.92 R
+14 X
+V
+0 X
+N
+394.94 586.71 490.59 589.71 R
+5 X
+V
+0 X
+N
+400.67 591.96 421.59 601.46 R
+5 X
+V
+0 X
+N
+430.69 592.46 451.61 601.96 R
+5 X
+V
+0 X
+N
+460.7 592.21 481.62 601.71 R
+5 X
+V
+0 X
+N
+394.94 567.07 490.59 570.07 R
+5 X
+V
+0 X
+N
+400.67 572.32 421.59 581.82 R
+5 X
+V
+0 X
+N
+430.69 572.82 451.61 582.32 R
+5 X
+V
+0 X
+N
+460.7 572.57 481.62 582.07 R
+5 X
+V
+0 X
+N
+395.3 610.82 417.03 624.57 R
+14 X
+V
+0 X
+N
+419.19 610.82 443.06 624.57 R
+14 X
+V
+0 X
+N
+445.18 611.13 466.19 624.17 R
+14 X
+V
+0 X
+N
+469.3 611.85 491.03 624.17 R
+14 X
+V
+0 X
+N
+394.98 547.35 490.62 550.35 R
+5 X
+V
+0 X
+N
+400.7 552.6 421.63 562.1 R
+5 X
+V
+0 X
+N
+430.72 553.1 451.64 562.6 R
+5 X
+V
+0 X
+N
+460.73 552.85 481.65 562.35 R
+5 X
+V
+0 X
+N
+395.44 527.53 491.09 530.53 R
+5 X
+V
+0 X
+N
+401.17 532.78 422.09 542.28 R
+5 X
+V
+0 X
+N
+431.18 533.28 452.11 542.78 R
+5 X
+V
+0 X
+N
+461.2 533.03 482.12 542.53 R
+5 X
+V
+0 X
+N
+395.41 482.64 491.05 485.64 R
+5 X
+V
+0 X
+N
+401.14 487.89 422.06 497.39 R
+5 X
+V
+0 X
+N
+431.15 488.39 452.07 497.89 R
+5 X
+V
+0 X
+N
+461.17 488.14 482.09 497.64 R
+5 X
+V
+0 X
+N
+394.69 462.99 490.34 465.99 R
+5 X
+V
+0 X
+N
+400.42 468.24 421.35 477.74 R
+5 X
+V
+0 X
+N
+430.44 468.74 451.36 478.24 R
+5 X
+V
+0 X
+N
+460.45 468.49 481.37 477.99 R
+5 X
+V
+0 X
+N
+395.82 502.81 491.47 505.81 R
+14 X
+V
+0 X
+N
+396.15 507.99 417.87 521.75 R
+14 X
+V
+0 X
+N
+420.04 507.99 443.9 521.75 R
+14 X
+V
+0 X
+N
+446.03 508.31 467.03 521.35 R
+14 X
+V
+0 X
+N
+470.15 509.02 491.87 521.35 R
+14 X
+V
+0 X
+N
+278.42 549.11 271.66 539.2 272.14 551.18 275.28 550.15 4 Y
+V
+284.37 577.83 275.29 550.14 2 L
+1 H
+N
+286.96 567.4 294.36 576.84 293.08 564.91 290.02 566.15 4 Y
+V
+290.03 566.15 279.17 539.19 2 L
+N
+(Daughter Card) 417.35 701.35 T
+(to A) 417.35 689.35 T
+(TC VME) 437 689.35 T
+(Cable) 417.35 677.35 T
+(2 slot VME) 152.58 697.18 T
+(Backplane Segments) 152.58 685.18 T
+386.69 661.09 376.03 655.59 382.15 665.91 384.42 663.5 4 Y
+V
+414.17 691.69 384.43 663.5 2 L
+0.5 H
+N
+269.52 677.45 279.36 670.59 267.38 671.19 268.45 674.32 4 Y
+V
+249.17 680.86 268.46 674.32 2 L
+N
+0 11 Q
+(HIPPI) 262.5 530.02 T
+72 63 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "7" 8
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(8) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+2 12 Q
+0 X
+(XBUS Cr) 72 187.44 T
+(ossbar Implementation) 120.75 187.44 T
+0 11 Q
+-0.03 (Initially) 72 174.11 P
+-0.03 (, we considered implementing the XBUS with either commercially available crossbar components,) 106.08 174.11 P
+0.98 (Xilinx programmable gate-arrays, or custom VLSI. W) 72 161.11 P
+0.98 (e ruled out commercial crossbars because of their) 315.61 161.11 P
+-0.01 (long con\336guration latencies. These chips were designed to support message passing in multiprocessor sys-) 72 148.11 P
+(tems rather than much lower latency memory accesses.) 72 135.11 T
+0.57 (While well-suited for implementing complex control units, the Xilinx gate arrays are inappropriate) 99 122.11 P
+0.06 (for highly interconnected datapaths with guaranteed propagation delays. The high speed, high pin-out Xil-) 72 109.11 P
+(inx components also very expensive.) 72 96.11 T
+0.8 (While we can fabricate custom VLSI chips at nominal cost through MOSIS, we decided against a) 99 83.11 P
+0.67 (custom design. This would have increased our risk, because of the long design time and the dif) 72 70.11 P
+0.67 (\336culty of) 499.35 70.11 P
+2 12 Q
+(T) 190.11 420.44 T
+(able 1: IOC PRINTED CIRCUIT BOARDS) 197.01 420.44 T
+0 F
+(Board) 110.69 387.44 T
+(XBUS) 205.45 394.44 T
+(\0504-Port\051) 202.46 380.44 T
+(XBUS) 294.68 394.44 T
+(\0508-Port\051) 291.69 380.44 T
+(Daughter Card) 367.22 387.44 T
+(SPUR CPU) 465.94 394.44 T
+(Board) 479.45 380.44 T
+0 9 Q
+(T) 79.87 358.44 T
+(echnology) 84.74 358.44 T
+(Double Sided) 196.85 358.44 T
+(SMT/Thru Hole) 192.36 347.44 T
+(Double Sided) 286.09 358.44 T
+(SMT/Blind V) 281.11 347.44 T
+(ias) 330.26 347.44 T
+(SMT/Thru Hole) 373.6 358.44 T
+(All Thru Hole) 468.64 358.44 T
+(Size, inches) 79.87 328.44 T
+(18.4 x 18.3) 201.22 328.44 T
+(18.4 x 18.3) 290.45 328.44 T
+(6.5 x 8.2) 386.96 328.44 T
+(15.7 x 14.44) 471.64 328.44 T
+(Layer Count) 79.87 309.44 T
+(18 layers, 14 routing) 184.25 309.44 T
+(20 layers, 18 routing) 273.48 309.44 T
+(10 layers, 8 routing) 367.74 309.44 T
+(10 layers, 8 routing) 459.16 309.44 T
+(Line/Space \050mils\051) 79.87 290.44 T
+(6/6) 215.7 290.44 T
+(6/6) 304.93 290.44 T
+(8/8) 396.94 290.44 T
+(8/8) 488.36 290.44 T
+(Pin Density pins/sq in) 79.87 271.44 T
+(54.7) 213.58 271.44 T
+(74.5) 302.81 271.44 T
+(47) 398.19 271.44 T
+(45) 489.61 271.44 T
+(# Nets/Connections) 79.87 252.44 T
+(1789/13,203) 198.85 252.44 T
+(2147/19,171) 288.08 252.44 T
+(162/121) 385.88 252.44 T
+(1) 415 252.44 T
+(1472/7041) 474.88 252.44 T
+(T) 79.87 233.44 T
+(otal Holes) 84.74 233.44 T
+(16,429) 209.09 233.44 T
+(23,1) 298.49 233.44 T
+(16) 313.88 233.44 T
+(2556) 393.7 233.44 T
+(12,702) 481.74 233.44 T
+(V) 79.87 214.44 T
+(ia Size) 85.82 214.44 T
+(0.016) 211.33 214.44 T
+(0.016) 300.57 214.44 T
+(0.016) 392.58 214.44 T
+(0.025) 483.99 214.44 T
+73.87 410.19 73.87 207.69 2 L
+V
+0.5 H
+0 Z
+N
+176.83 410.69 176.83 207.19 2 L
+V
+N
+266.06 410.69 266.06 207.19 2 L
+V
+N
+355.29 410.69 355.29 207.19 2 L
+V
+N
+450.08 410.69 450.08 207.19 2 L
+V
+N
+538.13 410.19 538.13 207.69 2 L
+V
+N
+73.62 410.44 538.38 410.44 2 L
+V
+N
+74.12 371.69 537.88 371.69 2 L
+V
+N
+74.12 369.19 537.88 369.19 2 L
+V
+N
+73.62 340.44 538.38 340.44 2 L
+V
+N
+73.62 321.44 538.38 321.44 2 L
+V
+N
+73.62 302.44 538.38 302.44 2 L
+V
+N
+73.62 283.44 538.38 283.44 2 L
+V
+N
+73.62 264.44 538.38 264.44 2 L
+V
+N
+73.62 245.44 538.38 245.44 2 L
+V
+N
+73.62 226.44 538.38 226.44 2 L
+V
+N
+73.62 207.44 538.38 207.44 2 L
+V
+N
+72 63 540 720 C
+72.62 440.44 539.38 720 C
+75.41 444.57 536.32 477.26 R
+7 X
+0 K
+V
+2 12 Q
+0 X
+(Figur) 75.41 469.26 T
+(e 4:) 103.85 469.26 T
+1 F
+(XBUS Car) 125.16 469.26 T
+(d Layout) 175.68 469.26 T
+0 10 Q
+0.47 (The major subsystems on the board are the interleaved memory system, the crossbar switch, the XOR engine, the) 75.41 458.59 P
+(daughter card interfaces, the HIPPI source and destination interfaces, and the host VME control interface.) 75.41 448.59 T
+76.65 494.46 275.4 681.33 R
+7 X
+V
+1 H
+2 Z
+0 X
+N
+77.27 653.21 274.77 653.21 2 L
+N
+206.02 491.02 263.52 500.39 R
+7 X
+V
+0 X
+N
+85.4 491.02 142.9 500.39 R
+7 X
+V
+0 X
+N
+146.02 491.02 203.52 500.39 R
+7 X
+V
+0 X
+N
+77.27 589.46 275.69 589.46 2 L
+N
+76.65 575.71 274.02 575.71 2 L
+N
+196.65 575.08 196.65 501.95 2 L
+N
+181.02 590.08 181.02 611.96 2 L
+N
+181.02 612.58 274.77 612.58 2 L
+N
+0 12 Q
+(XOR) 217.27 596.4 T
+(Host VME) 208.31 545.57 T
+(HIPPI) 119.15 550.15 T
+(Interface) 113.47 538.28 T
+(Daughter Cards) 117.27 578.9 T
+(Memory) 151.02 663.28 T
+(Cross Bar Switch) 119.15 627.03 T
+(\050185\051) 135.69 612.8 T
+(\050170\051) 222.35 531.13 T
+(\050164\051) 122.36 524.46 T
+(\05057\051) 243.19 595.3 T
+(\050180\051) 201.52 664.47 T
+(\050133 x 4\051) 195.69 578.63 T
+(4 Port XBUS Card) 126.35 698.63 T
+(Area per Function and # of Components) 79.71 685.8 T
+72 63 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "8" 9
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(9) 536 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+(making design changes late in the project.) 72 712.67 T
+0.92 (The crossbar) 99 699.67 P
+0.92 (-based memory system meets our requirement for high aggregate memory bandwidth) 156.13 699.67 P
+-0.04 (while using relatively inexpensive 32-bit ports. Note, however) 72 686.67 P
+-0.04 (, that a single port cannot utilize the full 400) 345.63 686.67 P
+-0.2 (MB/s of memory bandwidth; it is limited to only 40 MB/s. This is not a serious restriction because only the) 72 673.67 P
+(HIPPI ports can sustain more than 40 MB/s.) 72 660.67 T
+0.16 (While the XBUS ports themselves are inexpensive, the crossbar itself uses a lar) 99 647.67 P
+0.16 (ge number of highly) 450.11 647.67 P
+0.47 (connected components, which complicates the printed circuit board implementation. The XBUS datapath) 72 634.67 P
+-0.07 (is implemented using 196 16-bit transceivers, while the control unit uses eight 3-to-8 decoders, eight 20R8) 72 621.67 P
+0.64 (P) 72 608.67 P
+0.64 (AL) 77.1 608.67 P
+0.64 (\325) 90.73 608.67 P
+0.64 (s and eight 8-bit registers. By using surface mount technology) 93.79 608.67 P
+0.64 (, we implemented the crossbar in 120) 371.67 608.67 P
+(square inches or approximately 20% of the RAID controller) 72 595.67 T
+(\325) 336.02 595.67 T
+(s total board area.) 339.08 595.67 T
+2 12 Q
+(Memory Subsystem) 72 574 T
+0 11 Q
+0.98 (The memory system of RAID-II must support high bandwidth and lar) 72 560.67 P
+0.98 (ge capacity for buf) 387.99 560.67 P
+0.98 (fering multiple) 473.41 560.67 P
+-0.2 (HIPPI requests. T) 72 547.67 P
+-0.2 (o accomplish this, we chose to use 4 Mb DRAMs supplied by IBM \05016 Mb DRAMs have) 149.25 547.67 P
+0.16 (only recently become available\051 and to interleave across eight memory banks. Each memory bank is inde-) 72 534.67 P
+1.48 (pendently accessed via the XBUS. Memory is interleaved on a \336ne-grain basis across these banks, 16) 72 521.67 P
+0.6 (words at a time. W) 72 508.67 P
+0.6 (e chose \336ne-grain interleaving to smooth contention between banks. In the ideal case,) 156.84 508.67 P
+0.29 (multiple lar) 72 495.67 P
+0.29 (ge memory accesses will fall in lock-step, with all accesses orderly proceeding from one bank) 123.06 495.67 P
+(to the next.) 72 482.67 T
+0.41 (W) 99 469.67 P
+0.41 (e performed memory refresh using \322CAS before RAS,\323 where an internal row address is used on) 108.49 469.67 P
+0.13 (each memory chip. Refresh is only performed between XBUS accesses. Normal read and write operations) 72 456.67 P
+1.58 (determine the memory\325) 72 443.67 P
+1.58 (s power budget because all memory banks can be active simultaneously) 177.68 443.67 P
+1.58 (. Thus,) 508.21 443.67 P
+(refreshing all memory banks at the same time does not raise the maximum power requirement.) 72 430.67 T
+2 12 Q
+(VME Interfaces) 72 409 T
+0 11 Q
+0.61 (The XBUS card implements \336ve VME ports: a server control port and four A) 72 395.67 P
+0.61 (TC VME ports. The server) 419.49 395.67 P
+1.04 (uses the VME control port to read and write the XBUS card\325) 72 382.67 P
+1.04 (s memory and control registers. The other) 349.79 382.67 P
+0.25 (VME ports provide connectivity between the A) 72 369.67 P
+0.25 (TC disk controllers and the XBUS memory) 280.96 369.67 P
+0.25 (. The \336ve ports) 472.74 369.67 P
+-0.21 (are functionally identical, except that the server port contains additional logic to read and write control reg-) 72 356.67 P
+0.28 (isters on the XBUS card. These include \0501\051 a readable, writable board reset register) 72 343.67 P
+0.28 (, \0502\051 a read-only status) 440.35 343.67 P
+(register) 72 330.67 T
+(, and \0503\051 registers on each VME port for recording the VME address and data during parity errors.) 104.51 330.67 T
+0.21 (Each port has one interface to the VME bus and another to the XBUS memory) 99 317.67 P
+0.21 (. W) 446.6 317.67 P
+0.21 (e use three dif) 461.79 317.67 P
+0.21 (fer-) 524.15 317.67 P
+-0.15 (ent clock strategies. First, the interface to the XBUS memory runs at the same clock rate as the other cross-) 72 304.67 P
+1.84 (bar ports. Second, the VME interface logic runs at twice the XBUS clock rate, to allow for ef) 72 291.67 P
+1.84 (\336cient) 512.53 291.67 P
+0.15 (handshaking of data across the VME bus. Lastly) 72 278.67 P
+0.15 (, the VME bus itself is asynchronous. T) 285.35 278.67 P
+0.15 (o interact with the) 459.9 278.67 P
+(bus interface logic, several VME control signals must be synchronized.) 72 265.67 T
+0.52 (Synchronous FIFOs with independent read and write clocks form the interface between the normal) 99 252.67 P
+0.55 (speed and double speed clock regions in the VME ports. Communication from the VME bus interface to) 72 239.67 P
+0.69 (the XBUS interface uses two control FIFOs and one address/data FIFO. The opposite direction uses one) 72 226.67 P
+(data FIFO.) 72 213.67 T
+0.46 (Our VME interface implementation uses a commercially available P) 99 200.67 P
+0.46 (AL chip set that provides most) 402.52 200.67 P
+0.16 (of the logic needed to implement a VME slave module and to generate VME interrupts. W) 72 187.67 P
+0.16 (e also used sin-) 472.07 187.67 P
+(gle chip parity transceivers to generate and check parity between the XBUS memory and the VME bus.) 72 174.67 T
+2 12 Q
+(HIPPID, HIPPIS Interfaces) 72 153 T
+0 11 Q
+0.53 (All DMA engines are controlled from the \336le server through control register interfaces. These are imple-) 72 139.67 P
+-0.19 (mented using synchronous FIFOs. The FIFO allows the server to prepare multiple buf) 72 126.67 P
+-0.19 (fers before data actu-) 447.55 126.67 P
+0.99 (ally needs to go to/from the HIPPI. Unfortunately) 72 113.67 P
+0.99 (, the FIFO also prevents random access to the control) 296.72 113.67 P
+0.05 (registers. This ability would have proven useful for the HIPPID. For example, if the server sets up a DMA) 72 100.67 P
+0.05 (buf) 72 87.67 P
+0.05 (fer before the HIPPI packet actually arrives \050to shorten latency\051, the server would not know a priori the) 86.45 87.67 P
+-0.24 (size of the HIPPI packet. As a result, a DMA buf) 72 74.67 P
+-0.24 (fer would likely be left only partially full. W) 284.8 74.67 P
+-0.24 (e added a spe-) 478.19 74.67 P
+FMENDPAGE
+%%EndPage: "9" 10
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(10) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+(cial bit in the reset register to \337ush the last partial buf) 72 712.67 T
+(fer) 306.46 712.67 T
+(.) 318.05 712.67 T
+-0.21 (W) 99 699.67 P
+-0.21 (e also used FIFOs to interface between the clock worlds of the XBUS and the HIPPI boards. These) 108.49 699.67 P
+1.08 (also proved useful as speed-matching buf) 72 686.67 P
+1.08 (fers. Each XBUS port sustains a maximum of 40 MB/s, but a) 259.33 686.67 P
+0.76 (HIPPI board can burst at 100 MB/s. W) 72 673.67 P
+0.76 (e can generate or receive a 32 KB series of HIPPI packets at full) 247.32 673.67 P
+(HIPPI speeds by using 32 KB of FIFOs.) 72 660.67 T
+0.79 (Interfacing to the TMC I/O busses posed little design dif) 99 647.67 P
+0.79 (\336culty) 354.6 647.67 P
+0.79 (. Both buses are without addresses,) 381.96 647.67 P
+0.04 (and transfer a data word every 80 ns. However) 72 634.67 P
+0.04 (, control signals are driven at 40 ns intervals. W) 277.16 634.67 P
+0.04 (e decided to) 486.84 634.67 P
+0.11 (use very fast \0507 ns\051 P) 72 621.67 P
+0.11 (ALs clocked on the same edge as our control signal assert clock. W) 164.01 621.67 P
+0.11 (ith 7 ns P) 461.81 621.67 P
+0.11 (ALs and) 502.36 621.67 P
+-0.09 (fast bus drivers, the propagation delay was an acceptable 1) 72 608.67 P
+-0.09 (1 ns. Had the P) 328.94 608.67 P
+-0.09 (ALs been slower) 394.42 608.67 P
+-0.09 (, we would have) 468.25 608.67 P
+(needed more logic to pipeline the control signals, further complicating the design.) 72 595.67 T
+2 12 Q
+(XOR Engine) 72 574 T
+0 11 Q
+0.62 (The XOR DMA engine is also implemented with FIFOs. Multiple XOR operations can be queued up on) 72 560.67 P
+0.36 (the XBUS board. The XOR DMA engine can XOR up to 4095 source buf) 72 547.67 P
+0.36 (fers and move it into one result) 401.14 547.67 P
+-0.01 (buf) 72 534.67 P
+-0.01 (fer) 86.45 534.67 P
+-0.01 (. As degenerate cases, the XOR makes it possible to zero memory quickly or to perform quick mem-) 98.04 534.67 P
+(ory copies.) 72 521.67 T
+2 12 Q
+(Hardwar) 72 500 T
+(e Complexity) 119.09 500 T
+0 11 Q
+-0.03 (The complexity of the various state machines within the dif) 72 486.67 P
+-0.03 (ferent portions of the XBUS card are described) 333.05 486.67 P
+0.08 (in T) 72 473.67 P
+0.08 (able 2. W) 89.32 473.67 P
+0.08 (e made extensive use of conventional programmable logic. In general, the state machines are) 131.01 473.67 P
+1.48 (fairly simple, and easily \336t within a small number of high speed P) 72 175.67 P
+1.48 (ALs. However) 378.32 175.67 P
+1.48 (, the VME interfaces) 444.04 175.67 P
+0.19 (proved to be the most complex state machines. Recall that the six P) 72 162.67 P
+0.19 (AL implementation must be replicated) 369.58 162.67 P
+(for each of the \336ve VME interfaces on the board.) 72 149.67 T
+1.17 ( A summary of the hardware implementation level of ef) 99 136.67 P
+1.17 (fort is given in T) 354.38 136.67 P
+1.17 (able 3. W) 432.15 136.67 P
+1.17 (e have broken) 476.03 136.67 P
+1.02 (down the subsystems into the memory) 72 123.67 P
+1.02 (, HIPPI interfaces, XOR engine, VME interface, XBUS crossbar) 245.16 123.67 P
+1.02 (,) 537.25 123.67 P
+0.69 (system design, and mechanical/RAID chassis design. System design consists of time spent on high level) 72 110.67 P
+0.03 (design decisions, like partitioning and clocking of the major subsystems, and thus has no schematic, simu-) 72 97.67 P
+0.56 (lation, and debug elements. The mechanical and chassis design ef) 72 84.67 P
+0.56 (fort includes all activities related to the) 365.16 84.67 P
+0.4 (design and construction of the physical design of the RAID system. This involves the electrical design of) 72 71.67 P
+2 12 Q
+(T) 220.27 450 T
+(able 2: State Machine Summary) 227.17 450 T
+0 F
+(Subsystem) 133.68 424 T
+(# of States) 268.27 424 T
+(# of P) 363.98 424 T
+(ALs) 391.53 424 T
+(Components Used) 442.77 424 T
+0 9 Q
+(Memory Module) 90.21 402 T
+(9) 291.34 402 T
+(2) 385.84 402 T
+(22V10) 474.68 402 T
+(HIPPD XBUS Port) 86.09 383 T
+(9) 291.34 383 T
+(2) 385.84 383 T
+(22V10) 474.68 383 T
+(HIPPIS XBUS Port) 85.34 364 T
+(10) 289.09 364 T
+(2) 385.84 364 T
+(22V10) 474.68 364 T
+(HIPPID I/O Bus) 91.09 345 T
+(5) 291.34 345 T
+(1) 385.84 345 T
+(16R6) 477.18 345 T
+(HIPPIS I/O Bus) 91.83 326 T
+(10) 289.09 326 T
+(1) 385.84 326 T
+(16R8) 477.18 326 T
+(XOR XBUS Port) 89.59 307 T
+(DMA) 196.73 307 T
+(10) 289.09 307 T
+(2) 385.84 307 T
+(22V10) 474.68 307 T
+(XOR) 197.73 288 T
+(12) 289.09 288 T
+(2) 385.84 288 T
+(22V10) 474.68 288 T
+(VME XBUS Port) 89.09 269 T
+(Parity) 196.48 269 T
+(4) 291.34 269 T
+(1) 385.84 269 T
+(22V10) 474.68 269 T
+(VME Control) 182.37 250 T
+(9) 291.34 250 T
+(2) 385.84 250 T
+(22V10) 474.68 250 T
+(XBUS Control) 180.37 231 T
+(15) 289.09 231 T
+(3) 385.84 231 T
+(22V10) 474.68 231 T
+(VME Control Port) 87.34 212 T
+(Reg. Decode) 184 212 T
+(5) 291.34 212 T
+(1) 385.84 212 T
+(22V10) 474.68 212 T
+73.25 439.75 73.25 205.25 2 L
+V
+0.5 H
+0 Z
+N
+168.34 412.5 168.34 204.75 2 L
+V
+N
+246.08 440.25 246.08 204.75 2 L
+V
+N
+341.08 440.25 341.08 204.75 2 L
+V
+N
+435.08 440.25 435.08 204.75 2 L
+V
+N
+538.75 439.75 538.75 205.25 2 L
+V
+N
+73 440 539 440 2 L
+V
+N
+73.5 415.25 538.5 415.25 2 L
+V
+N
+73.5 412.75 538.5 412.75 2 L
+V
+N
+73 395 539 395 2 L
+V
+N
+73 376 539 376 2 L
+V
+N
+73 357 539 357 2 L
+V
+N
+73 338 539 338 2 L
+V
+N
+73 319 539 319 2 L
+V
+N
+168.09 300 539 300 2 L
+V
+N
+73 281 539 281 2 L
+V
+N
+168.09 262 539 262 2 L
+V
+N
+168.09 243 539 243 2 L
+V
+N
+73 224 539 224 2 L
+V
+N
+73 205 539 205 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "10" 11
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(11) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+0.41 (the disk shelves, including a SCSI backplane and power isolation logic, and the mechanical design of the) 72 471.67 P
+(disk shelves. In addition, we have lumped the implementation of the daughter card into this category) 72 458.67 T
+(.) 513.43 458.67 T
+0.45 (Of the individual hardware subsystems, the most complex by far was the VME interfaces. Its com-) 99 445.67 P
+0.45 (plexity comes from the need to implement ef) 72 432.67 P
+0.45 (\336cient interfaces to the VME and XBUS busses. Our imple-) 272.35 432.67 P
+0.56 (mentation supports full VME functionality while optimizing single word and block transfers. The XBUS) 72 419.67 P
+-0.25 (memory interface is particularly complex. The basic problem is that we cannot know in advance how much) 72 406.67 P
+0.57 (data will be accessed in a VME block mode operation. Because the XBUS protocol requires that the bus) 72 393.67 P
+0.42 (request line must be deasserted once cycle before the end of a transaction, we are forced to read ahead in) 72 380.67 P
+(order to predict the end of a transfer) 72 367.67 T
+(.) 229.73 367.67 T
+0.37 (The table does not include approximately 1000 hours of design time invested in the wide bus inter-) 99 354.67 P
+0.07 (connection strategy that we later abandoned, 1800 CPU hours of logic simulation, and 2000 CPU hours of) 72 341.67 P
+1.24 (printed circuit board routing time. The latter two \336gures were run in a distributed manner over several) 72 328.67 P
+-0.04 (workstations, and do not represent elapsed time. It is interesting to note that the routing time of our scaled-) 72 315.67 P
+(down 4-port version of the XBUS card was only 60 hours of CPU time in comparison.) 72 302.67 T
+2 16 Q
+(5. RAID Contr) 72 270.33 T
+(oller Softwar) 173.42 270.33 T
+(e) 262.39 270.33 T
+2 14 Q
+(5.1.  Softwar) 72 245.67 T
+(e Overview) 147.14 245.67 T
+0 11 Q
+0.08 (Because of the high communications latency between the server CPU and the network interfaces, the soft-) 72 231.67 P
+0.49 (ware for RAID-II is partitioned between the server and the processors embedded in the HIPPI interfaces.) 72 218.67 P
+1.24 (The critical performance issue is interrupt handling, especially since low latency for HIPPI response is) 72 205.67 P
+0.04 (essential. Moving software functionality to the HIPPI boards allows the server to \336eld fewer interrupts per) 72 192.67 P
+(packet.) 72 179.67 T
+-0.12 (W) 99 166.67 P
+-0.12 (e partitioned the driver software according to the piece of hardware being controlled or functional-) 108.49 166.67 P
+0.09 (ity it provided, as shown in Figure 5. The RAID driver maps logical blocks within a multi-disk RAID into) 72 153.67 P
+0.39 (logical blocks on each individual disk, using the XOR engine \050via the XBUS driver\051 to do parity calcula-) 72 140.67 P
+1.76 (tions and reconstruction. The XBUS driver manages the XOR hardware directly) 72 127.67 P
+1.76 (, hiding the hardware) 441.34 127.67 P
+0.16 (interface details from the RAID driver) 72 114.67 P
+0.16 (. Similarly) 240.89 114.67 P
+0.16 (, the A) 286.73 114.67 P
+0.16 (TC driver provides the RAID driver with a device-) 315.42 114.67 P
+0.43 (independent view of the disks. The VME link driver performs two functions. First, it initializes the VME) 72 101.67 P
+-0.19 (link boards, and provides access to individual memory locations on the VME for debugging purposes. Sec-) 72 88.67 P
+-0.19 (ond, it runs the DMA engine on the link boards to give higher) 72 75.67 P
+-0.19 (-level software a relatively fast \0508 MB/s\051 data) 341.45 75.67 P
+2 12 Q
+(T) 206.73 712 T
+(able 3: Hardwar) 213.62 712 T
+(e System Complexity) 298.02 712 T
+0 F
+(Section) 117.51 679 T
+(Design) 203.01 679 T
+(Schematic) 257.52 686 T
+(Capture) 263.51 672 T
+(Simulation) 328.17 686 T
+(and Debug) 328.35 672 T
+(Hardware) 402.86 686 T
+(Debug) 410.51 672 T
+(T) 486.26 679 T
+(otal) 492.75 679 T
+0 9 Q
+(Architectural Design) 97.94 650 T
+(960) 213.26 650 T
+(960) 491.76 650 T
+(Mechanical/Chassis Design) 85.7 631 T
+(1) 211.18 631 T
+(120) 215.34 631 T
+(907) 275.76 631 T
+(160) 347.76 631 T
+(2187) 489.51 631 T
+(Memory) 120.02 612 T
+(100) 213.26 612 T
+(60) 278.01 612 T
+(80) 350.01 612 T
+(160) 419.76 612 T
+(400) 491.76 612 T
+(HIPPI Destination) 102.42 593 T
+(40) 215.51 593 T
+(50) 278.01 593 T
+(50) 350.01 593 T
+(60) 422.01 593 T
+(200) 491.76 593 T
+(HIPPI Source) 110.66 574 T
+(40) 215.51 574 T
+(50) 278.01 574 T
+(70) 350.01 574 T
+(60) 422.01 574 T
+(220) 491.76 574 T
+(XOR) 126.01 555 T
+(30) 215.51 555 T
+(20) 278.01 555 T
+(20) 350.01 555 T
+(10) 422.01 555 T
+(80) 494.01 555 T
+(VME Interface) 108.43 536 T
+(400) 213.26 536 T
+(150) 275.76 536 T
+(300) 347.76 536 T
+(280) 419.76 536 T
+(1) 489.68 536 T
+(130) 493.84 536 T
+(XBUS) 123.51 517 T
+(80) 215.51 517 T
+(20) 278.01 517 T
+(20) 350.01 517 T
+(10) 422.01 517 T
+(130) 491.76 517 T
+(T) 126.33 498 T
+(otal) 131.19 498 T
+(1810) 211.01 498 T
+(1257) 273.51 498 T
+(700) 347.76 498 T
+(580) 419.76 498 T
+(5307) 489.51 498 T
+77.5 701.75 77.5 491.25 2 L
+V
+0.5 H
+0 Z
+N
+193.5 702.25 193.5 490.75 2 L
+V
+N
+246.5 702.25 246.5 490.75 2 L
+V
+N
+318.5 702.25 318.5 490.75 2 L
+V
+N
+390.5 702.25 390.5 490.75 2 L
+V
+N
+462.5 702.25 462.5 490.75 2 L
+V
+N
+534.5 701.75 534.5 491.25 2 L
+V
+N
+77.25 702 534.75 702 2 L
+V
+N
+77.75 663.25 534.25 663.25 2 L
+V
+N
+77.75 660.75 534.25 660.75 2 L
+V
+N
+77.25 643 534.75 643 2 L
+V
+N
+77.25 624 534.75 624 2 L
+V
+N
+77.25 605 534.75 605 2 L
+V
+N
+77.25 586 534.75 586 2 L
+V
+N
+77.25 567 534.75 567 2 L
+V
+N
+77.25 548 534.75 548 2 L
+V
+N
+77.25 529 534.75 529 2 L
+V
+N
+77.75 511.25 534.25 511.25 2 L
+V
+N
+77.75 508.75 534.25 508.75 2 L
+V
+N
+77.25 491 534.75 491 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "11" 12
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(12) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+0.74 (path between the XBUS board and the server) 72 489.83 P
+0.74 (. However) 275.19 489.83 P
+0.74 (, the link driver does not orchestrate single-word) 321.24 489.83 P
+1.22 (transfers or interrupts over the VME links; these are done transparently in hardware. The HIPPI driver) 72 476.83 P
+-0.19 (works with the HIPPI-D and HIPPI-S board code to provide high-level network software with Ultranet vir-) 72 463.83 P
+(tual circuits over the HIPPI interface.) 72 450.83 T
+0.38 (This separation of functionality has several advantages. First, the device drivers could be debugged) 99 437.83 P
+0.12 (as the hardware became available, allowing us to bring up the software in parallel with the hardware. Sec-) 72 424.83 P
+0.3 (ond, the hardware interface was isolated from the high-level code, which managed network protocols and) 72 411.83 P
+0.04 (the \336le system. Thus, the high-level code was tested even before the hardware was ready) 72 398.83 P
+0.04 (, using lower) 461.73 398.83 P
+0.04 (-per-) 518.65 398.83 P
+0.79 (formance driver stubs to test functionality) 72 385.83 P
+0.79 (. For example, we tested the high-level networking code using) 259.22 385.83 P
+0.94 (the low-performance VME backplane rather than the high-bandwidth XBUS connection. Since the soft-) 72 372.83 P
+0.17 (ware interface to the network was the same for both, the high-level functionality was debugged before the) 72 359.83 P
+(XBUS board was completed.) 72 346.83 T
+2 14 Q
+(5.2.  The RAID Device Driver) 72 323.83 T
+0 11 Q
+0.34 (The RAID device driver implements the logical abstraction of RAID Level 5 disk arrays through a Sprite) 72 309.83 P
+0.01 (block device driver) 72 296.83 P
+0.01 (. In a sense, the RAID driver is a \322meta\323 device driver that maps logical I/O requests to) 156.24 296.83 P
+(physical I/O requests that are processed by lower level device drivers it manipulates.) 72 283.83 T
+0.5 (The RAID driver stripes I/O request over multiple disks. This improves performance by increasing) 99 270.83 P
+-0.06 (data transfer rates and providing automatic load balancing. It also maintains a parity checksum for the data) 72 257.83 P
+0.75 (stored on the disks so that in the event of a disk failure, data is not lost. In the event of a disk failure, it) 72 244.83 P
+1.17 (reconstructs a failed disk to a spare. By using the parity checksum, the data on the failed disk is made) 72 231.83 P
+(available while the data is being reconstructed to a spare disk.) 72 218.83 T
+0.31 (Each parity block in a RAID Level 5 disk array is associated with several logical blocks of storage.) 99 205.83 P
+0.06 (A system crash during the update of a given block can make inconsistent the parity for other blocks which) 72 192.83 P
+(share the same parity block. The consistency of parity blocks must always be maintained.) 72 179.83 T
+-0.06 (After a system crash,it is dif) 99 166.83 P
+-0.06 (\336cult to know the state of the array) 222.37 166.83 P
+-0.06 (. Either all parity must be regenerated) 374.7 166.83 P
+0.74 (or a logging mechanism must be used to identify just those parity blocks that may be inconsistent at the) 72 153.83 P
+0.51 (time of the crash. It is dangerous to operate a RAID Level 5 disk array with a failed disk, since a system) 72 140.83 P
+(crash can make the parity inconsistent and make it impossible to reconstruct the data on the failed disk.) 72 127.83 T
+0.92 (For the above reasons, most implementations of RAID Level 5 disk arrays perform some form of) 99 114.83 P
+0.38 (status logging to stable storage. In our case, we use an extra disk as this log. Careful tuning has made the) 72 101.83 P
+0.2 (logging overhead negligible. In designing and developing the RAID device driver) 72 88.83 P
+0.2 (, we found that properly) 433.32 88.83 P
+(dealing with the various failure modes of disk arrays is by far the most dif) 72 75.83 T
+(\336cult task.) 397.07 75.83 T
+72 63 540 720 C
+73.01 497.16 538.99 720 C
+75.01 497.83 536.01 535.17 R
+7 X
+0 K
+V
+2 12 Q
+0 X
+(Figur) 75.01 527.17 T
+(e 5:) 103.44 527.17 T
+1 F
+(Inter) 124.76 527.17 T
+(connections Between RAID-II Softwar) 147.63 527.17 T
+(e Modules) 330.72 527.17 T
+0 10 Q
+0.34 (This diagram shows the communications paths between the various software modules. Several of these do not run) 75.01 516.5 P
+(on the \336le server host; their control and data goes over the VME backplane and the VME link boards.) 75.01 506.5 T
+72 63 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "12" 13
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(13) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(5.3.  Softwar) 72 387.53 T
+(e Contr) 147.14 387.53 T
+(ol Flow) 192.35 387.53 T
+0 11 Q
+-0.15 (All network information, whether read or written, goes over an Ultranet virtual circuit. The \336rst step in any) 72 373.53 P
+0.29 (\336le operation is to establish such a circuit \050if one does not already exist for that \336le\051. Most of this setup is) 72 360.53 P
+1.63 (handled by Ultranet hardware and the HIPPI boards; higher) 72 347.53 P
+1.63 (-level software receives a circuit identi\336er) 346.64 347.53 P
+0.83 (when the setup completes. Next, the client sends the \336le name to the server over the virtual circuit. The) 72 334.53 P
+0.48 (connection is now ready to process \336le reads and writes. Data can move in two directions \321 disk to net-) 72 321.53 P
+0.32 (work \050client read\051 or network to disk \050client write\051, as shown in Figure 6 and Figure 7 respectively) 72 308.53 P
+0.32 (. T) 509.32 308.53 P
+0.32 (o be) 521.07 308.53 P
+(brief, we have included the detailed operational steps in the \336gure captions.) 72 295.53 T
+2 14 Q
+(5.4.  Softwar) 72 272.53 T
+(e Complexity) 147.14 272.53 T
+0 11 Q
+0.54 (T) 72 258.53 P
+0.54 (able 4 summarizes the number of lines of code and estimated level of ef) 77.94 258.53 P
+0.54 (fort associated with each major) 400.55 258.53 P
+0.53 (software component of the design. Most of the driver software was rather straightforward. However) 72 245.53 P
+0.53 (, two) 517.5 245.53 P
+1.26 (elements were very complex: the RAID driver and the software associated with controlling the HIPPI-) 72 232.53 P
+0.21 (based network interfaces. The HIPPI driver communicates with the TMC HIPPI boards over a VME-link.) 72 219.53 P
+0.41 (Unlike the other drivers, its interface to higher level software is based on network-oriented sockets rather) 72 206.53 P
+0.73 (than the standard device driver interface. The embedded code on the HIPPIS and HIPPID manages con-) 72 193.53 P
+(nections over the Ultranet. A remarkably small amount of this code is written in assembly language.) 72 180.53 T
+2 16 Q
+(6. Lessons Learned and Design History) 72 148.2 T
+2 14 Q
+(6.1.  Lessons Learned) 72 123.53 T
+0 11 Q
+-0.1 (W) 72 109.53 P
+-0.1 (e still have much to learn about the ef) 81.49 109.53 P
+-0.1 (fectiveness of our design and implementation for RAID-II that will) 245.86 109.53 P
+(only be discovered through long term use. Nevertheless, we have learned several important lessons,.) 72 96.53 T
+0.56 (First, logic simulation tools are very mature; they work and they work well. W) 99 83.53 P
+0.56 (e were able to write) 451.12 83.53 P
+0.19 (reasonably complete VHDL models for complex OEM VLSI chips, such as our FIFOs and the VME P) 72 70.53 P
+0.19 (AL) 525.35 70.53 P
+72 63 540 720 C
+72 563.83 538.99 720 C
+284.17 570.83 533.33 713.33 R
+7 X
+0 K
+V
+2 12 Q
+0 X
+(Figur) 284.17 705.33 T
+(e 6:) 312.6 705.33 T
+1 F
+(Read Pr) 333.92 705.33 T
+(ocessing) 373.11 705.33 T
+0 10 Q
+(1. Read request arrives at the HIPPID board.) 284.17 694.66 T
+-0.15 (2. HIPPID board copies the message into the XBUS board and) 284.17 684.66 P
+(interrupts the Sun-4) 284.17 674.66 T
+1.07 (3. HIPPI driver calls back the high-level code to service the) 284.17 664.66 P
+(request.) 284.17 654.66 T
+0.57 (4. High-level code calls the RAID driver to read blocks from) 284.17 644.66 P
+(disk into XBUS memory) 284.17 634.66 T
+(.) 383.19 634.66 T
+2.66 (5. RAID driver maps calls A) 284.17 624.66 P
+2.66 (TC driver \050possibly multiple) 411.26 624.66 P
+(times\051 to read the desired blocks from disk into XBUS board.) 284.17 614.66 T
+(6. RAID driver calls back high-level code when done.) 284.17 604.66 T
+(7-8. Reply header is passed down to the HIPPIS board.) 284.17 594.66 T
+2.52 (9. HIPPIS board sends out header followed by data from) 284.17 584.66 P
+(XBUS board.) 284.17 574.66 T
+72 63 540 720 C
+0 0 612 792 C
+72 63 540 720 C
+72 396.86 537.34 563.83 C
+2 12 Q
+0 X
+0 K
+(Figur) 284.17 555.33 T
+(e 7:) 312.6 555.33 T
+1 F
+(W) 333.92 555.33 T
+(rite Pr) 343.25 555.33 T
+(ocessing) 374.45 555.33 T
+0 10 Q
+(For the write diagram, here are the steps:) 284.17 544.66 T
+-0.08 (1. W) 284.17 534.66 P
+-0.08 (rite request arrives at the HIPPID board. Data and headers) 303.12 534.66 P
+(are put into preallocated buf) 284.17 524.66 T
+(fers in XBUS board memory) 396.68 524.66 T
+(.) 511.5 524.66 T
+0.57 (2. HIPPI-D board noti\336es both the HIPPI driver and the HIP-) 284.17 514.66 P
+(PIS board.) 284.17 504.66 T
+(3a. HIPPI-S board acknowledges receipt of the write.) 284.17 494.66 T
+(3. HIPPI driver calls back high-level code.) 284.17 484.66 T
+0.04 (4. High-level code tells RAID driver to write certain buf) 284.17 474.66 P
+0.04 (fers in) 509.71 474.66 P
+(the XBUS memory) 284.17 464.66 T
+(.) 360.7 464.66 T
+1.22 (5. RAID driver coordinates A) 284.17 454.66 P
+1.22 (TC driver and XBUS driver to) 407.02 454.66 P
+0.64 (write data and parity) 284.17 444.66 P
+0.64 (. Parity is calculated on the XBUS board) 367.87 444.66 P
+(using the XOR engine.) 284.17 434.66 T
+0.79 (6. RAID driver noti\336es high-level software when the write is) 284.17 424.66 P
+(complete so the buf) 284.17 414.66 T
+(fers may be recycled.) 362.54 414.66 T
+72 63 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "13" 14
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(14) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+1.15 (set, and to use these ef) 72 504.67 P
+1.15 (fectively within our simulation environment. W) 176.43 504.67 P
+1.15 (e had very few logic bugs in the) 391.27 504.67 P
+(actual implementation.) 72 491.67 T
+0.49 (Second, despite our long history of system building, we continue to underestimate the time it takes) 99 478.67 P
+0.09 (to complete logic simulation. A good rule of thumb is that we spend as much time in simulation for veri\336-) 72 465.67 P
+0.82 (cation and debugging as we do for logic design and capture. In the case of this project, it was about six) 72 452.67 P
+(months of logic design and six months of simulation.) 72 439.67 T
+1.08 (Third, physical design tools, even industry standard tools, are inadequate for complex, two-sided,) 99 426.67 P
+1.46 (surface mount boards. The tools we used provided no coupling between the logic design and physical) 72 413.67 P
+-0.2 (board placement. For example, V) 72 400.67 P
+-0.2 (iewplace performs an initial placement within our schematic environment) 217.59 400.67 P
+(that is then lost when exporting the netlist to RACAL.) 72 387.67 T
+0.03 (Part of our CAD problem was that commercial autorouters, originally designed for thru hole boards,) 99 374.67 P
+0.89 (do not perform well on very dense surface mount designs, A greater emphasis must be place on getting) 72 361.67 P
+1.03 (every routed signal from surface mount pads to a vias from which they can be routed. RACAL did not) 72 348.67 P
+-0.18 (make the correct tradeof) 72 335.67 P
+-0.18 (f between routing a signal \050thereby creating blockages for later nets not yet routed\051) 178.34 335.67 P
+0.57 (versus getting the pads connected to vias before routing. This forced us to create many hand routes from) 72 322.67 P
+0.22 (pads to vias, often using diagonal routes. It is clear that routers need new algorithms speci\336cally designed) 72 309.67 P
+(for dense surface mount and to exploit blind vias.) 72 296.67 T
+0.17 (Fourth, many aspects of system building can be performed by subcontractors. This is critical for the) 99 283.67 P
+0.43 (success of university system building projects, because few groups can do it all themselves. W) 72 270.67 P
+0.43 (e used dif-) 492.76 270.67 P
+0.11 (ferent local subcontractors to design our sheet metal, to fabricate our shelves and disk holders, and assem-) 72 257.67 P
+(ble our surface mount printed circuit boards.) 72 244.67 T
+1.72 (Fifth, we were ef) 99 231.67 P
+1.72 (fective at leveraging our industrial contacts to obtain major subsystems of our) 179.01 231.67 P
+0.27 (design, namely the TMC HIPPI boards and the A) 72 218.67 P
+0.27 (TC SCSI string boards. However) 289.88 218.67 P
+0.27 (, such interactions have) 436.07 218.67 P
+0.47 (their drawbacks. Much of our design complexity comes from interfacing to boards for which we have no) 72 205.67 P
+0.51 (schematics or access to internal \336rmware. For example, A) 72 192.67 P
+0.51 (TC would not give us source to their \336rmware,) 329.94 192.67 P
+-0.22 (and only one member of the design team, Ken Lutz, had restricted access to their schematics. While not the) 72 179.67 P
+0.32 (ideal situation, A) 72 166.67 P
+0.32 (TC did dedicate a software engineer) 146.8 166.67 P
+0.32 (, T) 306.9 166.67 P
+0.32 (ony Andrews, to assist us with our software prob-) 318.66 166.67 P
+(lems.) 72 153.67 T
+-0.18 (Sixth, we used a locally written operating system, Sprite, as the basis of our server software architec-) 99 140.67 P
+0.68 (ture. This decision has its pluses and minuses. On the positive side, we had considerable local expertise,) 72 127.67 P
+0.63 (rapid turnaround on support \050most of the time\051, and ready access to the source code. The negatives were) 72 114.67 P
+-0.05 (that we could not leverage existing device drivers written for industry standard operating systems, and that) 72 101.67 P
+(the long-term future of our underlying software base remains unclear) 72 88.67 T
+(.) 374.97 88.67 T
+2 12 Q
+(T) 210.06 712 T
+(able 4: System Softwar) 216.96 712 T
+(e Complexity) 334.32 712 T
+0 F
+(System Component) 96.72 686 T
+(Subsystem) 226.68 686 T
+(Lines of Code) 314.39 686 T
+(Estimated Person Hours) 397.85 686 T
+0 9 Q
+(VME Link Driver) 95.75 664 T
+(1916) 339.38 664 T
+(200) 449.07 664 T
+(XBUS Board Driver) 95.75 645 T
+(1560) 339.38 645 T
+(100) 449.07 645 T
+(HIPPI Drivers) 95.75 626 T
+(6634) 339.38 626 T
+(400) 449.07 626 T
+(RAID Driver) 95.75 607 T
+(7086) 339.38 607 T
+(500) 449.07 607 T
+(A) 95.75 588 T
+(TC Driver) 101.24 588 T
+(2576) 339.38 588 T
+(200) 449.07 588 T
+(Embedded) 95.75 569 T
+(HIPPIS and HIPPID) 95.75 558 T
+(29000 Assembly Code) 203.98 569 T
+(700) 341.62 569 T
+(500) 449.07 569 T
+(High Level Code) 203.98 550 T
+(8500) 339.38 550 T
+(T) 95.75 531 T
+(otals) 100.61 531 T
+(28,972) 336.01 531 T
+(1900) 446.82 531 T
+89.75 701.75 89.75 524.25 2 L
+V
+0.5 H
+0 Z
+N
+197.98 702.25 197.98 523.75 2 L
+V
+N
+306.11 701.75 306.11 524.25 2 L
+V
+N
+308.61 701.75 308.61 524.25 2 L
+V
+N
+389.36 702.25 389.36 523.75 2 L
+V
+N
+522.26 701.75 522.26 524.25 2 L
+V
+N
+89.5 702 522.51 702 2 L
+V
+N
+90 677.25 522.01 677.25 2 L
+V
+N
+90 674.75 522.01 674.75 2 L
+V
+N
+89.5 657 522.51 657 2 L
+V
+N
+89.5 638 522.51 638 2 L
+V
+N
+89.5 619 522.51 619 2 L
+V
+N
+89.5 600 522.51 600 2 L
+V
+N
+89.5 581 522.51 581 2 L
+V
+N
+197.73 562 389.61 562 2 L
+V
+N
+90 544.25 522.01 544.25 2 L
+V
+N
+90 541.75 522.01 541.75 2 L
+V
+N
+89.5 524 522.51 524 2 L
+V
+N
+FMENDPAGE
+%%EndPage: "14" 15
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(15) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+2 14 Q
+0 X
+(6.2.  Design History) 72 710.67 T
+0 11 Q
+0.5 (The RAID group began its research on high performance I/O subsystems in early 1987, with a variety of) 72 696.67 P
+1 (discussions on the tradeof) 72 683.67 P
+1 (fs between availability and performance in disk systems. The paper originally) 188.61 683.67 P
+1.41 (de\336ning the RAID taxonomy was written in Fall 1987. NSF sponsored the implementation of the \336rst) 72 670.67 P
+0.3 (\322proof of concept\323 RAID-I between 1987 and 1990. That design ef) 72 657.67 P
+0.3 (fort focused on choosing the appropri-) 369.79 657.67 P
+0.46 (ate commercially available technology for disk drives, disk interfaces, and I/O controllers, and the devel-) 72 644.67 P
+1 (opment of the fundamental algorithms for data striping and reconstruction after disk failures. W) 72 631.67 P
+1 (e began) 505.14 631.67 P
+-0.06 (putting the prototype together in late 1988. It became operational by mid-1989 and was stable by year end.) 72 618.67 P
+0.24 (A DARP) 99 605.67 P
+0.24 (A-sponsored project to scale up the design for HIPPI interconnects and substantially lar) 138.21 605.67 P
+0.24 (ger) 525.97 605.67 P
+0.18 (numbers of disk drives, RAID-II, started in mid-1989. During much of 1990, we gained operational expe-) 72 592.67 P
+0.4 (rience with RAID-I while designing RAID-II. Ultimately) 72 579.67 P
+0.4 (, RAID-I became a main \336le server our research) 325.4 579.67 P
+(groups.) 72 566.67 T
+-0.26 (Initially we had planned to design our own HIPPI and SCSI interfaces. As we learned more about the) 99 553.67 P
+0.6 (complexity of these subsystems, we sought industrial partners to help us implement them. In early 1990.) 72 540.67 P
+-0.04 (TMC agreed to give us with their two-board HIPPI interface, while A) 72 527.67 P
+-0.04 (TC provided us with their VME \336ve-) 376.68 527.67 P
+(string SCSI boards at their manufacturing cost.) 72 514.67 T
+0.05 (W) 99 501.67 P
+0.05 (e knew that RAID-II would require much greater bandwidth between the HIPPI interfaces and the) 108.49 501.67 P
+-0.16 (disk drives than what would be possible with a conventional \336le server backplane. As described above, our) 72 488.67 P
+0.34 (original plan was to use a single wide, high bandwidth bus to interconnect the HIPPI interfaces, the SCSI) 72 475.67 P
+0.6 (disk interfaces, and the memory system. This is similar in style to the or) 72 462.67 P
+0.6 (ganization of the strategy HIPPI) 396.03 462.67 P
+-0.21 (RAID-3 product described in [Katz 92]. W) 72 449.67 P
+-0.21 (e made considerable progress on this design, but we were forced) 258.7 449.67 P
+0.64 (to abandon it in mid-1990 when we learned that the OS designers could not force network headers to be) 72 436.67 P
+0.03 (aligned on eight byte boundaries. Ed Lee proposed the crossbar interconnection network, and sold it to the) 72 423.67 P
+(rest of the group in several stormy design reviews. This became the basis of the \336nal design.) 72 410.67 T
+1.43 (The logic design began in Fall 1990 and was essentially complete by September 1991. W) 99 397.67 P
+1.43 (e used) 510.81 397.67 P
+0 (V) 72 384.67 P
+0 (iewlogic for schematic capture and simulation. While a year may appear long, it was to be expected. The) 79.27 384.67 P
+0.76 (hardware design team consisted of only four students. This was their \336rst major logic design. The VME) 72 371.67 P
+1.22 (state machines where quite complex, requiring frequent revision as pieces of the design came together) 72 358.67 P
+1.22 (.) 537.25 358.67 P
+0.34 (And \336nally) 72 345.67 P
+0.34 (, there was the usual turnover among the designers, leading to lost time as someone new came) 121.38 345.67 P
+(up to speed. In retrospect, the design ef) 72 332.67 T
+(fort could have used more personnel.) 244.19 332.67 T
+0.75 (Ken Lutz began the physical design in the Fall of 1991, and it quickly became clear that the logic) 99 319.67 P
+0.03 (would not \336t on a single board. The logic was partitioned into an XBUS card and four daughter cards con-) 72 306.67 P
+0.09 (taining the VME interfaces for the A) 72 293.67 P
+0.09 (TC cards. The latter was fabricated by January 1992, and provided an) 233.02 293.67 P
+(early learning experience with surface mount technology) 72 280.67 T
+(.) 321.47 280.67 T
+0.09 (Even after partitioning, the XBUS card remained too complex to be routed by RACAL. While wait-) 99 267.67 P
+0.7 (ing for new beta software, we took the opportunity to perform more extensive system simulations of the) 72 254.67 P
+(board. This was worthwhile, because several obscure timing problems were uncovered and \336xed.) 72 241.67 T
+1.02 (W) 99 228.67 P
+1.02 (e spent the \336rst three months of 1992 \336ghting RACAL to complete the XBUS physical design.) 108.49 228.67 P
+0.25 (Iterative routing passes typically took hundreds of hours, and still required considerable hand completion.) 72 215.67 P
+0.29 (T) 72 202.67 P
+0.29 (o minimize the risk, we decided to overlap the development of the original 8-by-8 port board and a sim-) 77.94 202.67 P
+0.21 (pler 8-by-4 port board. The latter greatly reducing the interconnect complexity of the crossbar) 72 189.67 P
+0.21 (. In fact, the) 486.6 189.67 P
+0.06 (original board, though \336nally routed, could not be fabricated by the PCB manufacturer) 72 176.67 P
+0.06 (, in part due to poor) 453.05 176.67 P
+(yields on blind vias. Our operational prototype is based on the second design.) 72 163.67 T
+0.81 (The boards were submitted for fabrication in April 1992. The 4-port board was fabricated, assem-) 99 150.67 P
+0.09 (bled, and ready for testing by the end of May) 72 137.67 P
+0.09 (. It came up very rapidly) 270.46 137.67 P
+0.09 (. Only a small number of logic prob-) 378.22 137.67 P
+1.4 (lems were encountered, attesting to the completeness of our simulation strategy) 72 124.67 P
+1.4 (. Most of the time was) 434.71 124.67 P
+(spent improving its electrical performance and on repairing the usual interfacing problems.) 72 111.67 T
+0.98 (Figure 8 summarizes the bugs found per week, between 8/4/92 and 10/5/92. Figure 9 shows their) 99 98.67 P
+0.18 (sources. Many bugs are found initially) 72 85.67 P
+0.18 (, but then trail of) 241.23 85.67 P
+0.18 (f in a long tail. The major source of errors was due) 315.3 85.67 P
+-0.18 (to the manufacturing and assembly processes. These included bent pins or the mounting of the wrong com-) 72 72.67 P
+FMENDPAGE
+%%EndPage: "15" 16
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(16) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+0.86 (ponent on the printed circuit board. The logic and software errors have been modest compared with our) 72 443.3 P
+(previous designs.) 72 430.3 T
+1.07 (At this writing \050early October 1992\051, all of the major subsystems are operational and data can be) 99 417.3 P
+0.63 (read and written through the HIPPI interfaces and the XBUS memory to disk. Obviously) 72 404.3 P
+0.63 (, a good deal of) 469.44 404.3 P
+(software tuning remains to be done to achieve the original performance goals.) 72 391.3 T
+2 16 Q
+(7. Summary) 72 358.97 T
+(, Conclusions, Futur) 154.63 358.97 T
+(e Plans) 292.95 358.97 T
+0 11 Q
+0.28 (Figure 10 gives a photograph of the RAID-II disk array storage server) 72 336.3 P
+0.28 (. It represents a natural evolution in) 382.37 336.3 P
+0.64 (system building projects within the universities. W) 72 323.3 P
+0.64 (e have moved away from designing custom LSI chips) 298.68 323.3 P
+1.23 (towards constructing lar) 72 310.3 P
+1.23 (ge scale assemblies of mechanical and electrical components. In these kinds of) 180.45 310.3 P
+72 63 540 720 C
+72 450.64 537.34 720 C
+77.32 465.27 280.88 528.88 R
+7 X
+0 K
+V
+2 12 Q
+0 X
+(Figur) 77.32 520.88 T
+(e 8:) 105.75 520.88 T
+1 F
+(Bugs Found Per W) 127.06 520.88 T
+(eek) 217.57 520.88 T
+0 10 Q
+0.01 (The number of bugs found are shown as a function) 77.32 510.21 P
+0.35 (of the week of debugging. The shape of this curve) 77.32 500.21 P
+0.67 (is very familiar to system designers: a rapidly ris-) 77.32 490.21 P
+-0.02 (ing number of bugs with a long tail of falling num-) 77.32 480.21 P
+(bers of bugs per week.) 77.32 470.21 T
+289.6 455.63 534.41 529.69 R
+7 X
+V
+2 12 Q
+0 X
+(Figur) 289.6 521.69 T
+(e 9:) 318.03 521.69 T
+1 F
+(Sour) 339.35 521.69 T
+(ces of Bugs) 361.56 521.69 T
+0 10 Q
+0.73 (The lar) 289.6 511.02 P
+0.73 (gest single source of bugs is from the manufacturing) 318.73 511.02 P
+-0.15 (and assembly process, such as a bent pin or a misplaced com-) 289.6 501.02 P
+2.38 (ponent. Design \337aws are mainly interface protocol errors) 289.6 491.02 P
+1.21 (while logic \337aws are mistakes in the schematics. Electrical) 289.6 481.02 P
+2.11 (\337aws are noise problems that require us to run at slower) 289.6 471.02 P
+(clock rates. Software problems are self-explanatory) 289.6 461.02 T
+(.) 494.88 461.02 T
+72 63 540 720 C
+0 0 612 792 C
+72 63 540 720 C
+72 63 538.06 293.69 C
+318.33 64.85 532.5 149.02 R
+7 X
+0 K
+V
+2 12 Q
+0 X
+(Figur) 318.33 141.02 T
+(e 10:) 346.77 141.02 T
+1 F
+(RAID-II Pr) 374.08 141.02 T
+(ototype) 427.92 141.02 T
+0 10 Q
+1.38 (Ann Drapeau is replacing a failed disk drive in the) 318.33 130.35 P
+2.02 (RAID-II storage server) 318.33 120.35 P
+2.02 (. The main equipment rack,) 414.51 120.35 P
+1.64 (containing the HIPPI boards, A) 318.33 110.35 P
+1.64 (TC disk controllers,) 449.54 110.35 P
+0.4 (VME links, and SUN host, is at the center) 318.33 100.35 P
+0.4 (. On either) 489.23 100.35 P
+0.57 (side are the racks of disk shelves. This con\336guration) 318.33 90.35 P
+0.24 (can hold up to 144 disk drives, 72 in each of the disk) 318.33 80.35 P
+(racks.) 318.33 70.35 T
+72 63 540 720 C
+0 0 612 792 C
+FMENDPAGE
+%%EndPage: "16" 17
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+72 740.81 540 756 R
+7 X
+0 K
+V
+72 54 540 54 2 L
+V
+0.25 H
+2 Z
+0 X
+N
+72 36 540 47.95 R
+7 X
+V
+0 8 Q
+0 X
+(RAID-II: Design and Implementation of a Large Scale Disk Array Controller) 72 42.62 T
+(October 6, 1992) 334.13 42.62 T
+(17) 532 42.62 T
+72 63 540 720 R
+7 X
+V
+0 11 Q
+0 X
+0.25 (projects, we must worry as much about sheet metal and mechanical design as we used to worry about cir-) 72 712.67 P
+1.4 (cuit design. And we are working with more complex software interfaces as well. RAID-II is network-) 72 699.67 P
+(attached hardware, adding another level of software complexity beyond the operating system.) 72 686.67 T
+1.15 (In 1987, we developed the original RAID taxonomy) 99 673.67 P
+1.15 (. Y) 335.78 673.67 P
+1.15 (et even today) 349.26 673.67 P
+1.15 (, there are few commercially) 409.42 673.67 P
+-0.19 (available RAID Level 5 systems, and none that would give us the open environment for the kinds of exper-) 72 660.67 P
+1.38 (imentation with network-attached storage we plan to pursue next. For example, our prototype contains) 72 647.67 P
+-0.11 (over 100 disk drives and supports a HIPPI/network interface to the outside world. It has been a worthwhile) 72 634.67 P
+0.66 (ef) 72 621.67 P
+0.66 (fort to build our prototype. This shows that universities can still operate at the forefront of technology) 80.34 621.67 P
+0.66 (,) 537.25 621.67 P
+0.74 (given generous help from industry) 72 608.67 P
+0.74 (. W) 225.58 608.67 P
+0.74 (e of) 241.3 608.67 P
+0.74 (fer our special thanks to the company\325) 258.61 608.67 P
+0.74 (s that supported us most) 430.85 608.67 P
+0.54 (generously with their technology: IBM for disk drives and memories, A) 72 595.67 P
+0.54 (TC for disk controllers, TMC for) 392.03 595.67 P
+0.14 (their HIPPI interfaces, IDT for their high speed FIFOs, and UltraNetwork T) 72 582.67 P
+0.14 (echnologies for their network-) 406.25 582.67 P
+(ing equipment.) 72 569.67 T
+0.21 (W) 99 556.67 P
+0.21 (e have several major projects underway that plan to make use of RAID-II as a storage server on a) 108.49 556.67 P
+1.64 (high speed network. W) 72 543.67 P
+1.64 (e are developing application software to use RAID-II as a high capacity video) 177.96 543.67 P
+0.07 (server) 72 530.67 P
+0.07 (. The prototype will be used as the destination for the real-time data capture of high resolution video) 98.24 530.67 P
+0.29 (microscope images over a HIPPI-based network between campus and the Lawrence Berkeley Laboratory) 72 517.67 P
+0.29 (,) 537.25 517.67 P
+0.82 (In addition, we plan to use RAID-II as the disk frontend for a distributed mass storage system spanning) 72 504.67 P
+(multiple robotic storage systems, including optical jukeboxes and 8 mm and VHS tape robots.) 72 491.67 T
+0.6 (Despite many successful system building projects at Berkeley) 99 478.67 P
+0.6 (, we still have many lessons to learn.) 374.37 478.67 P
+0.71 (Better project management is always needed. The project must strike the right balance between building) 72 465.67 P
+0.51 (real systems and writing enough papers for the team members to get degrees and jobs. Commercial tools) 72 452.67 P
+0.5 (will still break with cutting edge projects. Unfortunately) 72 439.67 P
+0.5 (, unlike our projects in the past that depended on) 321.93 439.67 P
+-0.13 (university tools, we have little leverage with companies to get the software \336xed. And \336nally) 72 426.67 P
+-0.13 (, change man-) 478.33 426.67 P
+1.96 (agement and version control remain primitive, despite the extensive research in this area. Our 4-port) 72 413.67 P
+-0.14 (XBUS card has half the memory we thought it would have because of an error in our hand-maintained ver-) 72 400.67 P
+(sion control.) 72 387.67 T
+2 16 Q
+(8. Refer) 72 355.33 T
+(ences) 125.87 355.33 T
+0 11 Q
+0.28 ([Chervenak 91] A. L. Chervenak, R. H. Katz, \322Performance Measurements of the First RAID Prototype,\323) 72 332.67 P
+(Proceedings ACM SIGMETRICS Conference, San Diego, CA, \050May 1991\051.) 99 321.67 T
+-0.17 ([Katz 92] R. H. Katz, \322High Performance Network and Channel-Based Storage,\323) 72 299.67 P
+1 F
+-0.17 (Pr) 429.24 299.67 P
+-0.17 (oceedings of the IEEE) 439.82 299.67 P
+0 F
+-0.17 (,) 537.25 299.67 P
+(V) 99 288.67 T
+(. 80, N. 8, \050August 1992\051.) 105.51 288.67 T
+-0.3 ([Lee 92] E. K. Lee, P) 72 266.67 P
+-0.3 (. M. Chen, J. H. Hartman, A. L. Drapeau, E. L. Miller) 163.24 266.67 P
+-0.3 (, R. H. Katz, G. A. Gibson, D. A.) 396.25 266.67 P
+0.77 (Patterson, \322RAID-II: A Scalable Storage Architecture for High-Bandwidth Network File Service,\323) 99 255.67 P
+(T) 99 244.67 T
+(echnical Report UCB/CSD 92/672, \050February 1992\051.) 104.94 244.67 T
+-0.09 ([Patterson 88] D. A. Patterson, G. A. Gibson, R. H. Katz, \322The Case for RAID: Redundant Arrays of Inex-) 72 222.67 P
+(pensive Disks,\323 Proceedings ACM SIGMOD Conference, Chicago, IL, \050May 1988\051, pp. 106\3201) 99 211.67 T
+(13.) 516.32 211.67 T
+0.39 ([Rosenblum 91] M. Rosenblum, J. Ousterhout, \322The Design and Implementation of a Log-structured File) 72 189.67 P
+(System,\323 Proc. ACM Symp. on Operating Systems Principles, \050October 1991\051.) 99 178.67 T
+FMENDPAGE
+%%EndPage: "17" 18
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%Pages: 17 1
+%%DocumentFonts: Times-Roman
+%%+ Times-Italic
+%%+ Times-Bold

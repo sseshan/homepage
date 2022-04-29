@@ -1,0 +1,165 @@
+<!-- DOCTYPE HTML "-//IETF//DTD HTML//EN" -->
+<HTML>
+<HEAD>
+<TITLE>IrisNet</TITLE>
+</HEAD>
+
+<BODY>
+<A NAME="TOP"></A>
+
+<TABLE WIDTH=100% ALIGN=LEFT BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=100% VALIGN=TOP ALIGN=LEFT>
+<FONT SIZE="6" COLOR="7F0000"><B>I</B></FONT><FONT SIZE="5" COLOR="7F0000"><B>RIS</B></FONT><FONT SIZE="6" COLOR="7F0000"><B>N</B></FONT><FONT SIZE="5" COLOR="7F0000"><B>ET</B></FONT><FONT SIZE="5"><B> </B></FONT><FONT SIZE="6"><B>(</B></FONT><FONT SIZE="6" COLOR="7F0000"><B>I</B></FONT><FONT SIZE="6"><B>nternet-Scale </B></FONT><FONT SIZE="6" COLOR="7F0000"><B>R</B></FONT><FONT SIZE="6"><B>esource-</B></FONT><FONT SIZE="6" COLOR="7F0000"><B>I</B></FONT><FONT SIZE="6"><B>ntensive </B></FONT><FONT SIZE="6" COLOR="7F0000"><B>S</B></FONT><FONT SIZE="6"><B>ensor </B></FONT><FONT SIZE="6" COLOR="7F0000"><B>Net</B></FONT><FONT SIZE="6"><B>work Service)<BR></B></FONT></TD></TR></TABLE><BR CLEAR=ALL>
+<br>
+<p><font face="Verdana,Arial">Download the latest version (version 1.5)<br> 
+</font></p>
+<ul>
+    <li><font face="Verdana,Arial"><a href="code/IRISNET.tar.gz">Full version</a> 
+    (Includes OA and SA)</font></li>
+    <li><font face="Verdana,Arial"><a href="code/IRISNET-OA.tar.gz">Minimal version</a> 
+    (Includes OA), <i>this might be sufficient for you if you only want the 
+    wide area database related functionalities</i>.</font></li>
+</ul>
+<p><font face="Verdana,Arial">Or, you can go to our CVS to dig out the version 
+you want.</font></p>
+
+
+<TABLE WIDTH=100% ALIGN=LEFT BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD WIDTH=100% VALIGN=TOP ALIGN=LEFT>
+<br>
+<FONT SIZE="4"><B>Instructions to download from CVS:</B></FONT></TD></TR></TABLE><BR CLEAR=ALL>
+<UL>
+<br>
+<LI><B>What hardware/software do I need to install IrisNet?</B><BR>To build 
+IrisNet, you need a computer with C/C++ compiler. We develop IrisNet on 
+Linux, so our current version installs smooth there. In future we will try to port the code to other platforms.<BR>
+<br>
+<LI><B>How can I get the IrisNet software?</B><BR>You can download 
+IrisNet code build it on your computer. IrisNet code is available 
+both by HTTP and by anonymous <A HREF="irisnet.html#anon-cvs" TARGET="anon-cvs">CVS</A>. The whole source code tree can be browsed <A HREF="cgi-bin/cvsweb" TARGET="_self">here</A>.<BR>&nbsp;<BR>There are two ways to buils IrisNet: from <I>all the pieces</I> or <I>all at once</I>. IrisNet is composed of multiple independent modules, and those modules can be downloaded independently.<BR>
+<br>
+<LI><B>What are the different IrisNet modules?</B><BR>Currently, IrisNet has four main modules: <I>OA</I> (Organizing Agent module), <I>SA</I> (Sensing Agent module), <I>Logger</I> (Event logging module, used for debugging), and <I>Applications</I> (different applications we have implemenetd so far on IrisNet). The OA module is written in Java, and the rest of the modules are written in C/C++.<BR>
+<br>
+<LI><B>Does IrisNet need other third party packages?</B><BR>Yes. IrisNet leverages the following existing off-the-shelf packages.
+</UL>
+
+<TABLE WIDTH=100% ALIGN=LEFT BORDER=0 CELLPADDING=0 CELLSPACING=0><TR>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD WIDTH=100% VALIGN=TOP ALIGN=LEFT>
+<TABLE ALIGN=LEFT WIDTH="678" BORDER=0  CELLPADDING=1 CELLSPACCING=0>
+<TR>
+<TD VALIGN=TOP ALIGN=CENTER  WIDTH="306" BGCOLOR="#FFFFBF"><I>Package</I></TD>
+<TD VALIGN=TOP ALIGN=CENTER  WIDTH="372" BGCOLOR="#FFFFBF"><I>Module that requires the package</I></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="306" BGCOLOR="#BFBFFF">Apache Xindice (XML database engine)</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="372" BGCOLOR="#BFBFFF">OA</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="306" BGCOLOR="#DFDFDF">Intel OpenCV (computer vision library)</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="372" BGCOLOR="#DFDFDF">Applications</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="306" BGCOLOR="#BFBFFF">NAM (Network Animator)</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="372" BGCOLOR="#BFBFFF"><FONT Color="#0F0F0F">Logger</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="306" BGCOLOR="#DFDFDF">CamStream (webcam viewer)</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="372" BGCOLOR="#DFDFDF">SA</TD>
+</TR>
+</TABLE></TD></TR></TABLE><BR CLEAR=ALL>
+
+<TABLE WIDTH=100% ALIGN=LEFT BORDER=0 CELLPADDING=0 CELLSPACING=0><TR>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD WIDTH=100% VALIGN=TOP ALIGN=LEFT>
+<BR>Since Xindice provides Java APIs for JDK-1.3, IrisNet requires that specific version of JDK too.</TD></TR></TABLE><BR CLEAR=ALL>
+<UL>
+<br>
+<A NAME="anon-cvs"><LI><B>How can I get the code via anonymous 
+cvs?</B><BR>First, make sure that you have the cvs client installed in your 
+machine. (do &quot;<FONT FACE="Courier New,Courier">whereis 
+cvs</FONT>&quot;)<BR>Then, set the environment variable CVSROOT as 
+&quot;<FONT FACE="Courier New,Courier">:pserver:anonymous@iris.wv.cc.cmu.edu:/home/iris/cvs</FONT>&quot;. 
+Finally, do &quot;<FONT FACE="Courier New,Courier">cvs login</FONT>&quot; with the 
+password &quot;<FONT FACE="Courier New,Courier">anonymous</FONT>&quot;. You are all 
+set to check out IrisNet code from the CVS repository.<BR>&nbsp;<BR>Now, you are to 
+decide which module you want to checkout. The whole IrisNet package (including all 
+the third party packages it depends on) is around 300MB in size, so you may like to 
+checkout only the modules you are interested in. Depending on what module you want 
+to checkout, use the CVS command &quot;<FONT FACE="Courier New,Courier">cvs co -r 
+V200 &lt;module_name&gt;</FONT>&quot;, where <font face="Courier 
+New,Courier">V200</font> is the current stable release of IrisNet 
+code and 
+<FONT FACE="Courier New,Courier">module_name</FONT> is any of the following: </UL>
+
+<TABLE WIDTH=100% ALIGN=LEFT BORDER=0 CELLPADDING=0 CELLSPACING=0><TR>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD WIDTH=100% VALIGN=TOP ALIGN=CENTER>
+<TABLE ALIGN=LEFT WIDTH="834" BORDER=0  CELLPADDING=1 CELLSPACCING=0>
+<TR>
+<TD VALIGN=TOP ALIGN=CENTER  WIDTH="132" BGCOLOR="#FFFFBF"><I><B>Module name</B></I></TD>
+<TD VALIGN=TOP ALIGN=CENTER  WIDTH="702" BGCOLOR="#FFFFBF"><I><B>Checked out code</B></I></TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#BFBFFF">IRISNET-all</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#BFBFFF">All the modules (OA, SA, Logger, Applications) and all the third party packages they need</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#DFDFDF">OA-all</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#DFDFDF">The OA modules and all the third party packages it needs (Xindice, JDK1.3 etc.)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#BFBFFF">OA</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#BFBFFF">The OA module (The 3rd party packages are not downloaded. Make sure that they are installed in your machine)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#DFDFDF">SA-all</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#DFDFDF">The SA modules and all the third party packages it needs. (CamStream etc.)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#BFBFFF">SA</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#BFBFFF">The SA module (The 3rd party packages are not downloaded. Make sure that they are installed in your machine)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#DFDFDF">Logger-all</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#DFDFDF">The Logger modules and all the third party packages it needs (NAM etc.)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#BFBFFF">Logger</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#BFBFFF">The Logger module (The 3rd party packages are not downloaded. Make sure that they are installed in your machine)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#DFDFDF">Applications-all</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#DFDFDF">The Application modules and all the third party packages it needs (Intel OpenCV etc.)</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="132" BGCOLOR="#BFBFFF">Applications</TD>
+<TD VALIGN=TOP ALIGN=LEFT  WIDTH="702" BGCOLOR="#BFBFFF">The application module. (The 3rd party packages are not downloaded. Make sure that they are installed in your machine)</TD>
+</TR>
+</TABLE></TD></TR></TABLE><BR CLEAR=ALL>
+
+<TABLE WIDTH=100% ALIGN=LEFT BORDER=0 CELLPADDING=0 CELLSPACING=0><TR>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD VALIGN=TOP WIDTH=24>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD WIDTH=100% VALIGN=TOP ALIGN=LEFT>
+<BR>We recommend you to check out the &quot;-all&quot; modules, which incorporate all the necessary packages. In case you do not checkout the 3rd party packages, the install script should find them automatically. If not, please let us know so that we can fix that in the install scripts.<BR>&nbsp;<BR>You can check out the 3rd party packages even if you already have those packages installed in your machine. IrisNet's install script installs everything under the IrisNet directory, so existing packages are not supposed to conflict with the packages that come with IrisNet.</TD></TR></TABLE><BR CLEAR=ALL>
+<UL>
+<br>
+<LI><B>Can I commit my changes to the CVS repository?</B><BR>No. As an anonymous user, you do not have write access to the reposritory. If you want to contribute to our code, contact <A HREF="mailto:sknath@cmu.edu">us</A>.<BR>
+<br>
+<LI><B>O.K. I have checked out the code. How can I install the code (and 3rd party packages) now?</B>
+<BR>Within the IrisNet directory, type &quot;<FONT FACE="Courier New,Courier">./install</FONT>&quot;, and all the modules you checked out should be installed.<BR>
+<br>
+
+<LI><B>I did run "./install", but the installation failed. So now..? </B>
+<BR>
+Read the <A HREF="faq-install.html">FAQ</A> page. If you still have problem in installing 
+the IrisNet code, please send a mail to <A 
+HREF="mailto:irisdev@intel-iris.net"><I>irisdev@intel-iris.net</I></A> 
+<br>
+
+<LI><B>How can I uninstall the modules? (and 3rd party packages?)</B><BR>Within the IrisNet Directory, type &quot;<FONT FACE="Courier New,Courier">./uninstall</FONT>&quot;.<BR>
+<br>
+<LI><B>Where should I send the bug reports/feature 
+requests/suggestions/codes?</B><BR>Mail them to <A HREF="mailto:sknath@mail.com">us</A>.
+</UL>
+</BODY>
+</HTML>

@@ -4,7 +4,7 @@
 
 <div id="topbar-wrapper" class="row justify-content-center">
   <div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between">
-    <span id="breadcrumb">
+    {%- comment -%} <span id="breadcrumb">
 
     {% assign paths = page.url | split: '/' %}
 
@@ -43,9 +43,9 @@
 
     {% endif %}
 
-    </span><!-- endof #breadcrumb -->
+    </span><!-- endof #breadcrumb -->{%- endcomment -%}
 
-    <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+    <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i> 
 
     <div id="topbar-title">
       {% if page.layout == 'home' %}
@@ -64,7 +64,7 @@
       <input class="form-control" id="search-input" type="search"
         aria-label="search" autocomplete="off" placeholder="{{ site.data.locales[lang].search.hint | capitalize }}...">
     </span>
-    <span id="search-cancel" >{{ site.data.locales[lang].search.cancel }}</span>
+    <span id="search-cancel" >{{ site.data.locales[lang].search.cancel }}</span> 
   </div>
 
 </div>

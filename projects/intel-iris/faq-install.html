@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<META NAME="GENERATOR" Content="Visual Page 1.1a for Windows">
+	<TITLE>untitled</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<P><B>IrisNet Installation FAQ</B></P>
+
+<P>
+<HR ALIGN="CENTER">
+<I>If you have any questions regarding download and installation of IrisNet, please read the </I><A HREF="http://www.intel-iris.net/download.html"><I>doanload
+page</I></A><I> first. If it does not answer your questions, go through this FAQ. If you still you have questions
+(stubborn you!), please mail them to </I><A HREF="mailto:irisdev@intel-iris.net"><I>irisdev@intel-iris.net</I></A><I>.</I><B></B></P>
+
+<P><B></B></P>
+</CENTER>
+<P><FONT COLOR="#990000"><B>General FAQ</B></FONT><B></B></P>
+
+<P><FONT COLOR="#006600"><B>1. Which module should I check out from the CVS repository.</B></FONT><B></B></P>
+
+<P>We encourage you to checkout one of the &quot;-all&quot; (<I>e.g.</I>, IRISNET-all, OA-all <I>etc.</I>) modules,
+since it comes with all the necessary packages. Thus you are less likely to have any installation problem.</P>
+
+<P><FONT COLOR="#006600"><B>2. I have a few of the 3rd party packages used by IrisNet already installed in my computer.
+Should I still checkout the &quot;-all&quot; modules, which come with the same packages I have?</B></FONT></P>
+
+<P>If you do not have space limitation in your hard disk, we recommend you to checkout the &quot;-all&quot; modules.
+Otherwise, the installation scripts (<I>e.g.,</I> install, configure, Makefile) may not find the correct paths
+to your already installed packages. If you do not checkput a required package, and instead intend to use your already
+installed package, you <I>may</I> need to manually modify the installation scripts so that they find your package.
+We tried to minimize this effort as best as possible, so the installaiton scripts should automatically find the
+already installed packages. If you have such problems, please mail us at <A HREF="mailto:irisdev@intel-iris.net">irisdev@intel-iris.net</A>.
+<BR>
+<BR>
+<I>Note that, even if you checkout the &quot;-all&quot; modules and install all the required 3rd party packages,
+they <B>will not interfere</B> with your already installed packages. IrisNet installs <B>everything</B> under the
+installaiton directory.</I><B></B></P>
+
+<P><FONT COLOR="#008000"><B>3. I tried to checkout the IrisNet code from the CVS repository, following the instructions
+in the </B></FONT><A HREF="http://www.intel-iris.net/download.html"><B>download page</B></A><FONT COLOR="#008000"><B>.
+But the chekout failed. Why?</B></FONT></P>
+
+<P>This should not happen if the machine <I>iris.wv.cc.cmu.edu </I>is online. If you still face the problem, inform
+<A HREF="mailto:sknath@cs.cmu.edu">us</A>.</P>
+
+<P><BR>
+<FONT COLOR="#008000"><B>4.  How do I know when there is any update of the IrisNet code? (Or, how do I know when
+I should do a cvs update?)</B></FONT></P>
+
+<P>Subscribe to the list <I>iris-announce@intel-iris.net</I>, by sending a request mail to <A HREF="mailto:majordomo@intel-iris.net">majordomo@intel-iris.net</A>.
+The body of the request mail should contain the line &quot;subscribe iris-announce&quot;. For more informations
+about the mailing lists, visit <A HREF="http://www.intel-iris.net/mail.html">this page</A>.</P>
+
+<P>
+<HR ALIGN="CENTER">
+</P>
+
+<P><FONT COLOR="#800000"><B>Specific Package Related FAQs</B></FONT></P>
+
+<P><FONT COLOR="#000099"><B>OpenCV</B></FONT></P>
+
+<P><FONT COLOR="#008000"><B>1. I tried to install the OpenCV that comes with the IrisNet code. But I get conifuguration
+error. What can be wrong?</B></FONT></P>
+
+<P>We have been reported of a few instances of this problem, and in all the cases the problem was due to the absence
+of a compatible Tcl/Tk package. OpenCV requites Tcl/Tk version 8.3 or later, so if your computed does not have
+Tcl/Tk 8.3 or later vesion installed, you might get this configuraiton error.</P>
+
+<P>We have tried to tweak the OpenCV configure script so that in case Tcl/Tk is not installed in your computer,
+OpenCV uses the one that comes with IrisNet. Now, you should not get this Tcl/Tk related configuration errors.
+If you still do, please mail us at <A HREF="mailto:irisdev@intel-iris.net"><I>irisdev@intel-iris.net</I></A>. And,
+as a quick fix, install Tcl/Tk 8.3 in your computer. :)</P>
+
+<P><I></I></P>
+
+<P>
+<HR ALIGN="CENTER">
+</P>
+
+<P><FONT COLOR="#0000FF"><B>CamStream</B></FONT></P>
+
+<P><FONT COLOR="#008000"><B>1. CamSteam configuration failed with the message: </B></FONT><FONT COLOR="#008000"
+FACE="Arial"><B>checking for Qt library version &gt;= 2.2.0... no</B></FONT><FONT COLOR="#008000"><B>. What can
+I do?</B></FONT></P>
+
+<P><A HREF="http://www.trolltech.com/">Download</A> and install the latest QT package :). </P>
+
+<P><FONT COLOR="#008000"><B>2. I have the QT package installedm and its version is higher that 2.2.0. But I still
+get the above message. What should Ido?</B></FONT></P>
+
+<P>Set the enviroment variable QTDIR to the QT directory path.</P>
+
+<P><FONT COLOR="#008000"><B>3. I have downloaded the latest 
+stable release of IrisNet. However, when I run the install 
+script, I get the error message "*** Camstream build failed 
+***", although all other packages are installed successfully. What is 
+wrong? </B></FONT></P>
+
+<P>If all the modules except Camstream are compiled successfully, then 
+one possible reasons for getting the above mentioned error message is 
+that you are using gcc3.2 for compiling the packages. Some portion of 
+the specific version of Camstream we use cannot be compiled with 
+gcc3.2, which accounts for this error message. Fortunately, the camstream 
+libraries critical to IrisNet are compiled successfully with gcc3.2 (this 
+is the reason all other IrisNet modules are installed successfully).
+
+<P> You can ignore the error message, since all other components of 
+IrisNet has been installed successfully. Alternatively, you can install 
+gcc 2.95, and use that to compile the whole IrisNet package.
+
+
+<P>
+<HR ALIGN="CENTER">
+</P>
+<P ALIGN="CENTER"><I>If you have any other installation problems, mail them to </I><A HREF="mailto:irisdev@intel-iris.net"><I>irisdev@intel-iris.net</I></A><I>.
+We will either fix those problems in future releases or include them in this FAQ page.</I>
+
+</BODY>
+
+</HTML>

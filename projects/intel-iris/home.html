@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+	<META NAME="GENERATOR" Content="Visual Page 1.1a for Windows">
+	<TITLE>IrisNet mailing lists</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<FORM ACTION="/cgi-bin/htsearch" METHOD="POST">
+<CENTER>
+<P>
+<TABLE BORDER="0" WIDTH="100%">
+	<TR>
+		<TD WIDTH="15%"><IMG SRC="iris.jpg" WIDTH="113" HEIGHT="64" ALIGN="BOTTOM" BORDER="0"></TD>
+		<TD WIDTH="85%">
+			<P ALIGN="CENTER"><FONT SIZE="6">I</FONT><FONT SIZE="5">RIS</FONT><FONT SIZE="6">N</FONT><FONT SIZE="5">ET</FONT><FONT
+			SIZE="6"><BR>
+			(</FONT><FONT SIZE="5" COLOR="#CC0000">I</FONT><FONT SIZE="5">nternet-scale </FONT><FONT SIZE="5" COLOR="#CC0000">R</FONT><FONT
+			SIZE="5">esource-</FONT><FONT SIZE="5" COLOR="#CC0000">I</FONT><FONT SIZE="5">ntensive </FONT><FONT SIZE="5" COLOR="#CC0000">S</FONT><FONT
+			SIZE="5">ensor </FONT><FONT SIZE="5" COLOR="#CC0000">Net</FONT><FONT SIZE="5">work Service</FONT><FONT SIZE="6">)</FONT>
+		</TD>
+	</TR>
+</TABLE>
+
+<TABLE BORDER="1" WIDTH="100%" BGCOLOR="#B0B0FF">
+	<TR>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="home.html">Home</A>
+		</TD>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="download.html">Download</A>
+		</TD>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="bugs.html">Bugs</A>
+		</TD>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="docs.html">Documentation</A>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="news.html">News</A>
+		</TD>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="mail.html">Mailing lists</A>
+		</TD>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="faq.html">FAQ</A>
+		</TD>
+		<TD WIDTH="25%">
+			<P ALIGN="CENTER"><A HREF="research.html">Research</A>
+		</TD>
+	</TR>
+</TABLE>
+<INPUT TYPE="SUBMIT" NAME="Search" VALUE="Search"><INPUT TYPE="TEXT" NAME="words" 
+value=""  SIZE="38">
+<input type="hidden" name="config" value="htdig">
+<input type="hidden" name="method" value="and">
+<FONT SIZE="2">Scope:</FONT>
+<SELECT NAME="restrict">
+<OPTION SELECTED value="">All IrisNet Documents</OPTION>
+<OPTION value="http://iris.wv.cc.cmu.edu/">Manuals, development and 
+mails</OPTION>
+<OPTION value="http://iris.wv.cc.cmu.edu/">Manuals </OPTION>
+<OPTION value="http://iris.wv.cc.cmu.edu/maillists/">Mailing 
+lists</OPTION>
+<OPTION value="http://iris.wv.cc.cmu.edu/">Research papers</OPTION>
+</SELECT>
+</center> 
+<p>
+Webcams are everywhere, collecting vast amounts of potentially useful 
+data. 
+However, there are no effective tools for querying the data. The 
+<b>Internet-scale Resource-Intensive Sensor services (IRIS)</b> project 
+is developing a scalable software infrastructure that will enable users 
+with 
+Internet access to data mine the wide world of webcams. IRIS will 
+facilitate 
+the deployment of webcam services that leverage both real-time and 
+historical 
+video feeds from any number of webcams, from other data sources, and from 
+other types of sensor data. Each sensor is locally attached to a computer 
+that is capable of resource-intensive processing such as image 
+recognition. 
+A key design goal is to facilitate dynamic reconfigurability in the 
+sensing 
+agent network.</p>
+
+<h3 class="FeatureSubHead">Introduction</h3>
+  <p>
+  <font color="#0000CC">Imagine driving towards a destination in a busy 
+  metropolitan area.&nbsp; While stopped at a traffic light, you query 
+your PDA 
+  specifying your destination and criteria for desirable parking spaces 
+(e.g., 
+  within two blocks of your destination, at least a four hour meter). You 
+get 
+  back directions to an available parking space satisfying your 
+criteria.&nbsp; 
+  Hours later, you realize that your meter is about to run out.&nbsp; You 
+query 
+  your PDA to discover that, historically, meter enforcers are not likely 
+to 
+  pass by your car in the next hour.&nbsp; A half hour later, you return 
+to your 
+  car and discover that although it has not been ticketed, it has been 
+  dented!&nbsp; Querying your PDA, you get back images showing how your 
+car was 
+  dented and by whom.</font>
+  <p>
+  This scenario demonstrates the potential utility 
+  of sensor-based services such as a Parking Space Finder, Silent 
+(Accident) 
+  Witness and Meter Enforcement Tracker.&nbsp; While several research 
+projects 
+  have begun to explore the use of networked collections of sensors, these 
+  systems have targeted the use of closely co-located resource-constrained 
+  sensor "motes".&nbsp; We describe a sensor network system architecture, 
+called 
+  IRIS ( Internet-scale Resource-Intensive Sensor services), based on much 
+more 
+  intelligent participants.&nbsp; We envision an environment where 
+different 
+  nodes on the Internet (standard PCs, laptops and PDAs) have attached 
+sensors 
+  such as webcams (video cameras attached to Web-enabled devices).&nbsp; 
+Any 
+  sensor-based service can retrieve information from this collection of 
+sensors 
+  and provide service to users.
+  <p>
+  While webcams are inexpensive and easy to 
+  deploy across a wide area, realizing useful services requires addressing 
+a 
+  number of challenges, including filtering large data feeds to retrieve 
+useful 
+  information, answering distributed queries with reasonable response 
+times, 
+  combining multiple sources of information, etc. Our goal in IRIS is to 
+create 
+  a common, scalable software infrastructure that allows services to 
+address 
+  these challenges in a manageable fashion.&nbsp; This would enable rapid 
+  development and deployment of distributed services over a worldwide 
+network of 
+  sensor feeds.
+
+<h3 class="FeatureSubHead">The IRIS Architecture</h3>
+  <p>
+  IRIS is composed 
+  of a potentially global collection of Sensing Agents (SAs) and 
+Organizing 
+  Agents (OAs). Any Internet connected, PC-class device can play the role 
+of an 
+  OA. However, less capable PDA-class devices can act as SAs.
+  <p>
+  Sensor-based services are deployed by orchestrating a group of OAs 
+  dedicated to the service.&nbsp; These OAs are responsible for collecting 
+and 
+  organizing the sensor data in a fashion that allows for a particular 
+class 
+  of queries to be answered (e.g., queries about parking spaces).&nbsp; 
+The OAs 
+  index, archive, aggregate, mine and cache data from the SAs to build a 
+  system-wide distributed database for that service.
+  <p>
+  In contrast, SAs are shared by all services.&nbsp; An SA collects raw 
+sensor data from a 
+  number of (possibly different types of) sensors. The focus of our design 
+is on 
+  sensors, such as webcams, that produce large volumes of data and require 
+  sophisticated processing.
+  <p>
+  Key features of IRIS include:
+  <ul>
+    <li>
+    Providing simple APIs for orchestrating the SAs and 
+    OAs to collect, collaboratively process and archive sensor data while 
+    minimizing network data transfers. </li>
+    <li>
+    Handling issues of service discovery, query routing, 
+    semantic caching of responses and load balancing in a scalable manner 
+    for all services. </li>
+    <li>
+    Handling the demanding requirements of processing and 
+    querying live and historical high-volume sensor feeds such as 
+    webcams.</li>
+  </ul>
+
+<h3 class="FeatureSubHead">Sensing Agents</h3>
+  <p>
+  OAs upload scripting 
+  code to any SA collecting sensor data of interest to the service. This 
+  scripting code programs the SA to take its raw sensor feed, perform the 
+  specified processing steps, and send the distilled information to the 
+OA. An 
+  alternative design could be to send a generic compressed sensor feed 
+from the 
+  SA to the OAs and to perform the filtering at the more powerful 
+OAs.&nbsp; Our 
+  experiments have shown that the service-specific filtering of the sensor 
+feed 
+  at the SA reduces the data transmitted from SAs significantly. For 
+example, 
+  the Parking Space Finder only needs a few bytes to encode parking space 
+  availability instead of approximately 6KB per image frame for a 
+  webcam feed. Filtering at the SA also reduces the overall latency.
+  <p>
+  A key concern is that because multiple services can share an SA, the 
+more 
+  limited computing power of the SA may be overloaded. To alleviate this 
+  concern, our scripting code API allows downloaded code from different 
+OAs to 
+  cooperate and avoid redundant processing. For example, both the Parking 
+Space 
+  Finder service and the Silent Accident Witness service perform steps of 
+  filtering for motion detection and for identifying vehicles. We 
+anticipate 
+  significant work sharing, because the downloaded codes are all 
+specialized to 
+  the processing of the SA's particular sensor feeds.
+
+<h3 class="FeatureSubHead">Organizing Agents</h3>
+  <p>
+  Central to sensor 
+  networks is distributed query processing over streaming data.&nbsp; In 
+IRIS, 
+  data such as the latest parking space availability information is stored 
+in 
+  XMLdatabases associated with each OA.&nbsp; Data for a particular 
+service is 
+  organized hierarchically, with each OA owning a part of the hierarchy. 
+(For 
+  example, a Parking Space Finder service may use a geographic hierarchy, 
+  e.g., usRegion--state--county--city--neighborhood--block). An OA may 
+also 
+  cache data owned by other OAs.
+  <p>
+  A user's query, represented in the XPATH language, selects data from a 
+set of 
+  nodes in the hierarchy. A typical XPATH query is: 
+  <br><font color="#0000CC">
+  
+/usRegion[@id='NE']/state[@id='PA']/county[@id='Allegheny']/city[@id='Pittsburgh']/neighborhood[@id='Oakland' 
+  OR @id='Shadyside']/block/parkingSpace[available='yes']</font>
+  <br>
+  This query requests all available parking spaces
+  in the Oakland or Shadyside neighborhoods of Pittsburgh.
+  An XPATH query contains a 
+  (maximal) hierarchical prefix, which specifies a single path from the 
+root of 
+  the hierarchy to the lowest common ancestor (LCA) of the nodes 
+potentially 
+  selected by the query. IRIS constructs a DNS-style name out of the 
+prefix, 
+  IRIS constructs the name 
+{pittsburgh.allegheny.pa.ne.parking.intel-iris.net}, 
+  performs a DNS lookup to get the IP address of this OA, and routes the 
+query 
+  there.
+  <p>
+  Upon receiving a query, the LCA OA queries its local XML 
+  database, and evaluates the result. If necessary, it gathers missing 
+data by 
+  sending subqueries to its children OAs (defined by the hierarchy), who 
+may 
+  recursively query their children, and so on.&nbsp; Finally the answers 
+from 
+  the children are combined and the result is sent back to the user.
+  <p>
+  If the query is initially routed to a higher-level node in the 
+hierarchy, most of 
+  the time is spent in network communication because of the high latencies 
+  between the upper-level nodes.&nbsp; As we come down to the lower-level 
+nodes, 
+  the time taken to query the databases dominates the end-to-end query 
+time. 
+  This also demonstrates the importance of intelligently routing a query 
+  directly as far down the hierarchy as possible.
+  <p>
+  In IRIS, queries may 
+  use the data cached in an OA, even if the new query is not an exact 
+match for 
+  the original query. For example, the query may use data for Oakland 
+cached at 
+  the Pittsburgh OA, even though this data is only a partial match for the 
+full 
+  query. The current prototype of IRIS supports a limited form of such 
+  semantic caching.
+
+<h3 class="FeatureSubHead">Conclusions</h3>
+  <p>
+  We believe that IRIS can enable a wealth of new 
+  sensor-based services. The next steps we are actively taking include 
+  investigating additional services, making the architecture more robust 
+by 
+  handling both failures and graceful departures of nodes, improving 
+performance 
+  through smarter semantic caching, and providing mechanisms for new SAs 
+to be 
+  incorporated into active services.
+
+<h3 class="FeatureSubHead">Project Team:</h3>
+<ul>
+  <li>
+  <a 
+href="http://www.intel-research.net/pittsburgh/people/gibbons/index.html">Phil 
+Gibbons</a> (Intel Research)</li>
+  <li>
+  <a href="http://www-2.cs.cmu.edu/~srini/">Srini Seshan</a> (CMU)</li>
+  <li>
+  <a href="http://www-2.cs.cmu.edu/~sknath/">Suman Nath</a> (CMU)</li>
+  <li>
+  <a href="http://www.cs.berkeley.edu/~amol/">Amol Deshpande</a> (U.C. 
+Berkeley)</li>
+  <li>
+  <a href="http://www.andrew.cmu.edu/~yke/">Yan Ke</a> (CMU)</li>
+</ul>
+ 
+</BODY>
+
+</HTML>

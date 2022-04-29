@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="hypermail 2.1.5, see http://www.hypermail.org/">
+<title>IrisNet developer's mailing list archive: XUPDATE</title>
+<meta name="Author" content="Suman Nath (sknath@cs.cmu.edu)">
+<meta name="Subject" content="XUPDATE">
+<meta name="Date" content="2003-04-23">
+<link rev="made" href="mailto:iris@intel50.wv.cc.cmu.edu">
+<style type="text/css">
+body {color: black; background: #ffffff}
+h1.center {text-align: center}
+div.center {text-align: center}
+</style>
+</head>
+<body>
+<h1>XUPDATE</h1>
+<!-- received="Wed Apr 23 14:04:51 2003" -->
+<!-- isoreceived="20030423180451" -->
+<!-- sent="Wed, 23 Apr 2003 14:06:25 -0400 (EDT)" -->
+<!-- isosent="20030423180625" -->
+<!-- name="Suman Nath" -->
+<!-- email="sknath@cs.cmu.edu" -->
+<!-- subject="XUPDATE" -->
+<!-- id="Pine.LNX.4.33L.0304231406010.30163-100000@ux10.sp.cs.cmu.edu" -->
+<!-- charset="US-ASCII" -->
+<!-- expires="-1" -->
+<div class="center">
+<table border="2" width="100%">
+<tr>
+<th><a href="mailto:irisdev@intel50.wv.cc.cmu.edu">New Message</a></th>
+<th><a href="mailto:irisdev@intel50.wv.cc.cmu.edu?subject=Re:%20XUPDATE&amp;replyto=Pine.LNX.4.33L.0304231406010.30163-100000@ux10.sp.cs.cmu.edu">Reply</a></th>
+<th><a href="http://www.intel-iris.net">About this list</a></th>
+<th><a href="date.html">Date view</a></th>
+<th><a href="index.html">Thread view</a></th>
+<th><a href="subject.html">Subject view</a></th>
+<th><a href="author.html">Author view</a></th>
+<th><a href="attachment.html">Attachment view</a></th>
+</tr>
+</table>
+</div>
+<p>
+<strong>From:</strong> Suman Nath (<a href="mailto:sknath@cs.cmu.edu?subject=Re:%20XUPDATE&amp;replyto=Pine.LNX.4.33L.0304231406010.30163-100000@ux10.sp.cs.cmu.edu"><em>sknath@cs.cmu.edu</em></a>)<br>
+<strong>Date:</strong> 04/23/03
+</p>
+<!-- next="start" -->
+<ul>
+<li><strong>Previous message:</strong> <a href="../Dec02/0001.html">mailer@intel50.wv.cc.cmu.edu: "Welcome again"</a>
+<!-- nextthread="start" -->
+<!-- reply="end" -->
+</ul>
+<hr>
+<!-- body="start" -->
+<p>
+Hi Ganesh
+<br>
+In the version (stable030203) of IrisNet you are using, SA sends XML paths
+<br>
+and values to update. OAs then construct the necessary XUPDATE commands to
+<br>
+do the update.
+<br>
+<p>However, this does not reflect the true potential of XUPDATE, since OAs
+<br>
+only &quot;replaces&quot; existing values. However, real XUPDATE supports a lot of
+<br>
+other operations like node addition, deletion etc. IrisNet's OAs actually
+<br>
+supports any arbitrary XUPDATe commands, but currently there is no way for
+<br>
+SAs to use that feature.
+<br>
+<p>The new version that I will send to you will allow SAs to send
+<br>
+arbitrary XUPDATE commands to the OAs (thus SAs will have more control
+<br>
+over how to manipulate the data). I will send the code to you soon. In the
+<br>
+mean time, you may like to look at the following links to get an idea
+<br>
+about XUPDATE specification and syntax. Thus when you have our code, you
+<br>
+can write senselets to construct required XUPDATE commands.
+<br>
+<p><p>1. <a href="http://www.xmldatabases.org/projects/XUpdate-UseCases/">http://www.xmldatabases.org/projects/XUpdate-UseCases/</a> : excellent page
+<br>
+with a lot of examples of allmost all possible XUPDATE commands.
+<br>
+<p>2. <a href="http://www.xmldb.org/xupdate/">http://www.xmldb.org/xupdate/</a> : XUPDATE specification
+<br>
+<p>3. <a href="http://www.xindice.org/Resources/XindiceDocumentation.html">http://www.xindice.org/Resources/XindiceDocumentation.html</a> : xindice
+<br>
+documntation page.
+<br>
+<p>For now, I think the 1st link would be enough for you.  The page
+<br>
+gives a lot of example xupdate commands. Your senselet should be able to
+<br>
+construct similar xupdate commands that suit your schema.
+<br>
+<p>Dont worry, I will help you in case you find something alien.
+<br>
+<p>Suman
+<br>
+<!-- body="end" -->
+<hr>
+<ul>
+<!-- next="start" -->
+<li><strong>Previous message:</strong> <a href="../Dec02/0001.html">mailer@intel50.wv.cc.cmu.edu: "Welcome again"</a>
+<!-- nextthread="start" -->
+<!-- reply="end" -->
+</ul>
+<div class="center">
+<table border="2" width="100%">
+<tr>
+<th><a href="mailto:irisdev@intel50.wv.cc.cmu.edu">New Message</a></th>
+<th><a href="mailto:irisdev@intel50.wv.cc.cmu.edu?subject=Re:%20XUPDATE&amp;replyto=Pine.LNX.4.33L.0304231406010.30163-100000@ux10.sp.cs.cmu.edu">Reply</a></th>
+<th><a href="http://www.intel-iris.net">About this list</a></th>
+<th><a href="date.html">Date view</a></th>
+<th><a href="index.html">Thread view</a></th>
+<th><a href="subject.html">Subject view</a></th>
+<th><a href="author.html">Author view</a></th>
+<th><a href="attachment.html">Attachment view</a></th>
+</tr>
+</table>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail.org/">hypermail 2.1.5</a> 
+: 04/23/03 EDT
+</em></small></p>
+</body>
+</html>

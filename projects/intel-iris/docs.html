@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>IRISNet Documentation</title>
+           
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+</head>
+<body>
+<h1>IRISNET Documentation</h1>
+Last Updated: January 13, 2003.<br>
+<br>
+</p>
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#Installation">Installation</a><li><a href="#Software_Dependencies">Software Dependencies</a></li>
+  
+  <ul>
+    <li><a href="#Sensing_Agents">Sensing Agents</a></li>
+    <li><a href="#Webcam">Webcam</a></li>
+    <li><a href="#Organizing_Agents">Organizing Agents</a></li>
+    <li><a href="#Logger">Logger</a><br>
+    </li>
+  
+  </ul>
+  <li><a href="#Technologies_APIs_and_Standards">Technologies, API's, and
+Standards</a></li>
+  <li><a href="#Coding_Style">Coding Style and Documentation</a></li>
+  <li><a href="#Test_Suite">Test Suite</a></li>
+  <li><a href="#Parking_Space_Finder">Parking Space Finder Application</a><br>
+  <li>Developing a new application<a href="PSF-HowTO.ps">[ps]</a><a href="PSF-HowTO.pdf">[pdf]</a> <br>
+  </li>
+</ul>
+<br>
+<br>
+<br>
+<hr width="100%" size="2">
+<h2><a name="Installation"></a>Installation</h2>
+<p>The easiest way to install IRISNET is to check out everything from the CVS 
+repository and do a full installation.</p>
+<ul>
+  <li>Download<ul>
+    <li>Follow instructions on.&nbsp;
+    <a href="http://iris.wv.cc.cmu.edu/download.html">
+    http://iris.wv.cc.cmu.edu/download.html</a>&nbsp; After download, run 
+    &quot;install&quot; in the main IRISNET directory.</li>
+  </ul>
+  </li>
+  <li>Set environment variables<ul>
+    <li>Add &quot;IRISNET/packages/opencv-0.9.3/otherlibs/highgui/.libs/&quot; and<br>
+    &quot;IRISNET/packages/opencv-0.9.3/cv/src/.libs/&quot; to your LD_LIBRARY_PATH 
+    environment variable.&nbsp; These environment variables tell where OpenCV is 
+    installed.</li>
+    <li>If Java is not installed on your system, add &quot;IRISNET/packages/jdk1.3.1_06/jre/bin&quot; 
+    to your path.</li>
+  </ul>
+  </li>
+  <li>Configure webcam<ul>
+    <li>You need to install the appropriate webcam drivers for your webcam.&nbsp; 
+    For USB Quickcam 3000 Pro webcams, use the driver on <a href="http://www.smcc.demon.nl/webcam/">http://www.smcc.demon.nl/webcam/</a></li>
+    <li>As root, run &quot;insmod -f pwcx-i386.o&quot; to load the Quickcam drivers.</li>
+  </ul>
+  </li>
+  <li>Run Test Suite (optional)<ul>
+    <li>You can optionally run &quot;testall.sh&quot; in the IRISNET/TestSuite directory 
+    to see if everything is installed correctly.</li>
+  </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<hr>
+<h2><a name="Software_Dependencies"></a>Software Dependencies</h2>
+<h3><a name="Sensing_Agents"></a><b>Sensing Agents</b></h3>
+<ul>
+  <li>Sensing agent coordinates the loading and execution of senselets.</li>
+  <li>Dependent on Webcam for getting sensor feed.<br>
+  </li>
+  <li>Intel OpenCV Library</li>
+  
+  <ul>
+    <li>Intel's open source computer vision and graphics library.<br>
+    </li>
+  
+  </ul>
+     
+  <ul>
+    <li>Intel Site: <a
+ href="http://www.intel.com/research/mrl/research/opencv/">http://www.intel.com/research/mrl/research/opencv/</a></li>
+    <li>Sourceforge Site: <a
+ href="http://sourceforge.net/projects/opencvlibrary/">http://sourceforge.net/projects/opencvlibrary/</a></li>
+    <li>More Documentation:
+    <a href="http://limu.is.kyushu-u.ac.jp/~yosimoto/other/opencv-docs/">
+    http://limu.is.kyushu-u.ac.jp/~yosimoto/other/opencv-docs/</a></li>
+     
+  </ul>
+  <li>Intel IPP/IPL</li>
+  
+  <ul>
+    <li>OpenCV used to depend on Intel's Image Processing Library (IPL). &nbsp;Therefore,
+OpenCV still shares a lot of data structures with the IPL. &nbsp;IPL is being
+moved into Intel's Integrated Performance Primivites (IPP), which is not
+free. &nbsp;OpenCV will use IPP to improve its performance if IPP is available,
+but is not dependent on it. &nbsp;IPP is available for both Windows and Linux
+platforms.</li>
+    <li>Intel Site: <a
+ href="http://www.intel.com/support/performancetools/libraries/ipp/ia/">http://www.intel.com/support/performancetools/libraries/ipp/ia/</a></li>
+  
+  </ul>
+  <li>Richard Stevens Unix Network Programming Library</li>
+  
+  <ul>
+    <li>For a lot of socket calls, we use the unp wrapper library.</li>
+    <li><a href="http://www.kohala.com/start/">http://www.kohala.com/start/</a></li>
+  
+  </ul>
+  <li>CSAPP</li>
+  
+  <ul>
+    <li>We also some the csapp wrapper for some socket calls.</li>
+    <li><a href="http://csapp.cs.cmu.edu/">http://csapp.cs.cmu.edu/</a><br>
+    </li>
+  
+  </ul>
+</ul>
+<h3><a name="Webcam"></a>Webcam</h3>
+<ul>
+  <li>Webcam loads video frames into shared memory for use by the senselets.</li>
+  <li>Camstream</li>
+  
+  <ul>
+    <li>C++ wrapper for Video4Linux and demo application. &nbsp;We use its
+libraries for ease of implementation, but in theory we can call the Video4Linux
+API directly.</li>
+    <li>It has a nice GUI that lets us test the cameras easily.<br>
+    </li>
+    <li>Camstream is dependent on Qt.<br>
+    </li>
+    <li><a href="http://www.smcc.demon.nl/camstream/">http://www.smcc.demon.nl/camstream/</a></li>
+  
+  </ul>
+  <li>Qt</li>
+  
+  <ul>
+    <li>A cross platform C++ GUI toolkit.</li>
+    <li>Comes with KDE.</li>
+    <li><a href="http://www.trolltech.com/">http://www.trolltech.com/</a></li>
+  
+  </ul>
+  <li>USB Quickcam drivers<ul>
+    <li>We have a set of USB Quickcam 3000 Pro webcams, which the following
+web site provides Video4Linux drivers.<br>
+    </li>
+    <li><a href="http://www.smcc.demon.nl/webcam/">http://www.smcc.demon.nl/webcam/</a></li>
+  
+  </ul>
+  <li>Video4Linux<ul>
+    <li>API used by Camstream and other programs to access video devices under
+linux. &nbsp;Most webcam drivers provide this interface.<br>
+    </li>
+    <li><a href="http://www.exploits.org/v4l/">http://www.exploits.org/v4l/</a></li>
+  
+  </ul>
+  <li>Shared Memory API</li>
+  
+  <ul>
+    <li>We use shared memory to pass data from Webcam to the senslets.</li>
+    <li>See man pages for shmget(), shmat()</li>
+    <li>Quick tutorial at <a
+ href="http://www.cs.cf.ac.uk/Dave/C/node27.html">http://www.cs.cf.ac.uk/Dave/C/node27.html</a><br>
+    </li>
+  
+  </ul>
+</ul>
+<h3><a name="Organizing_Agents"></a>Organizing Agents</h3>
+<ul>
+  <li>Java 1.3.0</li>
+  <ul>
+    <li>We use 1.3.0 instead of 1.4 because Xindice has not been tested with
+1.4. &nbsp;There have been known problems with Sun Java SDK 1.3.1.<br>
+    </li>
+  </ul>
+  <li>Apache Xindice XML Database: <a
+ href="http://xml.apache.org/xindice/">http://xml.apache.org/xindice/</a></li>
+  <li>Apache Xerces2 Java XML Parser: <a
+ href="http://xml.apache.org/xerces2-j/index.html">http://xml.apache.org/xerces2-j/index.html</a></li>
+  <li>Apache Xalan Java XSLT Processor: <a
+ href="http://xml.apache.org/xalan-j/index.html">http://xml.apache.org/xalan-j/index.html</a></li>
+  <li>sixpath XPath Parser: <a
+ href="http://sourceforge.net/projects/sixpath">http://sourceforge.net/projects/sixpath</a><br>
+  </li>
+</ul>
+<h3><a name="Logger"></a>Logger</h3>
+<ul>
+  <li>All IRISNet nodes send debugging to the logger, which reconstruct the
+flow of packets in the network.<br>
+  </li>
+  <li>Nam</li>
+  <ul>
+    <li>Network animator used for giving demo's.</li>
+    <li>We modified Nam to show different colors and window sizes, etc.<br>
+    </li>
+    <li><a href="http://www.isi.edu/nsnam/nam/">http://www.isi.edu/nsnam/nam/</a><br>
+    </li>
+  </ul>
+</ul>
+<br>
+<br>
+<hr width="100%" size="2">
+<h2><a name="Technologies_APIs_and_Standards"></a>Technologies, API's, and
+Standards</h2>
+<h3>XML</h3>
+<ul>
+  <li>We use XML as a distributed database for each application, and also
+as a data format for network communication. &nbsp;XML is handled mostly by
+the Organizing Agents.</li>
+  <li>We rely heavily on Apache XML libraries. &nbsp;<a
+ href="http://xml.apache.org/">http://xml.apache.org/</a><br>
+  </li>
+</ul>
+<br>
+<br>
+<hr width="100%" size="2">
+<h2><a name="Coding_Style"></a>Coding Style and Documentation</h2>
+<ul>
+  <li>Java:</li>
+  <ul>
+    <li>Coding style: <a href="http://java.sun.com/docs/codeconv/">http://java.sun.com/docs/codeconv/</a></li>
+    <li>Javadoc: <a href="http://java.sun.com/j2se/javadoc/">http://java.sun.com/j2se/javadoc/</a></li>
+  </ul>
+  <li>C/C++:</li>
+  <ul>
+    <li>"indent -i 8 -kr < ugly.cc > pretty.cc"</li>
+    <li>Doxygen: <a href="http://www.stack.nl/~dimitri/doxygen/index.html">http://www.stack.nl/~dimitri/doxygen/index.html</a></li>
+  </ul>
+</ul>
+
+
+
+<p>&nbsp;</p>
+
+
+
+<hr width="100%" size="2">
+
+
+
+<h2><a name="Test_Suite"></a>Test Suite</h2>
+
+
+
+<p>The test suite tests the components in system.&nbsp; All tests are in IRISNET/TestSuite/.&nbsp; 
+Within each directory, there is a script called testall.sh that runs the tests 
+the components.&nbsp; Also within each directory, there is a testcases.txt file 
+that describes each test in detail, the possible causes of failure for each 
+test, and possible remedies.&nbsp; Listed below are the tests and the two letter 
+code of each test in parentheses.</p>
+<ul>
+  <li>Network (NT)<ul>
+  <li>Pings various sites to see if network connectivity is good.</li>
+</ul>
+  <li>Sensing A</li>gent (SA)<ul>
+    <li>Builds the dummy2 application and tries to have the SA load it.&nbsp; 
+    Checks to see that both are running.</li>
+  </ul>
+  <li>Video Test (VD)<ul>
+  <li>Checks whether there are any compatible video devices on the system.&nbsp; 
+  Checks that we can get a live image from the video device.</li>
+</ul>
+  </li>
+  <li>Webcam (WC)<ul>
+  <li>Checks that the webcam utility is working correctly.&nbsp; Runs the webcam 
+  and checks that we can get a live image from it.<br>
+    </li>
+</ul>
+  </li>
+  <li>OA</li> (OA)<ul>
+    <li>Checks whether Java is present on the system and that we can start 
+    Xindice.<br>
+    </li>
+  </ul>
+  </ul>
+<p>&nbsp;</p>
+<hr>
+<h2><a name="Parking_Space_Finder"></a>Parking Space Finder Application</h2>
+<p>The parking space finder application is an example application to demonstrate 
+what can be done with IRISNET.&nbsp; It uses the video feed to detect which 
+parking spaces are full or empty, and reports them to the OA's.&nbsp; There is a 
+web based GUI that queries the OA's to find parking lots with free spaces.&nbsp; 
+The application files are in IRISNET/Applications/parking/</p>
+<ul>
+  <li>XML Schema for OA<ul>
+    <li>Files are located in IRISNET/Applications/parking/OA</li>
+    <li>The example schemas have hard coded IP addresses of our demo machines.</li>
+  </ul>
+  </li>
+  <li>Web based front end<ul>
+    <li>Files are located in IRISNET/Applications/parking/FrontEnd</li>
+    <li>The example html forms have hard coded IP addresses to our demo 
+    machines.</li>
+  </ul>
+  </li>
+  <li>Application code for SA<ul>
+    <li>Files are located in IRISNET/Applications/parking/SA</li>
+    <li>These files are general enough to be run on any SA</li>
+  </ul>
+  </li>
+</ul>
+<h3>Running the Parking Space Finder on SA</h3>
+<p>We now describe the process of setting up an application on the SA.&nbsp; The 
+Parking Space Finder files can be used as a template to create other 
+applications.</p>
+<ul>
+  <li>Compiling and Installing<ul>
+    <li>Run &quot;configure&quot; in IRISNET/Applications/.&nbsp; This will generate the 
+    proper make files for SA applications.</li>
+    <li>Run &quot;make&quot; in IRISNET/Applications/.&nbsp; This will compile the common 
+    libraries and the applications.</li>
+    <li>In IRISNET/Applications/parking/SA/, run installSA.sh.&nbsp; This copies 
+    the parking space application to the proper SA directories.</li>
+    <li>Similarly, run &quot;configure&quot; and &quot;make&quot; in IRISNET/SA/IrisWebcam/.&nbsp; 
+    This builds the application to load images into the shared memory.</li>
+    <li>Run &quot;configure&quot; and &quot;make&quot; in IRISNET/SA/IrisSA/ to build the SA</li>
+    <li>Run &quot;make&quot; in IRISNET/Util/SAControl/ and also IRISNET/Util/PortSink/.&nbsp; 
+    These are helper applications that facilitate running and debugging SA 
+    applications without an OA running.</li>
+  </ul>
+  </li>
+  <li>Running the application<ul>
+    <li>Open up a new terminal and run IRISNET/Util/PortSink/portsink 6789.&nbsp; 
+    This program listens on port 6789 and reads all data from that socket.&nbsp; 
+    It simulates an OA listening for SA data.</li>
+    <li>Do one of the following:<ul>
+      <li>cd into IRISNET/SA/IrisWebcam/.&nbsp; Run &quot;./loadImage images/calibrate.bmp 
+      75&quot;.&nbsp; This loads the calibration image into shared memory key 75.</li>
+      <li>As root, load the Quickcam driver.&nbsp; Not as root, run &quot;runwebcam.sh&quot; 
+      in IRISNET/SA/IrisWebcam/.&nbsp; This loads the live sensor feed into the 
+      shared memory.</li>
+    </ul>
+    </li>
+    <li>cd into IRISNET/SA/IrisSA/src/parking/.&nbsp; Run &quot;./calibrate &gt; 
+    pspots.conf&quot;.&nbsp; This program finds where the parking spots are from the 
+    calibration image and writes the reference images for empty parking spots to 
+    &quot;pspot?.jpg&quot;.</li>
+    <li>run &quot;./updateconf&quot;.&nbsp; This copies the reference images and 
+    calibration configuration to the proper SA directory.</li>
+    <li>cd into IRISNET/SA/IrisSA/src/.&nbsp; Run &quot;./runsa&quot;.&nbsp; This starts 
+    the SA, listening on port 3456 for commands from the OA.</li>
+    <li>In IRISNET/Util/SAControl/, run ` ./SAControl 127.0.0.1 3456 &quot;S 
+    127.0.0.1 6789 parking&quot; ', without the single quotes.&nbsp; This simulates 
+    the OA asking the SA to start the parking space finder application.&nbsp; 
+    You should see an image pop up displaying the free and empty parking spaces.</li>
+    <li>cd into IRISNET/SA/IrisWebcam/.&nbsp; Run &quot;./loadImages&quot;.&nbsp; This 
+    script loads a series of images into the shared memory, simulating cars 
+    coming into the parking lot.&nbsp; The parking space finder application 
+    should reflect the updated status of the parking lots.</li>
+    <li>Finally, in IRISNET/Util/SAControl/, run ` ./SAControl 127.0.0.1 3456 &quot;U 
+    127.0.0.1 6789 parking&quot; ' to terminate the parking space finder application.</li>
+  </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+</body>
+</html>
