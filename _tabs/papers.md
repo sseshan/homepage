@@ -1,6 +1,60 @@
 ---
-layout: categories
+layout: page
 title: Papers
 icon: fas fa-stream
 order: 1
 ---
+
+<div id="post-list">
+
+{% for paper in site.categories.Paper %}
+
+  <div class="post-preview">
+    <b>
+      <a href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+    </b>
+
+    <div class="post-content">
+      <p>
+        {% include no-linenos.html content=paper.content %}
+        {{ content | markdownify | strip_html | truncate: 200 | escape }}
+      </p>
+    </div>
+
+    {%- comment -%} <div class="post-meta text-muted d-flex">
+
+      <div class="mr-auto">
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        {% include timeago.html date=paper.date tooltip=true capitalize=true %}
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        {% include read-time.html content=paper.content %}
+
+        <!-- categories -->
+        {% if paper.categories.size > 0 %}
+          <i class="far fa-folder-open fa-fw"></i>
+          <span>
+          {% for category in paper.categories %}
+            {{ category }}
+            {%- unless forloop.last -%},{%- endunless -%}
+          {% endfor %}
+          </span>
+        {% endif %}
+      </div>
+
+      {% if paper.pin %}
+      <div class="pin">
+        <i class="fas fa-thumbtack fa-fw"></i>
+        <span>{{ site.data.locales[lang].paper.pin_prompt }}</span>
+      </div>
+      {% endif %}
+
+    </div> <!-- .post-meta --> {%- endcomment -%}
+
+  </div> <!-- .post-review -->
+  {%- comment -%} {% endfor %} {%- endcomment -%}
+
+{% endfor %}
+</div> <!-- #post-list -->
