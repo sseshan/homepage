@@ -1,6 +1,6 @@
 ---
 title: Projects
-icon: fas fa-info-circle
+icon: fas fa-tasks
 order: 4
 ---
 

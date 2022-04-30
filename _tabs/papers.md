@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Papers
-icon: fas fa-stream
+icon: fas fa-book
 order: 1
 ---
 

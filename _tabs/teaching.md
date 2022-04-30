@@ -1,7 +1,7 @@
 ---
 layout: archives
 title: Teaching
-icon: fas fa-archive
+icon: fas fa-university
 order: 3
 ---
 
