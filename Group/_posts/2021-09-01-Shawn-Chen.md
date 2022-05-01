@@ -6,7 +6,7 @@ homepage: https://shuoshuc.github.io/
 thesis_title: Video Streaming
 job: Google
 image:
-  path: /images/Students/Shawn.jpg
+  path: /assets/img/Students/Shawn.jpg
   width: 200
   height: 200
 ---

@@ -7,7 +7,7 @@ thesis_title: Collecting, Analyzing, and Using Fine-Grain Sensor Data with Mobil
 thesis_url: http://reports-archive.adm.cs.cmu.edu/anon/2016/abstracts/16-110.html
 job: Facebook
 image:
-  path: /images/Alumni/Richard.jpg
+  path: /assets/img/Alumni/Richard.jpg
   width: 200
   height: 200
 ---

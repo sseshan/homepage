@@ -5,7 +5,7 @@ categories: [Current, PhD]
 homepage: https://www.ccanel.com/
 thesis_title: Transport Receivers Ch
 image:
-  path: /images/Students/Chris.jpg
+  path: /assets/img/Students/Chris.jpg
   width: 200
   height: 200
 ---

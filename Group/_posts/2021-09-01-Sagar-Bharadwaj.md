@@ -5,7 +5,7 @@ categories: [Current, PhD]
 homepage: https://sagarb-97.github.io/
 thesis_title: Video Streaming
 image:
-  path: /images/Students/Sagar.jpg
+  path: /assets/img/Students/Sagar.jpg
   width: 200
   height: 200
 ---

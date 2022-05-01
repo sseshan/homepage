@@ -7,7 +7,7 @@ thesis_title: Securing Internet-of-Things via Fine-grained Network Detection and
 thesis_url: http://reports-archive.adm.cs.cmu.edu/anon/2020/abstracts/20-120.html
 job: Palo Alto Networks
 image:
-  path: /images/Alumni/Tianlong.jpg
+  path: /assets/img/Alumni/Tianlong.jpg
   width: 200
   height: 200
 ---

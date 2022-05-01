@@ -8,7 +8,7 @@ thesis_title: Eliminating Adverse Control Plane Interactions in Independent Netw
 thesis_url: http://reports-archive.adm.cs.cmu.edu/anon/2018/abstracts/18-106.html
 job: Nefali
 image:
-  path: /images/Alumni/Matt.jpg
+  path: /assets/img/Alumni/Matt.jpg
   width: 200
   height: 200
 ---

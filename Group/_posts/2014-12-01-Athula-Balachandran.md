@@ -7,7 +7,7 @@ thesis_title: Large Scale Data Analytics of User Behavior for Improving Content 
 thesis_url: http://reports-archive.adm.cs.cmu.edu/anon/2014/abstracts/14-142.html
 job: Google
 image:
-  path: /images/Alumni/Athula.jpg
+  path: /assets/img/Alumni/Athula.jpg
   width: 200
   height: 200
 ---

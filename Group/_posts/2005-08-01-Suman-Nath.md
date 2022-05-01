@@ -7,7 +7,7 @@ thesis_title: Exploiting Redundancy for Robust Sensing
 thesis_url: http://reports-archive.adm.cs.cmu.edu/anon/2005/abstracts/05-166.html
 job: Microsoft Research
 image:
-  path: /images/Alumni/Suman.jpg
+  path: assets/img/Alumni/Suman.jpg
   width: 200
   height: 200
 ---

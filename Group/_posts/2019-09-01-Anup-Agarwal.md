@@ -5,7 +5,7 @@ categories: [Current, PhD]
 homepage: https://www.cs.cmu.edu/~anupa/
 thesis_title: TBD
 image:
-  path: /images/Students/Anup.jpg
+  path: /assets/img/Students/Anup.jpg
   width: 200
   height: 200
 ---

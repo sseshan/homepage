@@ -7,7 +7,7 @@ thesis_title: Endpoint-Based Routing Strategies for Improving Internet Performan
 thesis_url: http://reports-archive.adm.cs.cmu.edu/anon/2005/abstracts/05-183.html
 job: Professor, UT Austin
 image:
-  path: /images/Alumni/Aditya.jpg
+  path: /assets/img/Alumni/Aditya.jpg
   width: 200
   height: 200
 ---
