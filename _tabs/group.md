@@ -7,6 +7,26 @@ order: 2
 
 <h1 style="text-align:center">Current Research group Members</h1>
 
+<h2 style="text-align:center">Postdocs</h2>
+
+<div class="row">
+{% for member in site.categories.group %}
+    {% if member.categories contains "Current" and member.categories contains "Postdoc"%}
+        <div class="col-md-3 col-sm-3 col-xs-6" style="text-align:center">
+            <a href="{{member.homepage}}" target="_blank">
+                {% if member.image.path %}
+                    <img src="{{ site.baseurl }}/{{ member.image.path }}" class="img-responsive img-hover" width="200" height="200"><br>
+                {% endif %}
+                <b>{{ member.title }}</b><br><br>
+            </a>
+
+        </div> <!-- col -->
+
+    {% endif %}
+{% endfor %}
+</div> <!-- row -->
+
+
 <h2 style="text-align:center">PhD</h2>
 
 <div class="row">
@@ -47,7 +67,7 @@ order: 2
 
             <a href="{{member.thesis_url}}" target="_blank">{{member.thesis_title}}</a><br> 
             {%- comment -%} ({{member.date | date: "%m/%y"}})<br> {%- endcomment -%}
-            {{member.job}}<br><br>
+            <b>{{member.job}}</b><br><br>
 
         </div> <!-- col -->
 
@@ -68,10 +88,10 @@ order: 2
                 {% endif %}
                 <b>{{ member.title }}</b><br>
             </a>
-
-            <a href="{{member.thesis_url}}" target="_blank">{{member.thesis_title}}</a><br> 
-            {%- comment -%} ({{member.date | date: "%m/%y"}})<br> {%- endcomment -%}
-            {{member.job}}<br><br>
+            {% if member.thesis_title %}
+                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
+            {% endif %}
+            <b>{{member.job}}</b><br><br>
 
         </div> <!-- col -->
 
@@ -83,7 +103,7 @@ order: 2
 
 <div class="row">
 {% for member in site.categories.group %}
-    {% if member.categories contains "Alumni" and member.categories contains "Masters"%}
+    {% if member.categories contains "Alumni" and member.categories contains "Undergrad"%}
         <div class="col-md-3 col-sm-3 col-xs-6" style="text-align:center">
             <a href="{{member.homepage}}" target="_blank">
                 {% if member.image.path %}
@@ -92,9 +112,10 @@ order: 2
                 <b>{{ member.title }}</b><br>
             </a>
 
-            <a href="{{member.thesis_url}}" target="_blank">{{member.thesis_title}}</a><br> 
-            {%- comment -%} ({{member.date | date: "%m/%y"}})<br> {%- endcomment -%}
-            {{member.job}}<br><br>
+            {% if member.thesis_title %}
+                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
+            {% endif %}
+            <b>{{member.job}}</b><br><br>
 
         </div> <!-- col -->
 
