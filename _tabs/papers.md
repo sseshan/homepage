@@ -26,6 +26,9 @@ order: 1
     </b>
     {{paper.venue}}<br>
     {{paper.authors}}<br>
+    {% if paper.award %} 
+        <b>{{ paper.award }}</b> <br>
+    {% endif %}
     <a href="{{ paper.url | relative_url }}">Bibtex</a><br>
 
   </div> <!-- .post-review -->

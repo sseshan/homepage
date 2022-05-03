@@ -5,6 +5,8 @@ title: "Improving TCP/IP Performance over Wireless Networks"
 venue: "ACM Conference on Mobile Computing and Networking (Mobicom)"
 authors: Hari Balakrishnan, Srinivasan Seshan, Elan Amir and Randy H. Katz
 webpage: https://doi.org/10.1145/215530.215544
+award: Best Student Paper Award
+categories: [Mobile, Wireless, TCP]
 ---
 
 URL: https://doi.org/10.1145/215530.215544
@@ -13,8 +15,8 @@ Bibtex Entry:
 
 @inproceedings{1995-Balakrishnan-mobicom,
     author = "Balakrishnan, Hari and Seshan, Srinivasan and Amir, Elan and Katz, Randy H.",
-    note = "Best Student Paper Award",
-    category = "BARWAN",
+    award = "Best Student Paper Award",
+    category = "[Mobile, Wireless, TCP]",
     title = "Improving TCP/IP Performance over Wireless Networks",
     year = "1995",
     isbn = "0897918142",
