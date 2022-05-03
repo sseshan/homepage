@@ -38,12 +38,12 @@
       </a>
     </li>
     <!-- papers -->
-    <li class="nav-item">
+    {%- comment -%} <li class="nav-item">
       <a href="{{ 'https://scholar.google.com/citations?user=0irVeiQAAAAJ&hl=en&oi=ao' | relative_url }}" class="nav-link">
         <i class="fa-fw fas fa-book ml-xl-3 mr-xl-3 unloaded"></i>
         <span>PAPERS</span>
       </a>
-    </li>
+    </li> {%- endcomment -%}
     <!-- the real tabs -->
     {% for tab in site.tabs %}
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">

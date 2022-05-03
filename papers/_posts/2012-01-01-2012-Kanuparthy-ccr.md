@@ -1,0 +1,34 @@
+---
+key: 2012-Kanuparthy-ccr
+date: 2012-01-01
+title: "Predicting Handoffs in 3G Networks"
+venue: SIGOPS Oper. Syst. Rev.
+authors: Umar Javed, Dongsu Han, Ramon Caceres, Jeffrey Pang, Srinivasan Seshan and Alexander Varshavsky
+webpage: https://doi.org/10.1145/2094091.2094109
+---
+
+URL: https://doi.org/10.1145/2094091.2094109
+
+Bibtex Entry:
+
+@article{2012-Kanuparthy-ccr,
+    author = "Javed, Umar and Han, Dongsu and Caceres, Ramon and Pang, Jeffrey and Seshan, Srinivasan and Varshavsky, Alexander",
+    title = "Predicting Handoffs in 3G Networks",
+    year = "2012",
+    issue_date = "December 2011",
+    publisher = "Association for Computing Machinery",
+    address = "New York, NY, USA",
+    volume = "45",
+    number = "3",
+    issn = "0163-5980",
+    url = "https://doi.org/10.1145/2094091.2094109",
+    doi = "10.1145/2094091.2094109",
+    abstract = "Consumers all over the world are increasingly using their smartphones on the go and expect consistent, high quality connectivity at all times. A key network primitive that enables continuous connectivity in cellular networks is handoff. Although handoffs are necessary for mobile devices to maintain connectivity, they can also cause short-term disruptions in application performance. Thus, applications could benefit from the ability to predict impending handoffs with reasonable accuracy, and modify their behavior to counter the performance degradation that accompanies handoffs. In this paper, we study whether attributes relating to the cellular network conditions measured at handsets can accurately predict handoffs. In particular, we develop a machine learning framework to predict handoffs in the near future. An evaluation on handoff traces from a large US cellular carrier shows that our approach can achieve 80\\% accuracy - 27\\% better than a naive predictor.",
+    journal = "SIGOPS Oper. Syst. Rev.",
+    month = "January",
+    pages = "65–70",
+    numpages = "6",
+    category = "Chaotic",
+    keywords = "prediction, mobility, UMTS, measurement, handoff, 3G, wireless"
+}
+
