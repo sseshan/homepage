@@ -1,5 +1,5 @@
 ---
-title: Shawn Shuoshou Chen
+title: Shawn Shuoshuo Chen
 date: 2021-09-01
 categories: [Current, PhD]
 homepage: https://shuoshuc.github.io/
