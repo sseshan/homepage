@@ -5,7 +5,7 @@ categories: [Alumni, PhD]
 homepage: https://daehyeok.kim/
 thesis_title: Towards Elastic and Resilient In-Network Computing
 thesis_url: http://reports-archive.adm.cs.cmu.edu/anon/2021/abstracts/21-143.html
-job: Microsoft
+job: Assistant Professor, UT Austin 
 image:
   path: /assets/img/Alumni/Daehyeok.jpg
   width: 200
