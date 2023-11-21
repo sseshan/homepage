@@ -53,14 +53,14 @@ for y in range(datetime.date.today().year, 1992, -1):
                 #if paper.type == 'phdthesis':
                 #if paper.type == 'mastersthesis':
 
-                if paper.type == 'article':
-                    print(title(paper) + "!" + paper.fields['journal'] + ", " + paper.fields['month'] + " " + paper.fields['year']+"!"+authors(paper))
-                    print()
+                # if paper.type == 'article':
+                #     print(title(paper) + "!" + paper.fields['journal'] + ", " + paper.fields['month'] + " " + paper.fields['year']+"!"+authors(paper))
+                #     print()
 
-                # if paper.type == 'inproceedings':
-                #     print(title(paper) + "!" + paper.fields['booktitle'] + ", " + paper.fields['month'] + " " + paper.fields['year']+"!"+authors(paper))
-                #     if "award" in paper.fields:
-                #         print(paper.fields['award'])
+                if paper.type == 'inproceedings':
+                    print(title(paper) + "!" + paper.fields['booktitle'] + ", " + paper.fields['month'] + " " + paper.fields['year']+"!"+authors(paper))
+                    if "award" in paper.fields:
+                        print(paper.fields['award'])
 
                 #if paper.type != 'inproceedings' and paper.type != 'article':
                     # print(title(paper) + "!" + paper.fields['month'] + " " + paper.fields['year']+"!"+authors(paper))
