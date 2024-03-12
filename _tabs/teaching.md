@@ -26,7 +26,7 @@ order: 3
 
 {% for course in courses %}
 
-    {% assign offerings = site.categories.[course] %}
+    {% assign offerings = site.categories[course] %}
     {% assign first_offering = offerings | first %} 
     {% assign semesters = "" | split: "" %}
 

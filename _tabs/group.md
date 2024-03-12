@@ -7,9 +7,9 @@ order: 2
 
 <h1 style="text-align:center">Current Research group Members</h1>
 
-<h2 style="text-align:center">Postdocs</h2>
+<!-- <h2 style="text-align:center">Postdocs</h2>
 
-<div class="row">
+<div class="row"> -->
 {% for member in site.categories.group %}
     {% if member.categories contains "Current" and member.categories contains "Postdoc"%}
         <div class="col-md-3 col-sm-3 col-xs-6" style="text-align:center">
@@ -24,7 +24,7 @@ order: 2
 
     {% endif %}
 {% endfor %}
-</div> <!-- row -->
+<!-- </div> row -->
 
 
 <h2 style="text-align:center">PhD</h2>
@@ -51,6 +51,25 @@ order: 2
 <hr width="25%" color="red">
 
 <h1 style="text-align:center">Alumni</h1>
+
+<h2 style="text-align:center">Postdocs</h2>
+
+<div class="row">
+{% for member in site.categories.group %}
+    {% if member.categories contains "Alumni" and member.categories contains "Postdoc"%}
+        <div class="col-md-3 col-sm-3 col-xs-6" style="text-align:center">
+            <a href="{{member.homepage}}" target="_blank">
+                {% if member.image.path %}
+                    <img src="{{ site.baseurl }}/{{ member.image.path }}" class="img-responsive img-hover" width="200" height="200"><br>
+                {% endif %}
+                <b>{{ member.title }}</b><br><br>
+            </a>
+
+        </div> <!-- col -->
+
+    {% endif %}
+{% endfor %}
+</div> <!-- row -->
 
 <h2 style="text-align:center">PhD</h2>
 
