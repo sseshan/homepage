@@ -47,6 +47,57 @@ order: 2
 </div> <!-- row -->
 
 
+<h2 style="text-align:center">Masters</h2>
+
+<div class="row">
+{% for member in site.categories.group %}
+    {% if member.categories contains "Current" and member.categories contains "Masters"%}
+        <div class="col-md-3 col-sm-3 col-xs-6" style="text-align:center">
+            <a href="{{member.homepage}}" target="_blank">
+                {% if member.image.path %}
+                    <img src="{{ site.baseurl }}/{{ member.image.path }}" class="img-responsive img-hover" width="200" height="200"><br>
+                {% endif %}
+                <b>{{ member.title }}</b><br>
+            </a>
+            {% if member.thesis_title %}
+                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
+            {% endif %}
+            <b>{{member.job}}</b><br><br>
+
+        </div> <!-- col -->
+
+    {% endif %}
+{% endfor %}
+</div> <!-- row -->
+
+<h2 style="text-align:center">Undergraduates</h2>
+
+<div class="row">
+{% for member in site.categories.group %}
+    {% if member.categories contains "Current" and member.categories contains "Undergrad"%}
+        <div class="col-md-3 col-sm-3 col-xs-6" style="text-align:center">
+            <a href="{{member.homepage}}" target="_blank">
+                {% if member.image.path %}
+                    <img src="{{ site.baseurl }}/{{ member.image.path }}" class="img-responsive img-hover" width="200" height="200"><br>
+                {% endif %}
+                <b>{{ member.title }}</b><br>
+            </a>
+
+            {% if member.thesis_title %}
+                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
+            {% endif %}
+            <b>{{member.job}}</b><br><br>
+
+        </div> <!-- col -->
+
+    {% endif %}
+{% endfor %}
+</div> <!-- row -->
+
+
+
+
+
 
 <hr width="25%" color="red">
 
