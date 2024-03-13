@@ -5,6 +5,8 @@ title: "Redesigning CDN-Broker Interactions for Improved Content Delivery"
 venue: "ACM Conference on Emerging Networking EXperiments and Technologies (CoNEXT)"
 authors: Matthew K. Mukerjee, Ilker Nadi Bozkurt, Devdeep Ray, Bruce M. Maggs, Srinivasan Seshan and Hui Zhang
 webpage: https://doi.org/10.1145/3143361.3143366
+award: Best Paper Award
+categories: Web/Video
 ---
 
 URL: https://doi.org/10.1145/3143361.3143366
@@ -27,7 +29,7 @@ Bibtex Entry:
     numpages = "13",
     keywords = "content brokers, interfaces, CDNs, content delivery",
     location = "Incheon, Republic of Korea",
-    note = "Best Paper Award",
+    award = "Best Paper Award",
     category = "Web/Video",
     series = "CoNEXT '17"
 }

@@ -5,6 +5,7 @@ title: "Handling Location Uncertainty in Event Driven Experimentation"
 venue: "ACM International Conference on Distributed Event-Based Systems"
 authors: Kartik Muralidharan, Srinivasan Seshan, Narayan Ramasubbu and Rajesh Krishna Balan
 webpage: https://doi.org/10.1145/2611286.2611303
+categories: LARC
 ---
 
 URL: https://doi.org/10.1145/2611286.2611303

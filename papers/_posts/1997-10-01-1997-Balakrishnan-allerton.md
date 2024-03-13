@@ -3,19 +3,20 @@ key: 1997-Balakrishnan-allerton
 date: 1997-10-01
 title: "TCP Improvements for Heterogeneous Networks: The Daedalus Approach"
 venue: "Allerton Conference on Communication, Control"
-authors: H. Balakrishnan, V. N. Padmanabhan, S. Seshan, M. Stemm, E. Amir and R. H. Katz
+authors: Hari Balakrishnan, Venkata N. Padmanabhan, Srinivasan Seshan, Mark Stemm, Elan Amir and Randy H. Katz
+categories: [Mobile, Wireless, TCP]
 ---
 
 Bibtex Entry:
 
 @inproceedings{1997-Balakrishnan-allerton,
-    author = "Balakrishnan, H. and Padmanabhan, V. N. and Seshan, S. and Stemm, M. and Amir, E. and Katz, R. H.",
+    author = "Balakrishnan, Hari and Padmanabhan, Venkata N. and Seshan, Srinivasan and Stemm, Mark and Amir, Elan and Katz, Randy H.",
     title = "TCP Improvements for Heterogeneous Networks: The Daedalus Approach",
     booktitle = "Allerton Conference on Communication, Control",
     month = "October",
     address = "Urbana, IL",
     year = "1997",
-    category = "BARWAN",
+    category = "[Mobile, Wireless, TCP]",
     summary = ""
 }
 

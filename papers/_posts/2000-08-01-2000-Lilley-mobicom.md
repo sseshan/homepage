@@ -5,6 +5,8 @@ title: "A Unified Header Compression Framework for Low-Bandwidth Links"
 venue: "ACM Conference on Mobile Computing and Networking (Mobicom)"
 authors: Jeremy Lilley, Jason Yang, Hari Balakrishnan and Srinivasan Seshan
 webpage: https://doi.org/10.1145/345910.345933
+award: Best Student Paper Award
+categories: [Mobile]
 ---
 
 URL: https://doi.org/10.1145/345910.345933
@@ -25,8 +27,8 @@ Bibtex Entry:
     pages = "131–142",
     numpages = "12",
     location = "Boston, Massachusetts, USA",
-    note = "Best Student Paper Award",
-    category = "Misc",
+    award = "Best Student Paper Award",
+    category = "[Mobile]",
     series = "MobiCom '00",
     month = "August"
 }

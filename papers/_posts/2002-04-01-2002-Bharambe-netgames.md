@@ -3,8 +3,9 @@ key: 2002-Bharambe-netgames
 date: 2002-04-01
 title: "Mercury: A Scalable Publish-Subscribe System for Internet Games"
 venue: "Workshop on Network and System Support for Games"
-authors: Ashwin R. Bharambe, Sanjay Rao and Srinivasan Seshan
+authors: Ashwin Bharambe, Sanjay Rao and Srinivasan Seshan
 webpage: https://doi.org/10.1145/566500.566501
+categories: [Overlay, P2P, Games]
 ---
 
 URL: https://doi.org/10.1145/566500.566501
@@ -12,7 +13,7 @@ URL: https://doi.org/10.1145/566500.566501
 Bibtex Entry:
 
 @inproceedings{2002-Bharambe-netgames,
-    author = "Bharambe, Ashwin R. and Rao, Sanjay and Seshan, Srinivasan",
+    author = "Bharambe, Ashwin and Rao, Sanjay and Seshan, Srinivasan",
     title = "Mercury: A Scalable Publish-Subscribe System for Internet Games",
     year = "2002",
     isbn = "1581134932",
@@ -26,7 +27,7 @@ Bibtex Entry:
     numpages = "7",
     location = "Braunschweig, Germany",
     month = "April",
-    category = "DistApps",
+    category = "[Overlay, P2P, Games]",
     series = "NetGames '02"
 }
 

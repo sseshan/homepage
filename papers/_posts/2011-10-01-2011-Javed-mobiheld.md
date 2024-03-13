@@ -5,6 +5,7 @@ title: "Predicting Handoffs in 3G Networks"
 venue: "ACM SOSP Workshop on Networking, Systems, and Applications on Mobile Handhelds"
 authors: Umar Javed, Dongsu Han, Ramon Caceres, Jeffrey Pang, Srinivasan Seshan and Alexander Varshavsky
 webpage: https://doi.org/10.1145/2043106.2043114
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1145/2043106.2043114

@@ -5,6 +5,7 @@ title: "Analyzing the Potential Benefits of CDN Augmentation Strategies for Inte
 venue: "ACM Internet Measurement Conference (IMC)"
 authors: Athula Balachandran, Vyas Sekar, Aditya Akella and Srinivasan Seshan
 webpage: https://doi.org/10.1145/2504730.2504743
+categories: Video
 ---
 
 URL: https://doi.org/10.1145/2504730.2504743

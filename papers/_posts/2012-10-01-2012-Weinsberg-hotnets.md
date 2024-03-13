@@ -5,6 +5,7 @@ title: "CARE: Content Aware Redundancy Elimination for Challenged Networks"
 venue: "Workshop on Hot Topics in Networking (HotNets)"
 authors: Udi Weinsberg, Qingxi Li, Nina Taft, Athula Balachandran, Vyas Sekar, Gianluca Iannaccone and Srinivasan Seshan
 webpage: https://doi.org/10.1145/2390231.2390253
+categories: CAN
 ---
 
 URL: https://doi.org/10.1145/2390231.2390253

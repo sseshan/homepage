@@ -3,19 +3,20 @@ key: 2002-Akella-sigcomm-lowpower
 date: 2002-01-01
 title: "Protocols for Low Power"
 venue: "Poster and Short Paper in ACM Sigcomm CCR"
-authors: A. Akella, R. Balan and S. Seshan
+authors: Aditya Akella, Rajesh Balan and Srinivasan Seshan
+categories: [Mobile]
 ---
 
 Bibtex Entry:
 
 @inproceedings{2002-Akella-sigcomm-lowpower,
-    author = "Akella, A. and Balan, R. and Seshan, S.",
+    author = "Akella, Aditya and Balan, Rajesh and Seshan, Srinivasan",
     title = "Protocols for Low Power",
     booktitle = "Poster and Short Paper in ACM Sigcomm CCR",
     address = "San Diego, CA",
     month = "January",
     year = "2002",
-    category = "Misc",
+    category = "[Mobile]",
     summary = ""
 }
 

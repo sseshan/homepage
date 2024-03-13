@@ -5,6 +5,7 @@ title: "Modeling Web Quality-of-Experience on Cellular Networks"
 venue: "ACM Conference on Mobile Computing and Networking (Mobicom)"
 authors: Athula Balachandran, Vaneet Aggarwal, Emir Halepovic, Jeffrey Pang, Srinivasan Seshan, Shobha Venkataraman and He Yan
 webpage: https://doi.org/10.1145/2639108.2639137
+categories: Video
 ---
 
 URL: https://doi.org/10.1145/2639108.2639137

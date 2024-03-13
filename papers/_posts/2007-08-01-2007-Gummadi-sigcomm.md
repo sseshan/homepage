@@ -2,9 +2,10 @@
 key: 2007-Gummadi-sigcomm
 date: 2007-08-01
 title: "Understanding and Mitigating the Impact of RF Interference on 802.11 Networks"
-venue: "Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication (ACM SIGCOMM)"
+venue: "ACM SIGCOMM"
 authors: Ramakrishna Gummadi, David Wetherall, Ben Greenstein and Srinivasan Seshan
 webpage: https://doi.org/10.1145/1282380.1282424
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1145/1282380.1282424
@@ -21,7 +22,7 @@ Bibtex Entry:
     url = "https://doi.org/10.1145/1282380.1282424",
     doi = "10.1145/1282380.1282424",
     abstract = "We study the impact on 802.11 networks of RF interference from devices such as Zigbee and cordless phones that increasingly crowd the 2.4GHz ISM band, and from devices such as wireless camera jammers and non-compliant 802.11 devices that seek to disrupt 802.11 operation. Our experiments show that commodity 802.11 equipment is surprisingly vulnerable to certain patterns of weak or narrow-band interference. This enables us to disrupt a link with an interfering signal whose power is 1000 times weaker than the victim's 802.11 signals, or to shut down a multiple AP, multiple channel managed network at a location with a single radio interferer. We identify several factors that lead to these vulnerabilities, ranging from MAC layer driver implementation strategies to PHY layer radio frequency implementation strategies. Our results further show that these factors are not overcome by simply changing 802.11 operational parameters (such as CCA threshold, rate and packet size) with the exception of frequency shifts. This leads us to explore rapid channel hopping as a strategy to withstand RF interference. We prototype a channel hopping design using PRISM NICs, and find that it can sustain throughput at levels of RF interference well above that needed to disrupt unmodified links, and at a reasonable cost in terms of switching overheads.",
-    booktitle = "Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication (ACM SIGCOMM)",
+    booktitle = "ACM SIGCOMM",
     pages = "385–396",
     numpages = "12",
     month = "August",

@@ -3,13 +3,14 @@ key: 2009-Sheth-pervasive
 date: 2009-05-01
 title: "Geo-fencing: Confining Wi-Fi Coverage to Physical Boundaries"
 venue: "International Conference on Pervasive Computing"
-authors: A. Sheth, S. Seshan and D. Wetherall
+authors: Anmol Sheth, Srinivasan Seshan and David Wetherall
+categories: Privacy
 ---
 
 Bibtex Entry:
 
 @inproceedings{2009-Sheth-pervasive,
-    author = "Sheth, A. and Seshan, S. and Wetherall, D.",
+    author = "Sheth, Anmol and Seshan, Srinivasan and Wetherall, David",
     title = "Geo-fencing: Confining Wi-Fi Coverage to Physical Boundaries",
     booktitle = "International Conference on Pervasive Computing",
     month = "May",

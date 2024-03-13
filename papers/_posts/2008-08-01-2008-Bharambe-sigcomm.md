@@ -2,9 +2,10 @@
 key: 2008-Bharambe-sigcomm
 date: 2008-08-01
 title: "Donnybrook: Enabling Large-Scale, High-Speed, Peer-to-Peer Games"
-venue: "Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication (ACM SIGCOMM)"
+venue: "ACM SIGCOMM"
 authors: Ashwin Bharambe, John R. Douceur, Jacob R. Lorch, Thomas Moscibroda, Jeffrey Pang, Srinivasan Seshan and Xinyu Zhuang
 webpage: https://doi.org/10.1145/1402958.1403002
+categories: DistApps
 ---
 
 URL: https://doi.org/10.1145/1402958.1403002
@@ -21,7 +22,7 @@ Bibtex Entry:
     url = "https://doi.org/10.1145/1402958.1403002",
     doi = "10.1145/1402958.1403002",
     abstract = "Without well-provisioned dedicated servers, modern fast-paced action games limit the number of players who can interact simultaneously to 16-32. This is because interacting players must frequently exchange state updates, and high player counts would exceed the bandwidth available to participating machines. In this paper, we describe Donnybrook, a system that enables epic-scale battles without dedicated server resources, even in a fast-paced game with tight latency bounds. It achieves this scalability through two novel components. First, it reduces bandwidth demand by estimating what players are paying attention to, thereby enabling it to reduce the frequency of sending less important state updates. Second, it overcomes resource and interest heterogeneity by disseminating updates via a multicast system designed for the special requirements of games: that they have multiple sources, are latency-sensitive, and have frequent group membership changes. We present user study results using a prototype implementation based on Quake III that show our approach provides a desirable user experience. We also present simulation results that demonstrate Donnybrook's efficacy in enabling battles of up to 900 players.",
-    booktitle = "Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication (ACM SIGCOMM)",
+    booktitle = "ACM SIGCOMM",
     pages = "389–400",
     numpages = "12",
     month = "August",

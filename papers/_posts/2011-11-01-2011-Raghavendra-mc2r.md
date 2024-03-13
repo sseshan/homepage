@@ -5,6 +5,7 @@ title: "IdleChat: Enabling High Bandwidth Real-Time Applications in Residential 
 venue: SIGMOBILE Mobile Computing Communications Review (MC2R)
 authors: Ramya Raghavendra, Michael Kaminsky, Konstantina Papagiannaki, Srinivasan Seshan and Elizabeth Belding
 webpage: https://doi.org/10.1145/2073290.2073293
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1145/2073290.2073293

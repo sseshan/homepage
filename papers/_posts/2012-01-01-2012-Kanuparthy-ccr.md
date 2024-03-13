@@ -1,34 +1,33 @@
 ---
 key: 2012-Kanuparthy-ccr
 date: 2012-01-01
-title: "Predicting Handoffs in 3G Networks"
-venue: SIGOPS Oper. Syst. Rev.
-authors: Umar Javed, Dongsu Han, Ramon Caceres, Jeffrey Pang, Srinivasan Seshan and Alexander Varshavsky
-webpage: https://doi.org/10.1145/2094091.2094109
+title: "Can User-Level Probing Detect and Diagnose Common Home-WLAN Pathologies"
+venue: {SIGCOMM Computer Communications Review (CCR)}
+authors: Partha Kanuparthy, Constantine Dovrolis, Konstantina Papagiannaki, Srinivasan Seshan and Peter Steenkiste
+webpage: https://doi.org/10.1145/2096149.2096151
 ---
 
-URL: https://doi.org/10.1145/2094091.2094109
+URL: https://doi.org/10.1145/2096149.2096151
 
 Bibtex Entry:
 
 @article{2012-Kanuparthy-ccr,
-    author = "Javed, Umar and Han, Dongsu and Caceres, Ramon and Pang, Jeffrey and Seshan, Srinivasan and Varshavsky, Alexander",
-    title = "Predicting Handoffs in 3G Networks",
+    author = "Kanuparthy, Partha and Dovrolis, Constantine and Papagiannaki, Konstantina and Seshan, Srinivasan and Steenkiste, Peter",
+    title = "Can User-Level Probing Detect and Diagnose Common Home-WLAN Pathologies",
     year = "2012",
-    issue_date = "December 2011",
+    issue_date = "January 2012",
     publisher = "Association for Computing Machinery",
     address = "New York, NY, USA",
-    volume = "45",
-    number = "3",
-    issn = "0163-5980",
-    url = "https://doi.org/10.1145/2094091.2094109",
-    doi = "10.1145/2094091.2094109",
-    abstract = "Consumers all over the world are increasingly using their smartphones on the go and expect consistent, high quality connectivity at all times. A key network primitive that enables continuous connectivity in cellular networks is handoff. Although handoffs are necessary for mobile devices to maintain connectivity, they can also cause short-term disruptions in application performance. Thus, applications could benefit from the ability to predict impending handoffs with reasonable accuracy, and modify their behavior to counter the performance degradation that accompanies handoffs. In this paper, we study whether attributes relating to the cellular network conditions measured at handsets can accurately predict handoffs. In particular, we develop a machine learning framework to predict handoffs in the near future. An evaluation on handoff traces from a large US cellular carrier shows that our approach can achieve 80\\% accuracy - 27\\% better than a naive predictor.",
-    journal = "SIGOPS Oper. Syst. Rev.",
+    volume = "42",
+    number = "1",
+    issn = "0146-4833",
+    url = "https://doi.org/10.1145/2096149.2096151",
+    doi = "10.1145/2096149.2096151",
+    abstract = "Common Wireless LAN (WLAN) pathologies include low signal-to-noise ratio, congestion, hidden terminals or interference from non-802.11 devices and phenomena. Prior work has focused on the detection and diagnosis of such problems using layer-2 information from 802.11 devices and special purpose access points and monitors, which may not be generally available. Here, we investigate a user-level approach: is it possible to detect and diagnose 802.11 pathologies with strictly user-level active probing, without any cooperation from, and without any visibility in, layer-2 devices? In this paper, we present preliminary but promising results indicating that such diagnostics are feasible.",
+    journal = "{SIGCOMM Computer Communications Review (CCR)}",
     month = "January",
-    pages = "65–70",
-    numpages = "6",
-    category = "Chaotic",
-    keywords = "prediction, mobility, UMTS, measurement, handoff, 3G, wireless"
+    pages = "7–15",
+    numpages = "9",
+    keywords = "probing, diagnosis, home networks, 802.11, performance"
 }
 

@@ -5,6 +5,7 @@ title: "Cache-and-Query for Wide Area Sensor Databases"
 venue: "ACM SIGMOD International Conference on Management of Data (SIGMOD)"
 authors: Amol Deshpande, Suman Nath, Phillip B. Gibbons and Srinivasan Seshan
 webpage: https://doi.org/10.1145/872757.872818
+categories: [Sensor Networks]
 ---
 
 URL: https://doi.org/10.1145/872757.872818
@@ -25,7 +26,7 @@ Bibtex Entry:
     pages = "503–514",
     numpages = "12",
     month = "June",
-    category = "IrisNet",
+    category = "[Sensor Networks]",
     location = "San Diego, California",
     series = "SIGMOD '03"
 }

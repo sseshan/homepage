@@ -5,6 +5,7 @@ title: "Understanding 802.11 Performance in Heterogeneous Environments"
 venue: "ACM SIGCOMM Workshop on Home Networks"
 authors: Kaushik Lakshminarayanan, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/2018567.2018577
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1145/2018567.2018577

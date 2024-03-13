@@ -5,6 +5,7 @@ title: "Using Your Smartphone to Detect and Map Heterogeneous Networks and Devic
 venue: "ACM Workshop on Hot Topics in Wireless"
 authors: George Nychis, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/2643614.2643624
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1145/2643614.2643624

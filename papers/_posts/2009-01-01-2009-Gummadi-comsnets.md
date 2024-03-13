@@ -5,6 +5,7 @@ title: "Metronome: Coordinating spectrum sharing in heterogeneous wireless netwo
 venue: "International Conference on COMmunication Systems and NETworkS (COMSNETS)"
 authors: Ramakrishna Gummadi, Hari Balakrishnan and Srinivasan Seshan
 webpage: https://doi.org/10.1109/COMSNETS.2009.4808853
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1109/COMSNETS.2009.4808853

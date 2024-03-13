@@ -5,6 +5,7 @@ title: "IrisNet: An Internet-Scale Architecture for Multimedia Sensors"
 venue: "ACM International Conference on Multimedia (ACM Multimedia)"
 authors: Jason Campbell, Phillip B. Gibbons, Suman Nath, Padmanabhan Pillai, Srinivasan Seshan and Rahul Sukthankar
 webpage: https://doi.org/10.1145/1101149.1101162
+categories: IrisNet
 ---
 
 URL: https://doi.org/10.1145/1101149.1101162

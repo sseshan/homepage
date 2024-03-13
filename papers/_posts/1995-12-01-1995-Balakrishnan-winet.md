@@ -5,6 +5,7 @@ title: "Improving reliable transport and handoff performance in cellular wireles
 venue: Wireless Networks
 authors: Hari Balakrishnan, Srinivasan Seshan and Randy H. Katz
 webpage: https://doi.org/10.1007/BF01985757
+categories: [Mobile, Wireless, TCP]
 ---
 
 URL: https://doi.org/10.1007/BF01985757
@@ -24,7 +25,7 @@ Bibtex Entry:
     title = "Improving reliable transport and handoff performance in cellular wireless networks",
     url = "https://doi.org/10.1007/BF01985757",
     note = "This is an extended and much-revised journal version of the Mobicom 1995 paper. Significant changes include a better description of the protocol and sections on how the Daedalus low-latency multicast-based handoff protocol and the snoop protocol are integrated together.",
-    category = "BARWAN",
+    category = "[Mobile, Wireless, TCP]",
     volume = "1",
     year = "1995",
     month = "December"

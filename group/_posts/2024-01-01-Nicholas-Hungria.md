@@ -1,7 +1,7 @@
 ---
 title: Nicholas Hungria
 date: 2024-01-01
-categories: [Current, Undergraduate]
+categories: [Current, Undergrad]
 homepage: https://www.linkedin.com/in/hungria/
 job: 
 image:

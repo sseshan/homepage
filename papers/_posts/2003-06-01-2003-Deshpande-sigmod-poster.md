@@ -5,6 +5,7 @@ title: "IrisNet: Internet-Scale Resource-Intensive Sensor Services"
 venue: "ACM SIGMOD International Conference on Management of Data (SIGMOD)"
 authors: Amol Deshpande, Suman Nath, Phillip B. Gibbons and Srinivasan Seshan
 webpage: https://doi.org/10.1145/872757.872856
+categories: [Sensor Networks]
 ---
 
 URL: https://doi.org/10.1145/872757.872856
@@ -26,6 +27,7 @@ Bibtex Entry:
     notes = "poster",
     location = "San Diego, California",
     series = "SIGMOD '03",
+    category = "[Sensor Networks]",
     month = "June"
 }
 

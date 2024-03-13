@@ -3,8 +3,9 @@ key: 2004-Yalagandula-worlds
 date: 2004-12-01
 title: "Beyond Availability: Towards a Deeper Understanding of Machine Failure Characteristics in Large Distributed Systems"
 venue: "Workshop on Real, Large Distributed Systems (WORLDS)"
-authors: P. Yalagandula, S. Nath, H. Yu, P. B. Gibbons and S. Seshan
+authors: Praveen Yalagandula, Suman Nath, H. Yu, Philip B. Gibbons and Srinivasan Seshan
 webpage: https://www.usenix.org/legacy/events/worlds04/tech/yalagandula.html
+categories: DistApps
 ---
 
 URL: https://www.usenix.org/legacy/events/worlds04/tech/yalagandula.html
@@ -12,7 +13,7 @@ URL: https://www.usenix.org/legacy/events/worlds04/tech/yalagandula.html
 Bibtex Entry:
 
 @inproceedings{2004-Yalagandula-worlds,
-    author = "Yalagandula, P. and Nath, S. and Yu, H. and Gibbons, P. B. and Seshan, S.",
+    author = "Yalagandula, Praveen and Nath, Suman and Yu, H. and Gibbons, Philip B. and Seshan, Srinivasan",
     title = "Beyond Availability: Towards a Deeper Understanding of Machine Failure Characteristics in Large Distributed Systems",
     booktitle = "Workshop on Real, Large Distributed Systems (WORLDS)",
     month = "December",

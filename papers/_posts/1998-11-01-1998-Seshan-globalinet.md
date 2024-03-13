@@ -4,6 +4,7 @@ date: 1998-11-01
 title: "Benefits of Transparent Content Negotiation in HTTP"
 venue: "IEEE Globcom 98 Internet Mini-Conference"
 authors: Srinivasan Seshan, Mark Stemm and Randy H Katz
+categories: [Measurement, Prediction, Adaptive Applications]
 ---
 
 Bibtex Entry:
@@ -15,7 +16,7 @@ Bibtex Entry:
     month = "November",
     geography = "Sydney, Australia",
     year = "1998",
-    category = "SPAND",
+    category = "[Measurement, Prediction, Adaptive Applications]",
     summary = ""
 }
 

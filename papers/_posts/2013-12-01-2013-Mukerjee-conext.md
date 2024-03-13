@@ -5,6 +5,7 @@ title: "Understanding Tradeoffs in Incremental Deployment of New Network Archite
 venue: "ACM Conference on Emerging Networking EXperiments and Technologies (CoNEXT)"
 authors: Matthew K. Mukerjee, Dongsu Han, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/2535372.2535396
+categories: XIA
 ---
 
 URL: https://doi.org/10.1145/2535372.2535396

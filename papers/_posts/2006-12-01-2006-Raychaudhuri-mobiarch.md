@@ -5,6 +5,7 @@ title: "CogNet: An Architectural Foundation for Experimental Cognitive Radio Net
 venue: "ACM/IEEE International Workshop on Mobility in the Evolving Internet Architecture (MobiArch)"
 authors: Dipankar Raychaudhuri, Narayan B. Mandayam, Joseph B. Evans, Benjamin J. Ewy, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/1186699.1186707
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1145/1186699.1186707

@@ -5,6 +5,7 @@ title: "A Quest for an Internet Video Quality-of-Experience Metric"
 venue: "Workshop on Hot Topics in Networking (HotNets)"
 authors: Athula Balachandran, Vyas Sekar, Aditya Akella, Srinivasan Seshan, Ion Stoica and Hui Zhang
 webpage: https://doi.org/10.1145/2390231.2390248
+categories: Video
 ---
 
 URL: https://doi.org/10.1145/2390231.2390248

@@ -5,6 +5,7 @@ title: "Self-Management in Chaotic Wireless Deployments"
 venue: "ACM Conference on Mobile Computing and Networking (Mobicom)"
 authors: Aditya Akella, Glenn Judd, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/1080829.1080849
+categories: Chaotic
 ---
 
 URL: https://doi.org/10.1145/1080829.1080849
