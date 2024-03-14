@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/zhenyu-zhou-913524b2/
 job: Google
 image:
-  path: assets/img/Students/Zhenyu.jpg
+  path: assets/img/Alumni/Zhenyu.jpg
   width: 200
   height: 200
 ---

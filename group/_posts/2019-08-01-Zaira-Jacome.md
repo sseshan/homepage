@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/zaira-jacome/
 job: 
 image:
-  path: assets/img/Students/Zaira.jpg
+  path: assets/img/Alumni/Zaira.jpg
   width: 200
   height: 200
 ---

@@ -113,9 +113,10 @@ order: 2
                 {% if member.image.path %}
                     <img src="{{ site.baseurl }}/{{ member.image.path }}" class="img-responsive img-hover" width="200" height="200"><br>
                 {% endif %}
-                <b>{{ member.title }}</b><br><br>
+                <b>{{ member.title }}</b><br>
             </a>
 
+            <b>{{member.job}}</b><br><br>
         </div> <!-- col -->
 
     {% endif %}

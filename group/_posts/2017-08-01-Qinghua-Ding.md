@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/devon-ding/
 job: PhD student @ UC,Berkeley
 image:
-  path: assets/img/Students/Qinghua.jpg
+  path: assets/img/Alumni/Qinghua.jpg
   width: 200
   height: 200
 ---

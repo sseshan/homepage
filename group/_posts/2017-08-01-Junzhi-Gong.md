@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/junzhi-gong-3a6a90187/
 job: PhD student @ Harvard
 image:
-  path: assets/img/Students/Junzhi.jpg
+  path: assets/img/Alumni/Junzhi.jpg
   width: 200
   height: 200
 ---

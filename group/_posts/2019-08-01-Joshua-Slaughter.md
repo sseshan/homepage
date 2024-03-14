@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/joshua-slaughter/
 job: PhD student @ Univ Edinburgh
 image:
-  path: assets/img/Students/Joshua.jpg
+  path: assets/img/Alumni/Joshua.jpg
   width: 200
   height: 200
 ---

@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/thibaudhottelier/
 job: Google
 image:
-  path: assets/img/Students/Thibaud.jpg
+  path: assets/img/Alumni/Thibaud.jpg
   width: 200
   height: 200
 ---

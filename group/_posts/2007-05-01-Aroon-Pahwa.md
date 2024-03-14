@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/aroon-p-78b67b4/
 job: Apple
 image:
-  path: assets/img/Students/Aroon.jpg
+  path: assets/img/Alumni/Aroon.jpg
   width: 200
   height: 200
 ---

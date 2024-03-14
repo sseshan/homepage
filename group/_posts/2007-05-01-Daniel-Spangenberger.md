@@ -5,7 +5,7 @@ categories: [Alumni, Undergrad]
 homepage: https://www.linkedin.com/in/dspangenberger/
 job: Explo
 image:
-  path: assets/img/Students/Daniel.jpg
+  path: assets/img/Alumni/Daniel.jpg
   width: 200
   height: 200
 ---
