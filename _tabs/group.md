@@ -59,9 +59,7 @@ order: 2
                 {% endif %}
                 <b>{{ member.title }}</b><br>
             </a>
-            {% if member.thesis_title %}
-                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
-            {% endif %}
+            
             <b>{{member.job}}</b><br><br>
 
         </div> <!-- col -->
@@ -83,9 +81,6 @@ order: 2
                 <b>{{ member.title }}</b><br>
             </a>
 
-            {% if member.thesis_title %}
-                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
-            {% endif %}
             <b>{{member.job}}</b><br><br>
 
         </div> <!-- col -->
@@ -99,7 +94,7 @@ order: 2
 
 
 
-<hr width="25%" color="red">
+<hr width="50%" color="red" style="border-top-width: thick;">
 
 <h1 style="text-align:center">Alumni</h1>
 
@@ -159,9 +154,7 @@ order: 2
                 {% endif %}
                 <b>{{ member.title }}</b><br>
             </a>
-            {% if member.thesis_title %}
-                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
-            {% endif %}
+
             <b>{{member.job}}</b><br><br>
 
         </div> <!-- col -->
@@ -183,9 +176,6 @@ order: 2
                 <b>{{ member.title }}</b><br>
             </a>
 
-            {% if member.thesis_title %}
-                {% if member.thesis_url %}<a href="{{member.thesis_url}}" target="_blank">{%endif%}{{member.thesis_title}}{% if member.thesis_url %}</a>{%endif%}<br> 
-            {% endif %}
             <b>{{member.job}}</b><br><br>
 
         </div> <!-- col -->

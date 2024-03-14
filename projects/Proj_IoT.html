@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Srinivasan Seshan's Home Page</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <script src="menu.js"></script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- /.row -->
+
+    <div class="row bg-success">
+      <br>
+      <div class="col-sm-7 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="img/projects/IoT.jpg" alt="">
+        <br>
+        &nbsp
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <p style="margin-left:5px;">
+          In this project, we explore new architectures to address the security challenges
+          created by the Internet of Things (IoT).
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>
+          Securing the Internet of Things
+        </h3>
+      </div>
+    </div>
+
+    <p>
+      The Internet-of-Things (IoT) has moved from hype to reality with 5 billion
+      IoT devices deployed in 2015, with expectations to grow significantly.
+      While IoT has the potential to transform our daily lives, significant
+      security risk accompanies its rise since vendors typically prioritize cost
+      and functionality over security.  Unfortunately, today's IT security
+      ecosystem is fundamentally ill equipped to handle IoT deployments. For
+      example, since IoT devices typically operate inside the network,
+      traditional perimeter defenses are ineffective. Many IoT devices do not
+      run a full-fledged OS since they are often power and resource constrained.
+      Moreover, the longevity of these devices means that vulnerable devices
+      (e.g., default passwords, unpatched bugs) remain deployed long after
+      vendors cease to produce or support them. Thus, traditional
+      endpoint-centric mechanisms (e.g., anti-virus, patches) are impractical.
+      Finally, given the rapid churn in the environment and device behaviors, we
+      need to reassess and update the system's security posture. Unfortunately,
+      today's security enforcement stems from a static mindset and cannot handle
+      this churn.
+      <br />
+    </p>
+
+    <p>
+      To address these issues, we believe that the network will play a
+      critical role in securing IoT deployments. We are developing a new IoT
+      security architecture called Precise Security for IoT (PSI). PSI
+      envisions customized µNFs (Micro Network-security Functions) acting as
+      security gateways for each IoT device. A logically centralized PSI
+      controller monitors the contexts of different devices and the
+      environment and generates a global view for cross-device policy
+      enforcement.  Based on this view, it instantiates and configures
+      individual µNFs and the necessary forwarding mechanisms to route packets
+      to these µNFs. This vision is general and can support a range of IoT
+      management models; e.g., directly connected devices vs. IoT hubs vs.
+      smartphone-controlled. To enable immediate deployment, we assume the
+      enterprise has a well-provisioned on premise compute cluster. In homes,
+      we envision an upgraded version of an IoT router (e.g., Google OnHub)
+      with compute capabilities. Each IoT device's first-hop edge router or
+      wireless access point (AP) is configured to tunnel packets to/from
+      device to the cluster. Note that tunneling is already supported in
+      commodity switches. This vision is synergistic with emerging network
+      management paradigms of software-defined networking (SDN) and network
+      functions virtualization (NFV). Specifically, PSI uses NFV concepts to
+      dynamically launch virtualized network functions (e.g., virtual IDS) on
+      demand and SDN capabilities to route the traffic to the desired µNFs.
+      <br />
+    </p>
+    <hr>
+    <h4>People</h4>
+    <ul>
+      <li>
+        Srinivasan Seshan (CMU)
+      </li>
+      <li>
+        Vyas Sekar (CMU)
+      </li>
+      <li>
+        Yuvraj Agarwal (CMU)
+      </li>
+      <li>
+        Tianlong Yu (CMU)
+      </li>
+    </ul>
+    <hr>
+    <h4>Publications</h4>
+
+    <p>
+      <b>&#8220;Handling a trillion (unfixable) flaws on a billion devices: Rethinking network security for the Internet-of-Things&#8221;</b><br />
+      by Tianlong Yu, Vyas Sekar, Srinivasan Seshan, Yuvraj Agarwal, and Chenren Xu.<br />
+      In <em>Proceedings of HotNets</em>, (Philadelphia, PA), Nov. 2015.<br />
+      <a href="papers/2015.Yu.hotnets-abstract.html">Details</a>.
+      Download:
+      <a href="papers/2015.Yu.hotnets.pdf">PDF</a>.
+    </p>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

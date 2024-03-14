@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Srinivasan Seshan's Home Page</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <script src="menu.js"></script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- /.row -->
+
+    <div class="row bg-success">
+      <br>
+      <div class="col-sm-7 col-xs-12">
+        <img class="img-responsive img-thumbnail" src="img/projects/CAN.png" alt="">
+        <br>
+        &nbsp
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <p style="margin-left:5px;">
+          <br>
+          Static content movement is the dominant contributor to the load on the
+          Internet core. Different users on the Internet often access the same
+          content. This results in the same data being transferred repeatedly over
+          the network, leading to inefficient resource usage.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>
+          Content-Aware Networking
+        </h3>
+      </div>
+    </div>
+
+    <p>Different users on the Internet often access the same content. This results in the same data being transferred repeatedly over the network, leading to inefficient resource usage. Many diverse systems have explored how to eliminate this redundant content from network links. These range from traditional Web caches and content distribution networks to recent work on “WAN optimizers” (systems that strip duplicate strings from network packets that have appeared in earlier packets). <br /></p>
+    <p>Despite their system-level differences, these existing mechanisms share the common goal of redundancy elimination, or removing duplicate data from the network. Our work examines a new network architecture where redundancy elimination (RE) is a network-supported primitive that is accessible in a uniform fashion to all applications, protocols and flows. Since it operates in an application-agnostic fashion, RE allows all applications to obtain the benefits of caching and enables caching of content between different applications. RE also extends caching benefits to below the application object granularity. In our initial work, we showed how Internet service providers could benefit from the RE because it allows them to manage their network resources better, especially under overload conditions such as flash crowds. Our work goes beyond the basic RE design to consider how Internet routing protocols should change if RE were widely deployed (e.g. rather than use shortest path routing, ISPs could construct routes that place potentially redundant traffic on a common set of links so as to maximize the effectiveness of redundancy elimination).<br /></p>
+    <p>In this project, we consider the broader implications of RE. For example, in a network where the infrastructure inherently removes redundant content, the design of applications and protocols could be impacted in a fundamental, and positive way. For instance, application layer multicast is vastly simplified in such a network because there is no longer a need to be careful about duplicate transmissions. Similarly, protocols may change to make the network more aware of the content of their packets; thus, simplifying the job of eliminating redundant content transmissions. We believe that this is a key step towards making the Internet architecture more content-aware and more efficient for the modern usage patterns of the Internet. <br /></p>
+
+    <hr>
+    <h4>People</h4>
+    <ul>
+      <li>
+        Srinivasan Seshan (CMU)
+      </li>
+      <li>
+        Aditya Akella (UWisc)
+      </li>
+      <li>
+        Vyas Sekar (CMU)
+      </li>
+      <li>
+        Ashok Anand (UWisc)
+      </li>
+      <li>
+        Archit Gupta (UWisc)
+      </li>
+      <li>
+        Athula Balachandran (CMU)
+      </li>
+      <li>
+        Arun Kumar (UWisc)</span>
+      </li>
+    </ul>
+
+    <hr>
+    <h4>Publications</h4>
+    <dl>
+
+      <p>
+        <b>&#8220;Packet Caches on Routers: The Implications of Universal Redundant Traffic Elimination&#8221;</b><br />
+        by A. Anand, A. Gupta, A. Akella, S. Seshan, and S. Shenker.<br />
+        In <em>Proceedings of the ACM SIGCOMM</em>, (Seattle, WA), Aug. 2008.<br />
+        <a href="papers/2008.Anand.sigcomm-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2008.Anand.sigcomm.pdf">PDF</a>,
+        <a href="papers/2008.Anand.sigcomm.ps">PostScript</a>,
+        <a href="papers/2008.Anand.sigcomm.pptx">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;RPT: Re-architecting loss protection for content-aware networks&#8221;</b><br />
+        by Dongsu Han, Ashok Anand, Aditya Akella, and Srinivasan Seshan.<br />
+        In <em>Proceedings of the USENIX NSDI</em>, (San Jose, CA), Apr. 2012.<br />
+        <a href="papers/2012.Han.nsdi.2-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2012.Han.nsdi.2.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;CARE: content aware redundancy elimination for challenged networks&#8221;</b><br />
+        by Udi Weinsberg, Qingxi Li, Nina Taft, Athula Balachandran, Vyas Sekar, Gianluca Iannaccone, and Srinivasan Seshan.<br />
+        In <em>Proceedings of HotNets</em>, (Redmond, WA), Oct. 2012.<br />
+        <a href="papers/2012.Weinsberg.hotnets-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2012.Weinsberg.hotnets.pdf">PDF</a>.
+      </p>
+
+    </dl>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

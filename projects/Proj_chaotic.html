@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Srinivasan Seshan's Home Page</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <script src="menu.js"></script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- /.row -->
+
+    <div class="row bg-success">
+      <br>
+      <div class="col-sm-7 col-xs-12 ">
+        <img class="img-responsive img-thumbnail" src="img/projects/Chaotic.png" alt="">
+        <br>
+        &nbsp
+      </div>
+      <div class="col-sm-5 col-xs-12">
+        <p style="margin-left:5px;">
+          <br>
+          Wireless technology is getting more common but remains poorly understood
+          by the typical user.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>
+          Chaotic Wireless Networks
+        </h3>
+      </div>
+    </div>
+
+    <p>
+      Before 2005, the bulk of the research done by the wireless networking
+      community focused on topics such as sensor networks, mesh networks and ad
+      hoc networks. However, the commercial use of wireless networking largely
+      used 802.11 technology with access point-based infrastructure. The
+      problems with such networks were largely ignored since most deployments of
+      802.11 networks had been in campus-like environments, where experts
+      carefully managed deployments. However, home users with little computer
+      expertise were rapidly deploying 802.11 and other wireless technologies.
+      The resulting dense deployment of wireless networks differed from past
+      dense campus-like deployments in two important ways:<br/>
+    </p>
+
+    <ol>
+      <li>
+        Unplanned. The spontaneous deployment of access points (APs) by independent people/organizations results in highly variable densities of wireless nodes and APs (e.g high density in an apartment building). <br /></p>
+      </li>
+      <li>
+        Unmanaged. Configuring and managing wireless networks is difficult for most people. In addition, nearby wireless networks managed by other users may interfere with each other. <br /></p>
+      </li>
+    </ol>
+    <p>Since our initial work, in 2005, characterizing the magnitude of this deployment trend and highlighting some of the resulting problems, there has been growing interest in solving problems that these “chaotic” deployments create. Our own work has focused on two key problems: 1) making wireless more secure and private, and 2) making wireless link performance better and more reliable. In each of these areas, wireless links, especially in chaotic deployments, fell far short of their wired counterparts.<br /></p>
+    <p><b>Security and Privacy</b>. In the context of network architecture, privacy has traditionally been taken to mean the confidentiality of messages. One of the key contributions of our work in this area has been in showing that the emerging usage patterns for ubiquitous computing devices are creating new privacy risks. We use such devices anywhere and everywhere and the fact that these devices communicate wirelessly raises the significant risk that these devices allow users to be tracked and profiled, even when users employ the best existing security practices. <br /></p>
+    <p>Our work in addressing this problem makes three core contributions. First, we quantified the magnitude of the privacy threats in using state-of-the-art wireless protocols, such as Wi-Fi and Bluetooth, in ubiquitous computing settings. Using practical machine learning techniques and analysis on the 802.11 traffic of hundreds of users, our work showed that an adversary can accurately track many users even if devices periodically change addresses and use state-of-the-art link layer encryption, such as WPA. Second, we developed a wireless link-layer protocol, called SlyFi, that defends against privacy attacks by hiding all explicit protocol fields that can link any two packets together. This is challenging because many identifying fields play key roles in all wireless protocols today, such as device discovery and message filtering. This work won the Best Paper Award at MobiSys 2008 and Intel is leading a push for its application and IEEE standardization. Third, we developed new ways to bootstrap trust between devices that have never communicated before. As part of this effort, we developed Wifi-Reports, a service that enables users to evaluate Wi-Fi hotspots before they use them. Wifi-Reports incorporates a novel privacy-preserving, reputation system for wireless networks that uses measurement reports contributed by users.  We believe that this collection of work has created significant new interest in the areas of location privacy and wireless security.<br /></p>
+    <p>Performance and Reliability. One of the greatest problems with the growing usage of wireless networks is the demand they place on the limited spectrum resources that these networks can use. Note that this is a important area of on-going research in my group and I expect that we will make significant progress on improving wireless performance and reliability in the coming years. Our current work in this area addresses uses two approaches: 1) improving the ability of wireless networks to coexist or identify problems when spectrum resources are scarce and 2) improving the efficiency of wireless spectrum use. <br /></p>
+    <p>The traditional method for understanding how the transmissions of two different networks interact has been to use interference modeling and Shannon information theory-based computations. Unfortunately, this approach fails to account for hardware implementation limitations and for the behavior of protocol layers above the physical layer. As a result, this approach only provides an upper limit for performance. Our work was the first to explore the real-world interaction between 802.11 and other wireless technologies. We showed that performance is often much worse than predicted and developed a model for predicting this performance. Based on these results, we have begun developing tools to help identify and diagnose poor wireless interactions. Our first step in this direction has been the development of novel techniques for monitoring a broad range of wireless network technologies simultaneously.<br /></p>
+    <p>We have also been actively exploring how next generation radio hardware might help alleviate performance and reliability issues by using spectrum more effectively. Two particular technologies that have shown much promise are directional RF transmission and software-defined radios (SDRs). The focus of our work has been to develop the upper layer protocols to make effective use of this technology. For example, while directional antennas can focus RF energy in different directions and, thus, reduce interference, the design of distributed control mechanisms to configure these antennas has been a challenging open issue. This problem has been especially difficult and important in indoor environments where complex RF propagation patterns are difficult to predict and the where dense usage patterns are common. Our work was the first to show how to use directional antennas effectively to improve spectrum reuse and performance in indoor settings. Similarly, SDRs provide the hardware ability for any transmitter’s behavior (e.g., frequency band and modulation) to adapt to current conditions and avoid coexistence problems. However, the software to implement these behaviors and adapt them is lacking. Our efforts have produced one of the first designs for effectively partitioning modern link-layer functionality between the SDR hardware and the software protocol stack. We have also been active in the design of the distributed framework for controlling and coordinating the behavior of SDRs on different nodes. <br /></p>
+
+    <hr>
+
+    <h4> People:<br /></h4>
+    <ul>
+      <li>
+        Srinivasan Seshan (CMU)<br /></p>
+      </li>
+      <li>
+        Peter Steenkiste (CMU)<br /></p>
+      </li>
+      <li>
+        David Wetherall (UW/Intel Seattle)<br /></p>
+      </li>
+      <li>
+        Tadayoshi Kohno (UW)<br /></p>
+      </li>
+      <li>
+        Ben Greenstein (Intel Seattle)<br /></p>
+      </li>
+      <li>
+        Anmol Sheth (Intel Seattle)<br /></p>
+      </li>
+      <li>
+        Dipankar Raychaudhuri (Rutgers)<br /></p>
+      </li>
+      <li>
+        Joseph Evans (KU)<br /></p>
+      </li>
+      <li>
+        David Andersen (CMU)<br /></p>
+      </li>
+      <li>
+        Dina Papagiannaki (Intel Pittsburgh)<br /></p>
+      </li>
+      <li>
+        Michael Kaminsky (Intel Pittsburgh)<br /></p>
+      </li>
+      <li>
+        Jeff Pang (CMU)<br /></p>
+      </li>
+      <li>
+        Xi Liu (CMU)<br /></p>
+      </li>
+      <li>
+        George Nychis (CMU)<br /></p>
+      </li>
+      <li>
+        Dongsu Han (CMU)<br /></p>
+      </li>
+      <li>
+        Damon McCoy (Univ. of Colorado)<br /></p>
+      </li>
+      <li>
+        Ramakrishna Gummadi (USC)<br /></p>
+      </li>
+    </ul>
+
+    <hr>
+    <h4>Publications</h4>
+
+    <dl>
+
+      <p>
+        <b>&#8220;Self Management in Chaotic Wireless Deployments&#8221;</b><br />
+        by A. Akella, G. Judd, S. Seshan, and P. Steenkiste.<br />
+        In <em>Proceedings of ACM MobiCom</em>, (Cologne, Germany), Sep. 2005.<br />
+        <a href="papers/2005.Akella.mobicom-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2005.Akella.mobicom.pdf">PDF</a>,
+        <a href="papers/2005.Akella.mobicom.ps">PostScript</a>,
+        <a href="papers/2005.Akella.mobicom.ppt">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;CogNet - An Architecture for Experimental Cognitive Radio Networks within the Future Internet&#8221;</b><br />
+        by D. Raychaudhuri, N. Mandayam, J. Evans, B. Ewy, S. Seshan, and P. Steenkiste.<br />
+        In <em>Proceedings of the First ACM/IEEE international workshop on Mobility in the evolving internet architecture (MobiArch '06)</em>, (San Francisco, CA), Dec. 2006.<br />
+        <a href="papers/2006.Raychaudhuri.mobiarch-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2006.Raychaudhuri.mobiarch.pdf">PDF</a>,
+        <a href="papers/2006.Raychaudhuri.mobiarch.ps">PostScript</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Understanding and Mitigating the Impact of RF Interference on 802.11 Networks&#8221;</b><br />
+        by R. Gummadi, D. Wetherall, B. Greenstein, and S. Seshan.<br />
+        In <em>Proceedings of the ACM SIGCOMM</em>, (Kyoto, Japan), Aug. 2007.<br />
+        <a href="papers/2007.Gummadi.sigcomm-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2007.Gummadi.sigcomm.pdf">PDF</a>,
+        <a href="papers/2007.Gummadi.sigcomm.ps">PostScript</a>,
+        <a href="papers/2007.Gummadi.sigcomm.ppt">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Interference-Aware Transmission Power Control for Dense Wireless Networks&#8221;</b><br />
+        by S. Seshan, X. Liu, and P. Steenkiste.<br />
+        In <em>Proceedings of the Annual Conference of ITA</em>, (College Park, MD), Sep. 2007.<br />
+        <a href="papers/2007.Seshan.ita-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2007.Seshan.ita.pdf">PDF</a>,
+        <a href="papers/2007.Seshan.ita.ps">PostScript</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Self Management in Chaotic Wireless Deployments&#8221;</b><br />
+        by A. Akella, G. Judd, S. Seshan, and P. Steenkiste.<br />
+        <em>Wireless Networks Journal (WINET), Special Issue on Selected Papers from MobiCom 2005</em>, vol. 13, no. 6, Dec. 2007, pp. 737-755.<br />
+        <a href="papers/2007.Akella.winet-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2007.Akella.winet.pdf">PDF</a>,
+        <a href="papers/2007.Akella.winet.ps">PostScript</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Link-alike: using wireless to share network resources in a neighborhood&#8221;</b><br />
+        by S. Jakubczak, D. G. Andersen, M. Kaminsky, K. Papagiannaki, and S. Seshan.<br />
+        <em>SIGMOBILE Mobile Computing Communications Review (MC2R)</em>, vol. 12, no. 4, Oct. 2008, pp. 1-14, ACM.<br />
+        <a href="papers/2008.Jakubczak.mc2r-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2008.Jakubczak.mc2r.pdf">PDF</a>,
+        <a href="papers/2008.Jakubczak.mc2r.ps">PostScript</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Mark-and-Sweep: Getting the Inside Scoop on Neighborhood Networks&#8221;</b><br />
+        by D. Han, A. Agarwala, D. G. Andersen, M. Kaminsky, K. Papagiannaki, and S. Seshan.<br />
+        In <em>Proceedings of IMC</em>, (Vouliagmeni, Greece), Oct. 2008.<br />
+        <a href="papers/2008.Han.imc-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2008.Han.imc.pdf">PDF</a>,
+        <a href="papers/2008.Han.imc.ps">PostScript</a>,
+        <a href="papers/2008.Han.imc.pptx">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Metronome: Coordinating spectrum sharing in heterogeneous wireless networks&#8221;</b><br />
+        by Ramakrishna Gummadi, Hari Balakrishnan, and Srinivasan Seshan.<br />
+        In <em>Proceedings of COMSNETS</em>, (Bangalore, India), Jan. 2009.<br />
+        <a href="papers/2009.Gummadi.comsnets-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2009.Gummadi.comsnets.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Access Point Localization using Local Signal Strength Gradient&#8221;</b><br />
+        by D. Han, and D.&nbsp;G.&nbsp;Andersen, M. Kaminsky, K. Papagiannaki, and S. Seshan.<br />
+        In <em>Proceedings of the PAM conference</em>, (Seoul, Korea), Apr. 2009.<br />
+        <a href="papers/2009.Han.pam-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2009.Han.pam.pdf">PDF</a>,
+        <a href="papers/2009.Han.pam.ps">PostScript</a>,
+        <a href="papers/2009.Han.pam.pptx">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Enabling MAC Protocol Implementations on Software-defined Radios&#8221;</b><br />
+        by G. Nychis, T. Hottelier, Z. Yang, S. Seshan, and P. Steenkiste.<br />
+        In <em>Proceedings of the USENIX NSDI</em>, (Boston, MA), Apr. 2009.<br />
+        <a href="papers/2009.Nychis.nsdi-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2009.Nychis.nsdi.pdf">PDF</a>,
+        <a href="papers/2009.Nychis.nsdi.ps">PostScript</a>,
+        <a href="papers/2009.Nychis.nsdi.pptx">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;DIRC: Increasing Indoor Wireless Capacity Using Directional Antennas&#8221;</b><br />
+        by X. Liu, A. Sheth, M. Kaminsky, K. Papagiannaki, S. Seshan, and P. Steenkiste.<br />
+        In <em>Proceedings of the ACM SIGCOMM</em>, (Barcelona, Spain), Aug. 2009.<br />
+        <a href="papers/2009.Liu.sigcomm-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2009.Liu.sigcomm.pdf">PDF</a>,
+        <a href="papers/2009.Liu.sigcomm.ps">PostScript</a>,
+        <a href="papers/2009.Liu.sigcomm.ppt">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;RFDump: An Architecture for Monitoring the Wireless Ether&#8221;</b><br />
+        by K. Lakshminarayanan, S. Sapra, S. Seshan, and P. Steenkiste.<br />
+        In <em>Proceedings of ACM CoNEXT</em>, (Rome, Italy), Dec. 2009.<br />
+        <a href="papers/2009.Lakshminarayanan.conext-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2009.Lakshminarayanan.conext.pdf">PDF</a>,
+        <a href="papers/2009.Lakshminarayanan.conext.ps">PostScript</a>,
+        <a href="papers/2009.Lakshminarayanan.conext.pptx">PowerPoint</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Pushing the envelope of indoor wireless spatial reuse using directional access points and clients&#8221;</b><br />
+        by Xi Liu, Anmol Sheth, Michael Kaminsky, Konstantina Papagiannaki, Srinivasan Seshan, and Peter Steenkiste.<br />
+        In <em>Proceedings of ACM MobiCom</em>, (Chicago, IL), Sep. 2010.<br />
+        <a href="papers/2010.Liu.mobicom-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2010.Liu.mobicom.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;The hare and the tortoise: taming wireless losses by exploiting wired reliability&#8221;</b><br />
+        by Anirudh Badam, Michael Kaminsky, Dongsu Han, Konstantina Papagiannaki, David G Andersen, and Srinivasan Seshan.<br />
+        In <em>Proceedings of ACM MobiHoc</em>, (Paris, France), May 2011.<br />
+        <a href="papers/2011.Badam.mobihoc-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2011.Badam.mobihoc.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Clearing the RF smog: making 802.11n robust to cross-technology interference&#8221;</b><br />
+        by Shyamnath Gollakota, Fadel Adib, Dina Katabi, and Srinivasan Seshan.<br />
+        In <em>Proceedings of the ACM SIGCOMM</em>, (Toronto, Canada), Aug. 2011.<br />
+        <a href="papers/2011.Gollakota.sigcomm-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2011.Gollakota.sigcomm.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Understanding 802.11 performance in heterogeneous environments&#8221;</b><br />
+        by Kaushik Lakshminarayanan, Srinivasan Seshan, and Peter Steenkiste.<br />
+        In <em>Proceedings of the 2nd ACM SIGCOMM workshop on Home networks</em>, (Toronto, Canada), Aug. 2011.<br />
+        <a href="papers/2011.Lakshminarayanan.homenets-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2011.Lakshminarayanan.homenets.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;<a href="papers/http://doi.acm.org/10.1145/2030718.2030731">When Are Directional Antennas Useful in Indoor Environments</a>&#8221;</b><br />
+        by Xi Liu, Srinivasan Seshan, and Peter Steenkiste.<br />
+        In <em>Proceedings of the 6th ACM International Workshop on Wireless Network Testbeds, Experimental Evaluation and Characterization</em>, Sep. 2011, pp. 59-66.<br />
+        <a href="papers/2011.Liu.wintech-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2011.Liu.wintech.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Predicting handoffs in 3g networks&#8221;</b><br />
+        by Umar Javed, Dongsu Han, Ramon Caceres, Jeffrey Pang, Srinivasan Seshan, and Alexander Varshavsky.<br />
+        In <em>Proceedings of ACM MobiHeld</em>, (Cascais, Portugal), Oct. 2011.<br />
+        <a href="papers/2011.Javed.mobiheld-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2011.Javed.mobiheld.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;IdleChat: enabling high bandwidth real-time applications in residential broadband networks&#8221;</b><br />
+        by Ramya Raghavendra, Michael Kaminsky, Konstantina Papagiannaki, Srinivasan Seshan, and Elizabeth Belding.<br />
+        <em>ACM SIGMOBILE Mobile Computing and Communications Review</em>, vol. 15, no. 3, Nov. 2011, pp. 10-22.<br />
+        <a href="papers/2011.Raghavendra.mc2r-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2011.Raghavendra.mc2r.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Can user-level probing detect and diagnose common home-WLAN pathologies&#8221;</b><br />
+        by Partha Kanuparthy, Constantine Dovrolis, Konstantina Papagiannaki, Srinivasan Seshan, and Peter Steenkiste.<br />
+        <em>ACM SIGCOMM Computer Communication Review</em>, vol. 42, no. 1, Jan. 2012, pp. 7-15.<br />
+        <a href="papers/2012.Kanuparthy.ccr-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2012.Kanuparthy.ccr.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Centralized, measurement-based, spectrum management for environments with heterogeneous wireless networks&#8221;</b><br />
+        by George Nychis, Charalampos Tsourakakis, Srinivasan Seshan, and Peter Steenkiste.<br />
+        In <em>Dynamic Spectrum Access Networks (DYSPAN), 2014 IEEE International Symposium on</em>, (Mclean, VA), Apr. 2014, pp. 303-314, IEEE.<br />
+        <a href="papers/2014.Nychis.Dyspan-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2014.Nychis.Dyspan.pdf">PDF</a>.
+      </p>
+
+      <p>
+        <b>&#8220;Using your smartphone to detect and map heterogeneous networks and devices in the home&#8221;</b><br />
+        by George Nychis, Srinivasan Seshan, and Peter Steenkiste.<br />
+        In <em>Proceedings of the 1st ACM workshop on Hot topics in wireless</em>, (Maui, HI), Sep. 2014, pp. 31-36, ACM.<br />
+        <a href="papers/2014.Nychis.hotwireless-abstract.html">Details</a>.
+        Download:
+        <a href="papers/2014.Nychis.hotwireless.pdf">PDF</a>.
+      </p>
+
+    </dl>
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
