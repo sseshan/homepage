@@ -3107,3 +3107,21 @@ keywords = {computer networks, internet fairness, internet measurement, internet
 location = {Sydney, NSW, Australia},
 series = {ACM SIGCOMM '24}
 }
+
+@inproceedings{2024-Canel-IMC,
+author = {Canel, Christopher and Madhavan, Balasubramanian and Sundaresan, Srikanth and Spring, Neil and Kannan, Prashanth and Zhang, Ying and Lin, Kevin and Seshan, Srinivasan},
+title = {Understanding Incast Bursts in Modern Datacenters},
+year = {2024},
+isbn = {9798400705922},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3646547.3689028},
+doi = {10.1145/3646547.3689028},
+abstract = {In datacenters, common incast traffic patterns are challenging because they violate the basic premise of bandwidth stability on which TCP congestion control convergence is built, overwhelming shallow switch buffers and causing packet losses and high latency. To understand why these challenges remain despite decades of research on datacenter congestion control, we conduct an in-depth investigation into high-degree incasts both in production workloads at Meta and in simulation. In addition to characterizing the bursty nature of these incasts and their impacts on the network, our findings demonstrate the shortcomings of widely deployed window-based congestion control techniques used to address incast problems. Furthermore, we find that hosts associated with a specific application or service exhibit similar and predictable incast traffic properties across hours, pointing the way toward solutions that predict and prevent incast bursts, instead of reacting to them.},
+booktitle = {Proceedings of the 2024 ACM on Internet Measurement Conference},
+pages = {674–680},
+numpages = {7},
+keywords = {congestion control, datacenter networks, incast, microbursts, tcp},
+location = {Madrid, Spain},
+series = {IMC '24}
+}
