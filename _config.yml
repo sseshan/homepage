@@ -24,7 +24,7 @@ timezone: America/New_York
 
 title: Srinivasan Seshan                          # the main title
 
-tagline: Joseph F. Traub Professor<br>Department Head<br><b>Computer Science</b>   # it will display as the sub-title
+tagline: Joseph F. Traub Professor<br><b>Computer Science</b>   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Srinivasan Seshan's Home Page.

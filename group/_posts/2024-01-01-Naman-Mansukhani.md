@@ -1,9 +1,9 @@
 ---
 title: Naman Mansukhani
 date: 2024-01-01
-categories: [Current, Masters]
+categories: [Alumni, Masters]
 homepage: https://www.linkedin.com/in/namanman/
-job: 
+job: The Voleon Group
 image:
   path: assets/img/Students/Naman.jpg
   width: 200

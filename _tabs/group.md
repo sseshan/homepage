@@ -7,9 +7,10 @@ order: 2
 
 <h1 style="text-align:center">Current Research group Members</h1>
 
-<!-- <h2 style="text-align:center">Postdocs</h2>
 
-<div class="row"> -->
+<h2 style="text-align:center">Postdocs</h2>
+
+<div class="row">
 {% for member in site.categories.group %}
     {% if member.categories contains "Current" and member.categories contains "Postdoc"%}
         <div class="col-md-3 col-sm-3 col-xs-6" style="text-align:center">
@@ -24,7 +25,7 @@ order: 2
 
     {% endif %}
 {% endfor %}
-<!-- </div> row -->
+</div> <!-- row -->
 
 
 <h2 style="text-align:center">PhD</h2>

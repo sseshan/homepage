@@ -1,9 +1,9 @@
 ---
 title: Varun Maddipati
 date: 2024-01-01
-categories: [Current, Masters]
+categories: [Alumni, Masters]
 homepage: https://www.linkedin.com/in/varunmaddipati/
-job: 
+job: Optiver
 image:
   path: assets/img/Students/Varun.jpg
   width: 200

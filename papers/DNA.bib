@@ -3128,3 +3128,76 @@ location = {Madrid, Spain},
 series = {IMC '24},
 month = nov
 }
+
+@inproceedings{2025-Bharadwaj-hotos,
+author = {Bharadwaj, Sagar and Rowe, Anthony and Seshan, Srinivasan},
+title = {Uniting the World by Dividing it: Federated Maps to Enable Spatial Applications},
+year = {2025},
+isbn = {9798400714757},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3713082.3730371},
+doi = {10.1145/3713082.3730371},
+abstract = {The emergence of the Spatial Web -- the Web where content is tied to real-world locations has the potential to improve and enable many applications such as augmented reality, navigation, robotics, and more. The Spatial Web is missing a key ingredient that is impeding its growth -- a spatial naming system to resolve real-world locations to names. Today's spatial naming systems are digital maps such as Google and Apple maps. These maps and the location-based services provided on top of these maps are primarily controlled by a few large corporations and mostly cover outdoor public spaces. Emerging classes of applications, such as persistent world-scale augmented reality, require detailed maps of both outdoor and indoor spaces. Existing centralized mapping infrastructures are proving insufficient for such applications because of the scale of cartography efforts required and the privacy of indoor map data.In this paper, we present a case for a federated spatial naming system, or in other words, a federated mapping infrastructure. This enables disparate parties to manage and serve their own maps of physical regions and unlocks scalability of map management, isolation and privacy of maps. Map-related services such as address-to-location mapping, location-based search, and routing needs re-architecting to work on federated maps. We discuss some essential services and practicalities of enabling these services.},
+booktitle = {Proceedings of the 2025 Workshop on Hot Topics in Operating Systems},
+pages = {74–79},
+numpages = {6},
+location = {Banff, AB, Canada},
+series = {HotOS '25},
+month = jun
+}
+
+
+@inproceedings{2025-Sherry-TPRC,
+author = {Sherry, Justine and Ware, Ranysha and Suizo, Isabel C. and Seshan, Srinivasan and Philip, Adithya Abraham},
+title = {Congestion Safety Audits for Internet Services},
+year = {2025},
+publisher = {SSRN},
+url = {http://dx.doi.org/10.2139/ssrn.5383658},
+doi = {10.2139/ssrn.5383658},
+booktitle = {Proceedings of TPRC 2025: The 53rd Research Conference on Communication, Information & Internet Policy},
+month = aug
+}
+
+
+@inproceedings{2025-Bharadwaj-ismar,
+author = {Bharadwaj, Sagar and Williams, Harrison and Wang, Luke and Liang, Michael and Jin, Tao and Seshan, Srinivasan and Rowe, Anthony},
+title = {OpenFLAME: Federated Visual Positioning System to Enable Large-Scale AR},
+year = {2025},
+url = {https://sagar-bharadwaj-ks.github.io/files/papers/openflame-ismar.pdf},
+abstract = {World-scale augmented reality (AR) applications need a ubiquitous 6DoF localization backend to anchor content to the real world
+consistently across devices. Large organizations such as Google
+and Niantic are 3D scanning outdoor public spaces in order to
+build their own Visual Positioning Systems (VPS). These centralized VPS solutions fail to meet the needs of many future AR
+applications—they do not cover private indoor spaces because of
+privacy concerns, regulations, and the labor bottleneck of updating and maintaining 3D scans. In this paper, we present OpenFLAME, a federated VPS backend that allows independent organizations to 3D scan and maintain a separate VPS service for their
+own spaces. This enables access control of indoor 3D scans, distributed maintenance of the VPS backend, and encourages larger
+coverage. Sharding of VPS services introduces several unique
+challenges—coherency of localization results across spaces, quality control of VPS services, selection of the right VPS service for a
+location, and many others. We introduce the concept of federated
+image-based localization and provide reference solutions for managing and merging data across maps without sharing private data.},
+booktitle = {IEEE International Symposium on Mixed and Augmented Reality (ISMAR)},
+keywords = {mixed reality, augmented reality, virtual reality},
+location = {Daejeon, South Korea},
+month = oct
+}
+
+@article{2025-Kaneria-conext,
+author = {Kaneria, Darshil D. and Ware, Ranysha and Seshan, Srinivasan},
+title = {VCCAnalyzer: Identifying Congestion Control Algorithms used by Video Streaming Services},
+year = {2025},
+issue_date = {December 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {3},
+number = {CoNEXT4},
+url = {https://doi.org/10.1145/3768979},
+doi = {10.1145/3768979},
+abstract = {CCAnalyzer is a recent proposal for a congestion control algorithm (CCA) classifier to measure the deployment of congestion control algorithms in the Internet today by creating a controlled bottleneck and monitoring bottleneck queue occupancy between third-party websites and a controlled receiver. However, this work was designed for web traffic, whereas most internet traffic today is video streaming. Video streaming applications pose additional challenges in CCA classification due to the interactions between adaptive bitrate (ABR) algorithms and CCAs. In this work, we present VCCAnalyzer, which addresses these challenges by carefully selecting bottleneck bandwidth rates to minimize ABR interference and applying interpolation and smoothing techniques to create classifiable queue occupancy traces. VCCAnalyzer achieves 100\% accuracy, higher accuracy than other approaches in video classification. To demonstrate the efficacy of VCCAnalyzer, we conduct a measurement study examining the CCA deployment across major streaming platforms, including Disney+, Hulu, Twitch, and other commonly visited websites. Our findings reveal some variations in congestion control strategies between these services. Our results demonstrate that VCCAnalyzer can effectively classify CCAs in video environments.},
+journal = {Proc. ACM Netw.},
+month = nov,
+articleno = {32s},
+numpages = {11},
+keywords = {congestion control, network analysis, video streaming},
+note = {Also appeared in ACM CoNEXT 2025}
+}
