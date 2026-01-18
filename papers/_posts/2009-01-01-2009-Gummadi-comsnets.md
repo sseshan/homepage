@@ -6,12 +6,10 @@ venue: "International Conference on COMmunication Systems and NETworkS (COMSNETS
 authors: Ramakrishna Gummadi, Hari Balakrishnan and Srinivasan Seshan
 webpage: https://doi.org/10.1109/COMSNETS.2009.4808853
 categories: Chaotic
+localpdf: papers/2009-Gummadi-comsnets/2009-Gummadi-comsnets.pdf
 ---
 
-URL: https://doi.org/10.1109/COMSNETS.2009.4808853
-
-Bibtex Entry:
-
+<pre>
 @InProceedings{2009-Gummadi-comsnets,
     author = "Gummadi, Ramakrishna and Balakrishnan, Hari and Seshan, Srinivasan",
     title = "Metronome: Coordinating spectrum sharing in heterogeneous wireless networks",
@@ -24,3 +22,4 @@ Bibtex Entry:
     url = "https://doi.org/10.1109/COMSNETS.2009.4808853"
 }
 
+</pre>

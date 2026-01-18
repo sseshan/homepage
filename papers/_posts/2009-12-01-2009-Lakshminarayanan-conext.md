@@ -6,12 +6,11 @@ venue: "ACM Conference on Emerging Networking EXperiments and Technologies (CoNE
 authors: Kaushik Lakshminarayanan, Samir Sapra, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/1658939.1658968
 categories: Chaotic
+localpdf: papers/2009-Lakshminarayanan-conext/2009-Lakshminarayanan-conext.pdf
+localppt: papers/2009-Lakshminarayanan-conext/2009-Lakshminarayanan-conext.pptx
 ---
 
-URL: https://doi.org/10.1145/1658939.1658968
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2009-Lakshminarayanan-conext,
     author = "Lakshminarayanan, Kaushik and Sapra, Samir and Seshan, Srinivasan and Steenkiste, Peter",
     title = "RFDump: An Architecture for Monitoring the Wireless Ether",
@@ -32,3 +31,4 @@ Bibtex Entry:
     series = "CoNEXT '09"
 }
 
+</pre>

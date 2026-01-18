@@ -6,12 +6,10 @@ venue: "ACM Internet Measurement Conference (IMC)"
 authors: Athula Balachandran, Vyas Sekar, Aditya Akella and Srinivasan Seshan
 webpage: https://doi.org/10.1145/2504730.2504743
 categories: Video
+localpdf: papers/2013-Balachandran-imc/2013-Balachandran-imc.pdf
 ---
 
-URL: https://doi.org/10.1145/2504730.2504743
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2013-Balachandran-imc,
     author = "Balachandran, Athula and Sekar, Vyas and Akella, Aditya and Seshan, Srinivasan",
     title = "Analyzing the Potential Benefits of CDN Augmentation Strategies for Internet Video Workloads",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "IMC '13"
 }
 
+</pre>

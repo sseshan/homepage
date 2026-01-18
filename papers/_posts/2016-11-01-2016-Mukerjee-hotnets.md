@@ -5,12 +5,10 @@ title: "The Impact of Brokers on the Future of Content Delivery"
 venue: "Workshop on Hot Topics in Networking (HotNets)"
 authors: Matthew K. Mukerjee, Ilker Nadi Bozkurt, Bruce Maggs, Srinivasan Seshan and Hui Zhang
 webpage: https://doi.org/10.1145/3005745.3005749
+localpdf: papers/2016-Mukerjee-hotnets/2016-Mukerjee-hotnets.pdf
 ---
 
-URL: https://doi.org/10.1145/3005745.3005749
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2016-Mukerjee-hotnets,
     author = "Mukerjee, Matthew K. and Bozkurt, Ilker Nadi and Maggs, Bruce and Seshan, Srinivasan and Zhang, Hui",
     title = "The Impact of Brokers on the Future of Content Delivery",
@@ -29,3 +27,4 @@ Bibtex Entry:
     series = "HotNets '16"
 }
 
+</pre>

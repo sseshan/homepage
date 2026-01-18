@@ -6,12 +6,11 @@ venue: "ACM SIGMETRICS"
 authors: Erich M. Nahum, Marcel-Catalin Rosu, Srinivasan Seshan and Jussara Almeida
 webpage: https://doi.org/10.1145/378420.378790
 categories: [Measurement]
+localpdf: papers/2001-Nahum-sigmetrics/2001-Nahum-sigmetrics.pdf
+localppt: papers/2001-Nahum-sigmetrics/2001-Nahum-sigmetrics.ppt
 ---
 
-URL: https://doi.org/10.1145/378420.378790
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2001-Nahum-sigmetrics,
     author = "Nahum, Erich M. and Rosu, Marcel-Catalin and Seshan, Srinivasan and Almeida, Jussara",
     title = "The Effects of Wide-Area Conditions on WWW Server Performance",
@@ -31,3 +30,4 @@ Bibtex Entry:
     series = "SIGMETRICS '01"
 }
 
+</pre>

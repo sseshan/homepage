@@ -6,12 +6,10 @@ venue: "ACM/IEEE International Workshop on Mobility in the Evolving Internet Arc
 authors: Dipankar Raychaudhuri, Narayan B. Mandayam, Joseph B. Evans, Benjamin J. Ewy, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/1186699.1186707
 categories: Chaotic
+localpdf: papers/2006-Raychaudhuri-mobiarch/2006-Raychaudhuri-mobiarch.pdf
 ---
 
-URL: https://doi.org/10.1145/1186699.1186707
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2006-Raychaudhuri-mobiarch,
     author = "Raychaudhuri, Dipankar and Mandayam, Narayan B. and Evans, Joseph B. and Ewy, Benjamin J. and Seshan, Srinivasan and Steenkiste, Peter",
     title = "CogNet: An Architectural Foundation for Experimental Cognitive Radio Networks within the Future Internet",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "MobiArch '06"
 }
 
+</pre>

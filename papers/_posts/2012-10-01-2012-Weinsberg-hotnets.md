@@ -6,12 +6,10 @@ venue: "Workshop on Hot Topics in Networking (HotNets)"
 authors: Udi Weinsberg, Qingxi Li, Nina Taft, Athula Balachandran, Vyas Sekar, Gianluca Iannaccone and Srinivasan Seshan
 webpage: https://doi.org/10.1145/2390231.2390253
 categories: CAN
+localpdf: papers/2012-Weinsberg-hotnets/2012-Weinsberg-hotnets.pdf
 ---
 
-URL: https://doi.org/10.1145/2390231.2390253
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2012-Weinsberg-hotnets,
     author = "Weinsberg, Udi and Li, Qingxi and Taft, Nina and Balachandran, Athula and Sekar, Vyas and Iannaccone, Gianluca and Seshan, Srinivasan",
     title = "CARE: Content Aware Redundancy Elimination for Challenged Networks",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "HotNets-XI"
 }
 
+</pre>

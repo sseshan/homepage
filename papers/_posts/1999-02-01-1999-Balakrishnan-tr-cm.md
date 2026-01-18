@@ -6,8 +6,7 @@ authors: Hari Balakrishnan, Hariharan S. Rahul and Srinivasan Seshan
 categories: [Congestion Control, TCP]
 ---
 
-Bibtex Entry:
-
+<pre>
 @techreport{1999-Balakrishnan-tr-cm,
     author = "Balakrishnan, Hari and Rahul, Hariharan S. and Seshan, Srinivasan",
     title = "An Integrated Congestion Management Architecture for Internet Hosts",
@@ -19,3 +18,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

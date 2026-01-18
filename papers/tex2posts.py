@@ -1,4 +1,6 @@
 from pybtex.database.input import bibtex
+import os
+
 parser = bibtex.Parser()
 bib_data = parser.parse_file('DNA.bib')
 
@@ -52,13 +54,23 @@ for entry in bib_data.entries:
     f.write("authors: " + authors(paper) + "\n")
     if "url" in paper.fields:
         f.write("webpage: " + paper.fields['url'] + "\n")
+    if "video" in paper.fields:
+        f.write("video: " + paper.fields['video'] + "\n")
+    if "github" in paper.fields:
+        f.write("github: " + paper.fields['github'] + "\n")
     if "award" in paper.fields:
         f.write("award: " + paper.fields['award'] + "\n")
     if "category" in paper.fields:
         f.write("categories: " + paper.fields['category'] + "\n")
+    if os.path.isfile("papers/"+paper.key+"/" + paper.key + ".pdf"):
+        f.write("localpdf: papers/" + paper.key + "/" + paper.key + ".pdf" + "\n")
+    if os.path.isfile("papers/"+paper.key+"/" + paper.key + "-slides.pdf"):
+        f.write("localslides: papers/" + paper.key + "/" + paper.key + "-slides.pdf" + "\n")
+    if os.path.isfile("papers/"+paper.key+"/" + paper.key + ".ppt"):
+        f.write("localppt: papers/" + paper.key + "/" + paper.key + ".ppt\n")
+    if os.path.isfile("papers/"+paper.key+"/" + paper.key + ".pptx"):
+        f.write("localppt: papers/" + paper.key + "/" + paper.key + ".pptx\n")
     f.write("---" + "\n")
     f.write("\n")
-    if "url" in paper.fields:
-        f.write("URL: " + paper.fields['url'] + "\n\n")
-    f.write("Bibtex Entry:\n\n" + paper.to_string("bibtex") + "\n")
+    f.write("<pre>\n" + paper.to_string("bibtex") + "\n</pre>\n")
     f.close()

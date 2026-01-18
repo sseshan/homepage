@@ -7,12 +7,11 @@ authors: Jeremy Lilley, Jason Yang, Hari Balakrishnan and Srinivasan Seshan
 webpage: https://doi.org/10.1145/345910.345933
 award: Best Student Paper Award
 categories: [Mobile]
+localpdf: papers/2000-Lilley-mobicom/2000-Lilley-mobicom.pdf
+localppt: papers/2000-Lilley-mobicom/2000-Lilley-mobicom.ppt
 ---
 
-URL: https://doi.org/10.1145/345910.345933
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2000-Lilley-mobicom,
     author = "Lilley, Jeremy and Yang, Jason and Balakrishnan, Hari and Seshan, Srinivasan",
     title = "A Unified Header Compression Framework for Low-Bandwidth Links",
@@ -33,3 +32,4 @@ Bibtex Entry:
     month = "August"
 }
 
+</pre>

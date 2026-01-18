@@ -5,12 +5,10 @@ title: "On Application-Level Approaches to Avoiding TCP Throughput Collapse in C
 venue: "Workshop on Petascale Data Storage: Held in Conjunction with Supercomputing '07"
 authors: Elie Krevat, Vijay Vasudevan, Amar Phanishayee, David G. Andersen, Gregory R. Ganger, Garth A. Gibson and Srinivasan Seshan
 webpage: https://doi.org/10.1145/1374596.1374598
+localpdf: papers/2007-Krevat-petascale/2007-Krevat-petascale.pdf
 ---
 
-URL: https://doi.org/10.1145/1374596.1374598
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2007-Krevat-petascale,
     author = "Krevat, Elie and Vasudevan, Vijay and Phanishayee, Amar and Andersen, David G. and Ganger, Gregory R. and Gibson, Garth A. and Seshan, Srinivasan",
     title = "On Application-Level Approaches to Avoiding TCP Throughput Collapse in Cluster-Based Storage Systems",
@@ -30,3 +28,4 @@ Bibtex Entry:
     series = "PDSW '07"
 }
 
+</pre>

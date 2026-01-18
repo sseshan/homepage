@@ -7,8 +7,7 @@ authors: Aditya Akella, Rajesh Balan and Srinivasan Seshan
 categories: [Mobile]
 ---
 
-Bibtex Entry:
-
+<pre>
 @inproceedings{2002-Akella-sigcomm-lowpower,
     author = "Akella, Aditya and Balan, Rajesh and Seshan, Srinivasan",
     title = "Protocols for Low Power",
@@ -20,3 +19,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

@@ -5,10 +5,10 @@ title: "Toward Representative Internet Measurements"
 venue: "New York Metro Area Networking Workshop"
 authors: Aditya Akella, Srinivasan Seshan and Anees Shaikh
 categories: [Measurement]
+localpdf: papers/2003-Akella-nymetro/2003-Akella-nymetro.pdf
 ---
 
-Bibtex Entry:
-
+<pre>
 @inproceedings{2003-Akella-nymetro,
     author = "Akella, Aditya and Seshan, Srinivasan and Shaikh, Anees",
     title = "Toward Representative Internet Measurements",
@@ -20,3 +20,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

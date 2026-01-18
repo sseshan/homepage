@@ -6,12 +6,11 @@ venue: "IEEE INFOCOM"
 authors: Mukesh Agrawal, Amit Manjhi, Nikhil Bansal and Srinivasan Seshan
 webpage: https://doi.org/10.1109/INFCOM.2003.1208675
 categories: [Multipath, Content Aware Networks]
+localpdf: papers/2003-Agrawal-infocom/2003-Agrawal-infocom.pdf
+localppt: papers/2003-Agrawal-infocom/2003-Agrawal-infocom.ppt
 ---
 
-URL: https://doi.org/10.1109/INFCOM.2003.1208675
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2003-Agrawal-infocom,
     author = "Agrawal, Mukesh and Manjhi, Amit and Bansal, Nikhil and Seshan, Srinivasan",
     title = "Improving Web Performance in Broadcast-Unicast Networks",
@@ -28,3 +27,4 @@ Bibtex Entry:
     url = "https://doi.org/10.1109/INFCOM.2003.1208675"
 }
 
+</pre>

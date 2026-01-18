@@ -5,12 +5,10 @@ title: "Redesigning Data Centers for Renewable Energy"
 venue: "Workshop on Hot Topics in Networking (HotNets)"
 authors: Anup Agarwal, Jinghan Sun, Shadi Noghabi, Srinivasan Iyengar, Anirudh Badam, Ranveer Chandra, Srinivasan Seshan and Shivkumar Kalyanaraman
 webpage: https://doi.org/10.1145/3484266.3487394
+localpdf: papers/2021-Agarwal-hotnets/2021-Agarwal-hotnets.pdf
 ---
 
-URL: https://doi.org/10.1145/3484266.3487394
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2021-Agarwal-hotnets,
     author = "Agarwal, Anup and Sun, Jinghan and Noghabi, Shadi and Iyengar, Srinivasan and Badam, Anirudh and Chandra, Ranveer and Seshan, Srinivasan and Kalyanaraman, Shivkumar",
     title = "Redesigning Data Centers for Renewable Energy",
@@ -29,3 +27,4 @@ Bibtex Entry:
     series = "HotNets '21"
 }
 
+</pre>

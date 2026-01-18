@@ -6,12 +6,10 @@ venue: "ACM Workshop on Hot Topics in Wireless"
 authors: George Nychis, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/2643614.2643624
 categories: Chaotic
+localpdf: papers/2014-Nychis-hotwireless/2014-Nychis-hotwireless.pdf
 ---
 
-URL: https://doi.org/10.1145/2643614.2643624
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2014-Nychis-hotwireless,
     author = "Nychis, George and Seshan, Srinivasan and Steenkiste, Peter",
     title = "Using Your Smartphone to Detect and Map Heterogeneous Networks and Devices in the Home",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "HotWireless '14"
 }
 
+</pre>

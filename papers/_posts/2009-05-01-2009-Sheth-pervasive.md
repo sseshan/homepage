@@ -5,10 +5,10 @@ title: "Geo-fencing: Confining Wi-Fi Coverage to Physical Boundaries"
 venue: "International Conference on Pervasive Computing"
 authors: Anmol Sheth, Srinivasan Seshan and David Wetherall
 categories: Privacy
+localpdf: papers/2009-Sheth-pervasive/2009-Sheth-pervasive.pdf
 ---
 
-Bibtex Entry:
-
+<pre>
 @inproceedings{2009-Sheth-pervasive,
     author = "Sheth, Anmol and Seshan, Srinivasan and Wetherall, David",
     title = "Geo-fencing: Confining Wi-Fi Coverage to Physical Boundaries",
@@ -25,3 +25,4 @@ Bibtex Entry:
     summary = "How to use multiple directional antennas to limit packet reception to a specified region"
 }
 
+</pre>

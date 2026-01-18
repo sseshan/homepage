@@ -5,12 +5,10 @@ title: "Understanding Internet Video Viewing Behavior in the Wild"
 venue: "ACM SIGMETRICS"
 authors: Athula Balachandran, Vyas Sekar, Aditya Akella and Srinivasan Seshan
 webpage: https://doi.org/10.1145/2465529.2465534
+localpdf: papers/2013-Balachandran-sigmetrics/2013-Balachandran-sigmetrics.pdf
 ---
 
-URL: https://doi.org/10.1145/2465529.2465534
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2013-Balachandran-sigmetrics,
     author = "Balachandran, Athula and Sekar, Vyas and Akella, Aditya and Seshan, Srinivasan",
     title = "Understanding Internet Video Viewing Behavior in the Wild",
@@ -31,3 +29,4 @@ Bibtex Entry:
     series = "SIGMETRICS '13"
 }
 
+</pre>

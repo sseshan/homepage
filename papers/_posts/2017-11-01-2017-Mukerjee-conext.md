@@ -7,12 +7,10 @@ authors: Matthew K. Mukerjee, Ilker Nadi Bozkurt, Devdeep Ray, Bruce M. Maggs, S
 webpage: https://doi.org/10.1145/3143361.3143366
 award: Best Paper Award
 categories: Web/Video
+localpdf: papers/2017-Mukerjee-conext/2017-Mukerjee-conext.pdf
 ---
 
-URL: https://doi.org/10.1145/3143361.3143366
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2017-Mukerjee-conext,
     author = "Mukerjee, Matthew K. and Bozkurt, Ilker Nadi and Ray, Devdeep and Maggs, Bruce M. and Seshan, Srinivasan and Zhang, Hui",
     title = "Redesigning CDN-Broker Interactions for Improved Content Delivery",
@@ -34,3 +32,4 @@ Bibtex Entry:
     series = "CoNEXT '17"
 }
 
+</pre>

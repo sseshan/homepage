@@ -6,12 +6,10 @@ venue: "ACM SIGCOMM Workshop on Home Networks"
 authors: Kaushik Lakshminarayanan, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/2018567.2018577
 categories: Chaotic
+localpdf: papers/2011-Lakshminarayanan-homenets/2011-Lakshminarayanan-homenets.pdf
 ---
 
-URL: https://doi.org/10.1145/2018567.2018577
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2011-Lakshminarayanan-homenets,
     author = "Lakshminarayanan, Kaushik and Seshan, Srinivasan and Steenkiste, Peter",
     title = "Understanding 802.11 Performance in Heterogeneous Environments",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "HomeNets '11"
 }
 
+</pre>

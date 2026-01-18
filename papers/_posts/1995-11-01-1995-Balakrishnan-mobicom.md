@@ -7,12 +7,10 @@ authors: Hari Balakrishnan, Srinivasan Seshan, Elan Amir and Randy H. Katz
 webpage: https://doi.org/10.1145/215530.215544
 award: Best Student Paper Award
 categories: [Mobile, Wireless, TCP]
+localpdf: papers/1995-Balakrishnan-mobicom/1995-Balakrishnan-mobicom.pdf
 ---
 
-URL: https://doi.org/10.1145/215530.215544
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{1995-Balakrishnan-mobicom,
     author = "Balakrishnan, Hari and Seshan, Srinivasan and Amir, Elan and Katz, Randy H.",
     award = "Best Student Paper Award",
@@ -33,3 +31,4 @@ Bibtex Entry:
     month = "November"
 }
 
+</pre>

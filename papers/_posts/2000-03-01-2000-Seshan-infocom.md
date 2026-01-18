@@ -6,12 +6,10 @@ venue: "IEEE INFOCOM"
 authors: Mark Stemm, Randy H. Katz and Srinivasan Seshan
 webpage: https://doi.org/10.1109/INFCOM.2000.832198
 categories: [Measurement, Prediction, Adaptive Applications]
+localpdf: papers/2000-Seshan-infocom/2000-Seshan-infocom.pdf
 ---
 
-URL: https://doi.org/10.1109/INFCOM.2000.832198
-
-Bibtex Entry:
-
+<pre>
 @INPROCEEDINGS{2000-Seshan-infocom,
     author = "Stemm, Mark and Katz, Randy H. and Seshan, Srinivasan",
     booktitle = "IEEE INFOCOM",
@@ -27,3 +25,4 @@ Bibtex Entry:
     month = "March"
 }
 
+</pre>

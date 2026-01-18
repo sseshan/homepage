@@ -2,16 +2,15 @@
 key: 2003-Akella-sigcomm
 date: 2003-08-01
 title: "A Measurement-Based Analysis of Multihoming"
-venue: "ACM SIGCOMM"
+venue: "ACM SIGCOMM Conference"
 authors: Aditya Akella, Bruce Maggs, Srinivasan Seshan, Anees Shaikh and Ramesh Sitaraman
 webpage: https://doi.org/10.1145/863955.863995
 categories: [Measurement, Multipath]
+localpdf: papers/2003-Akella-sigcomm/2003-Akella-sigcomm.pdf
+localppt: papers/2003-Akella-sigcomm/2003-Akella-sigcomm.ppt
 ---
 
-URL: https://doi.org/10.1145/863955.863995
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2003-Akella-sigcomm,
     author = "Akella, Aditya and Maggs, Bruce and Seshan, Srinivasan and Shaikh, Anees and Sitaraman, Ramesh",
     title = "A Measurement-Based Analysis of Multihoming",
@@ -22,7 +21,7 @@ Bibtex Entry:
     url = "https://doi.org/10.1145/863955.863995",
     doi = "10.1145/863955.863995",
     abstract = {Multihoming has traditionally been employed by stub networks to enhance the reliability of their network connectivity. With the advent of commercial "intelligent route control" products, stubs now leverage multihoming to improve performance. Although multihoming is widely used for reliability and, increasingly for performance, not much is known about the tangible benefits that multihoming can offer, or how these benefits can be fully exploited. In this paper, we aim to quantify the extent to which multihomed networks can leverage performance and reliability benefits from connections to multiple providers. We use data collected from servers belonging to the Akamai content distribution network to evaluate performance benefits from two distinct perspectives of multihoming: high-volume content-providers which transmit large volumes of data to many distributed clients, and enterprises which primarily receive data from the network. In both cases, we find that multihoming can improve performance significantly and that not choosing the right set of providers could result in a performance penalty as high as 40\\%. We also find evidence of diminishing returns in performance when more than four providers are considered for multihoming. In addition, using a large collection of measurements, we provide an analysis of the reliability benefits of multihoming. Finally, we provide guidelines on how multihomed networks can choose ISPs, and discuss practical strategies of using multiple upstream connections to achieve optimal performance benefits.},
-    booktitle = "ACM SIGCOMM",
+    booktitle = "ACM SIGCOMM Conference",
     pages = "353–364",
     numpages = "12",
     month = "August",
@@ -31,3 +30,4 @@ Bibtex Entry:
     series = "SIGCOMM '03"
 }
 
+</pre>

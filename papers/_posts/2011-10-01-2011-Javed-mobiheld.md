@@ -6,12 +6,10 @@ venue: "ACM SOSP Workshop on Networking, Systems, and Applications on Mobile Han
 authors: Umar Javed, Dongsu Han, Ramon Caceres, Jeffrey Pang, Srinivasan Seshan and Alexander Varshavsky
 webpage: https://doi.org/10.1145/2043106.2043114
 categories: Chaotic
+localpdf: papers/2011-Javed-mobiheld/2011-Javed-mobiheld.pdf
 ---
 
-URL: https://doi.org/10.1145/2043106.2043114
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2011-Javed-mobiheld,
     author = "Javed, Umar and Han, Dongsu and Caceres, Ramon and Pang, Jeffrey and Seshan, Srinivasan and Varshavsky, Alexander",
     title = "Predicting Handoffs in 3G Networks",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "MobiHeld '11"
 }
 
+</pre>

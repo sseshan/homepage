@@ -7,12 +7,12 @@ authors: Ben Greenstein, Damon McCoy, Jeffrey Pang, Tadayoshi Kohno, Srinivasan 
 webpage: https://doi.org/10.1145/1378600.1378607
 award: Best Student Paper Award
 categories: Privacy
+localpdf: papers/2008-Greenstein-mobisys/2008-Greenstein-mobisys.pdf
+localslides: papers/2008-Greenstein-mobisys/2008-Greenstein-mobisys-slides.pdf
+localppt: papers/2008-Greenstein-mobisys/2008-Greenstein-mobisys.pptx
 ---
 
-URL: https://doi.org/10.1145/1378600.1378607
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2008-Greenstein-mobisys,
     author = "Greenstein, Ben and McCoy, Damon and Pang, Jeffrey and Kohno, Tadayoshi and Seshan, Srinivasan and Wetherall, David",
     title = "Improving Wireless Privacy with an Identifier-Free Link Layer Protocol",
@@ -34,3 +34,4 @@ Bibtex Entry:
     series = "MobiSys '08"
 }
 
+</pre>

@@ -6,12 +6,10 @@ venue: "ACM SIGMETRICS"
 authors: Aditya Akella, Srinivasan Seshan and Anees Shaikh
 webpage: https://doi.org/10.1145/781027.781075
 categories: [Measurement, Multipath]
+localpdf: papers/2003-Akella-sigmetrics/2003-Akella-sigmetrics.pdf
 ---
 
-URL: https://doi.org/10.1145/781027.781075
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2003-Akella-sigmetrics,
     author = "Akella, Aditya and Seshan, Srinivasan and Shaikh, Anees",
     title = "An Empirical Evaluation of Wide-Area Internet Bottlenecks",
@@ -33,3 +31,4 @@ Bibtex Entry:
     month = "June"
 }
 
+</pre>

@@ -6,12 +6,10 @@ venue: SIGMOBILE Mobile Computing Communications Review (MC2R)
 authors: Ramya Raghavendra, Michael Kaminsky, Konstantina Papagiannaki, Srinivasan Seshan and Elizabeth Belding
 webpage: https://doi.org/10.1145/2073290.2073293
 categories: Chaotic
+localpdf: papers/2011-Raghavendra-mc2r/2011-Raghavendra-mc2r.pdf
 ---
 
-URL: https://doi.org/10.1145/2073290.2073293
-
-Bibtex Entry:
-
+<pre>
 @article{2011-Raghavendra-mc2r,
     author = "Raghavendra, Ramya and Kaminsky, Michael and Papagiannaki, Konstantina and Seshan, Srinivasan and Belding, Elizabeth",
     title = "IdleChat: Enabling High Bandwidth Real-Time Applications in Residential Broadband Networks",
@@ -32,3 +30,4 @@ Bibtex Entry:
     numpages = "13"
 }
 
+</pre>

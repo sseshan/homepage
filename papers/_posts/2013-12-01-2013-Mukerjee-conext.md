@@ -6,12 +6,10 @@ venue: "ACM Conference on Emerging Networking EXperiments and Technologies (CoNE
 authors: Matthew K. Mukerjee, Dongsu Han, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/2535372.2535396
 categories: XIA
+localpdf: papers/2013-Mukerjee-conext/2013-Mukerjee-conext.pdf
 ---
 
-URL: https://doi.org/10.1145/2535372.2535396
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2013-Mukerjee-conext,
     author = "Mukerjee, Matthew K. and Han, Dongsu and Seshan, Srinivasan and Steenkiste, Peter",
     title = "Understanding Tradeoffs in Incremental Deployment of New Network Architectures",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "CoNEXT '13"
 }
 
+</pre>

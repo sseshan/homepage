@@ -5,10 +5,10 @@ title: "An Efficient Network Interface for the RAID-II File Server"
 venue: Masters Thesis
 authors: Srinivasan Seshan
 categories: [File Systems, NIC]
+localpdf: papers/1993-Seshan-masters/1993-Seshan-masters.pdf
 ---
 
-Bibtex Entry:
-
+<pre>
 @MastersThesis{1993-Seshan-masters,
     author = "Seshan, Srinivasan",
     title = "An Efficient Network Interface for the RAID-II File Server",
@@ -20,3 +20,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

@@ -6,12 +6,10 @@ venue: "Global Telecommunications Conference, 2002. GLOBECOM '02. IEEE"
 authors: Jia-Yu Pan,  S.Seshan and Christos Faloutsos
 webpage: https://doi.org/10.1109/GLOCOM.2002.1189013
 categories: [Measurements]
+localpdf: papers/2002-Pan-globalinet/2002-Pan-globalinet.pdf
 ---
 
-URL: https://doi.org/10.1109/GLOCOM.2002.1189013
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2002-Pan-globalinet,
     author = "Pan, Jia-Yu and S.Seshan and Faloutsos, Christos",
     title = "Fast Correlation-Aware Sampling for Network Data Mining",
@@ -28,3 +26,4 @@ Bibtex Entry:
     url = "https://doi.org/10.1109/GLOCOM.2002.1189013"
 }
 
+</pre>

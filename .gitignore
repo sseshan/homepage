@@ -6,9 +6,5 @@ _site/
 .bundle/
 vendor/
 .DS_Store
-.DS_Store
 assets/.DS_Store
 Gemfile.lock
-.DS_Store
-assets/.DS_Store
-.DS_Store

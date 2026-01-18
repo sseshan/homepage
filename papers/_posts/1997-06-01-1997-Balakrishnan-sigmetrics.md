@@ -6,12 +6,11 @@ venue: "ACM SIGMETRICS"
 authors: Hari Balakrishnan, Mark Stemm, Srinivasan Seshan and Randy H. Katz
 webpage: https://doi.org/10.1145/258612.258631
 categories: [Measurement, Prediction]
+localpdf: papers/1997-Balakrishnan-sigmetrics/1997-Balakrishnan-sigmetrics.pdf
+localppt: papers/1997-Balakrishnan-sigmetrics/1997-Balakrishnan-sigmetrics.ppt
 ---
 
-URL: https://doi.org/10.1145/258612.258631
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{1997-Balakrishnan-sigmetrics,
     author = "Balakrishnan, Hari and Stemm, Mark and Seshan, Srinivasan and Katz, Randy H.",
     title = "Analyzing Stability in Wide-Area Network Performance",
@@ -31,3 +30,4 @@ Bibtex Entry:
     category = "[Measurement, Prediction]"
 }
 
+</pre>

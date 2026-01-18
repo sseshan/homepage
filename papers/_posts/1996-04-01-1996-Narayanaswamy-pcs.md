@@ -6,12 +6,10 @@ venue: IEEE Personal Communications Magazine
 authors: Shankar Narayanaswamy, Srinivasan Seshan, Elan Amir, Eric Brewer, Robert W. Brodersen, Frederick Burghardt, Andrew Burstein, Yuan-Chi Chang, Armando Fox, Jeffrey M. Gilbert, Richard Han, Randy H. Katz, Allan C. Long, David G. Messerschmitt and Jan M. Rabaey
 webpage: https://doi.org/10.1109/98.490749
 categories: [Mobile]
+localpdf: papers/1996-Narayanaswamy-pcs/1996-Narayanaswamy-pcs.pdf
 ---
 
-URL: https://doi.org/10.1109/98.490749
-
-Bibtex Entry:
-
+<pre>
 @ARTICLE{1996-Narayanaswamy-pcs,
     author = "Narayanaswamy, Shankar and Seshan, Srinivasan and Amir, Elan and Brewer, Eric and Brodersen, Robert W. and Burghardt, Frederick and Burstein, Andrew and Chang, Yuan-Chi and Fox, Armando and Gilbert, Jeffrey M. and Han, Richard and Katz, Randy H. and Long, Allan C. and Messerschmitt, David G. and Rabaey, Jan M.",
     journal = "IEEE Personal Communications Magazine",
@@ -26,3 +24,4 @@ Bibtex Entry:
     month = "April"
 }
 
+</pre>

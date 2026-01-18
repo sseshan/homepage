@@ -6,12 +6,10 @@ venue: "ACM Conference on Mobile Computing and Networking (Mobicom)"
 authors: Athula Balachandran, Vaneet Aggarwal, Emir Halepovic, Jeffrey Pang, Srinivasan Seshan, Shobha Venkataraman and He Yan
 webpage: https://doi.org/10.1145/2639108.2639137
 categories: Video
+localpdf: papers/2014-Balachandran-mobicom/2014-Balachandran-mobicom.pdf
 ---
 
-URL: https://doi.org/10.1145/2639108.2639137
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2014-Balachandran-mobicom,
     author = "Balachandran, Athula and Aggarwal, Vaneet and Halepovic, Emir and Pang, Jeffrey and Seshan, Srinivasan and Venkataraman, Shobha and Yan, He",
     title = "Modeling Web Quality-of-Experience on Cellular Networks",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "MobiCom '14"
 }
 
+</pre>

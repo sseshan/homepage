@@ -48,7 +48,7 @@ order: 2
 </div> <!-- row -->
 
 
-<h2 style="text-align:center">Masters</h2>
+<!-- <h2 style="text-align:center">Masters</h2> -->
 
 <div class="row">
 {% for member in site.categories.group %}
@@ -69,7 +69,7 @@ order: 2
 {% endfor %}
 </div> <!-- row -->
 
-<h2 style="text-align:center">Undergraduates</h2>
+<!-- <h2 style="text-align:center">Undergraduates</h2> -->
 
 <div class="row">
 {% for member in site.categories.group %}

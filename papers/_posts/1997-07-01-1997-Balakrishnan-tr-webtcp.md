@@ -4,10 +4,10 @@ date: 1997-07-01
 title: "TCP Behavior of a Busy Web Server: Analysis and Improvements"
 authors: Hari Balakrishnan, V. N. Padmanabhan, Srinivasan Seshan, Mark Stemm and Randy H. Katz
 categories: [Congestion Control, TCP]
+localpdf: papers/1997-Balakrishnan-tr-webtcp/1997-Balakrishnan-tr-webtcp.pdf
 ---
 
-Bibtex Entry:
-
+<pre>
 @techreport{1997-Balakrishnan-tr-webtcp,
     author = "Balakrishnan, Hari and Padmanabhan, V. N. and Seshan, Srinivasan and Stemm, Mark and Katz, Randy H.",
     title = "TCP Behavior of a Busy Web Server: Analysis and Improvements",
@@ -19,3 +19,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

@@ -6,12 +6,10 @@ venue: Wireless Networks
 authors: Hari Balakrishnan, Srinivasan Seshan and Randy H. Katz
 webpage: https://doi.org/10.1007/BF01985757
 categories: [Mobile, Wireless, TCP]
+localpdf: papers/1995-Balakrishnan-winet/1995-Balakrishnan-winet.pdf
 ---
 
-URL: https://doi.org/10.1007/BF01985757
-
-Bibtex Entry:
-
+<pre>
 @article{1995-Balakrishnan-winet,
     author = "Balakrishnan, Hari and Seshan, Srinivasan and Katz, Randy H.",
     abstract = "TCP is a reliable transport protocol tuned to perform well in traditional networks where congestion is the primary cause of packet loss. However, networks with wireless links and mobile hosts incur significant losses due to bit-errors and handoffs. This environment violates many of the assumptions made by TCP, causing degraded end-to-end performance. In this paper, we describe the additions and modifications to the standard Internet protocol stack (TCP/IP) to improve end-to-end reliable transport performance in mobile environments. The protocol changes are made to network-layer software at the base station and mobile host, and preserve the end-to-end semantics of TCP. One part of the modifications, called the snoop module, caches packets at the base station and performs local retransmissions across the wireless link to alleviate the problems caused by high bit-error rates. The second part is a routing protocol that enables low-latency handoff to occur with negligible data loss. We have implemented this new protocol stack on a wireless testbed. Our experiments show that this system is significantly more robust at dealing with unreliable wireless links than normal TCP; we have achieved throughput speedups of up to 20 times over regular TCP and handoff latencies over 10 times shorter than other mobile routing protocols.",
@@ -31,3 +29,4 @@ Bibtex Entry:
     month = "December"
 }
 
+</pre>

@@ -5,10 +5,10 @@ title: "Supporting Spectators in Online Multiplayer Games"
 venue: "Workshop on Hot Topics in Networking (HotNets)"
 authors: Ashwin Bharambe, V. Padmanabhan and Srinivasan Seshan
 categories: [Overlay, P2P, Games]
+localpdf: papers/2004-Bharambe-hotnets/2004-Bharambe-hotnets.pdf
 ---
 
-Bibtex Entry:
-
+<pre>
 @inproceedings{2004-Bharambe-hotnets,
     author = "Bharambe, Ashwin and Padmanabhan, V. and Seshan, Srinivasan",
     title = "Supporting Spectators in Online Multiplayer Games",
@@ -20,3 +20,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

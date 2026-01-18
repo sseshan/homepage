@@ -5,10 +5,10 @@ title: "TCP Improvements for Heterogeneous Networks: The Daedalus Approach"
 venue: "Allerton Conference on Communication, Control"
 authors: Hari Balakrishnan, Venkata N. Padmanabhan, Srinivasan Seshan, Mark Stemm, Elan Amir and Randy H. Katz
 categories: [Mobile, Wireless, TCP]
+localpdf: papers/1997-Balakrishnan-allerton/1997-Balakrishnan-allerton.pdf
 ---
 
-Bibtex Entry:
-
+<pre>
 @inproceedings{1997-Balakrishnan-allerton,
     author = "Balakrishnan, Hari and Padmanabhan, Venkata N. and Seshan, Srinivasan and Stemm, Mark and Amir, Elan and Katz, Randy H.",
     title = "TCP Improvements for Heterogeneous Networks: The Daedalus Approach",
@@ -20,3 +20,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

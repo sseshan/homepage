@@ -6,12 +6,10 @@ venue: "ACM International Conference on Multimedia (ACM Multimedia)"
 authors: Jason Campbell, Phillip B. Gibbons, Suman Nath, Padmanabhan Pillai, Srinivasan Seshan and Rahul Sukthankar
 webpage: https://doi.org/10.1145/1101149.1101162
 categories: IrisNet
+localpdf: papers/2005-Campbell-multimedia/2005-Campbell-multimedia.pdf
 ---
 
-URL: https://doi.org/10.1145/1101149.1101162
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2005-Campbell-multimedia,
     author = "Campbell, Jason and Gibbons, Phillip B. and Nath, Suman and Pillai, Padmanabhan and Seshan, Srinivasan and Sukthankar, Rahul",
     title = "IrisNet: An Internet-Scale Architecture for Multimedia Sensors",
@@ -32,3 +30,4 @@ Bibtex Entry:
     series = "MULTIMEDIA '05"
 }
 
+</pre>

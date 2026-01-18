@@ -4,10 +4,10 @@ date: 2002-08-01
 title: "Multi-Modal Network Protocols: Adapting to Highly Variable Operating Conditions"
 authors: Aditya Akella, Ashwin Bharambe, Suman Nath and Srinivasan Seshan
 categories: [Congestion Control, TCP]
+localpdf: papers/2002-Akella-tr-multimodal/2002-Akella-tr-multimodal.pdf
 ---
 
-Bibtex Entry:
-
+<pre>
 @techreport{2002-Akella-tr-multimodal,
     author = "Akella, Aditya and Bharambe, Ashwin and Nath, Suman and Seshan, Srinivasan",
     title = "Multi-Modal Network Protocols: Adapting to Highly Variable Operating Conditions",
@@ -20,3 +20,4 @@ Bibtex Entry:
     month = "August"
 }
 
+</pre>

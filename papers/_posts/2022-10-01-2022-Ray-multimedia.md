@@ -5,12 +5,10 @@ title: "Prism: Handling Packet Loss for Ultra-Low Latency Video"
 venue: "ACM International Conference on Multimedia (ACM Multimedia)"
 authors: Devdeep Ray, Vicente Bobadilla Riquelme and Srinivasan Seshan
 webpage: https://doi.org/10.1145/3503161.3547856
+localpdf: papers/2022-Ray-multimedia/2022-Ray-multimedia.pdf
 ---
 
-URL: https://doi.org/10.1145/3503161.3547856
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2022-Ray-multimedia,
     author = "Ray, Devdeep and Bobadilla Riquelme, Vicente and Seshan, Srinivasan",
     title = "Prism: Handling Packet Loss for Ultra-Low Latency Video",
@@ -30,3 +28,4 @@ Bibtex Entry:
     month = "October"
 }
 
+</pre>

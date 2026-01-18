@@ -20,15 +20,18 @@ order: 1
 
   <div class="post-preview">
     <b>
-      {% if paper.webpage %} <a href="{{ paper.webpage }}">{% endif %}
-        {{ paper.title }} <br>
-      {% if paper.webpage %} </a> {% endif %}
+      {{ paper.title }} <br>
     </b>
     {{paper.venue}}<br>
     {{paper.authors}}<br>
-    {% if paper.award %} 
-        <b>{{ paper.award }}</b> <br>
-    {% endif %}
+    {% if paper.award %} <b>{{ paper.award }}</b> <br> {% endif %}
+    {% if paper.webpage %} <a href="{{ paper.webpage }}">Official Site</a> &nbsp; {%endif %}
+    {% if paper.localpdf %} <a href="{{ paper.localpdf }}">PDF</a>&nbsp; {%endif %}
+    {% if paper.localslides %} <a href="{{ paper.localslides }}">Slides (PDF)</a>&nbsp; {%endif %}
+    {% if paper.localppt %} <a href="{{ paper.localppt }}">Slides (PPT)</a>&nbsp; {%endif %}
+    {% if paper.video %} <a href="{{ paper.video }}">Video</a>&nbsp; {%endif %}
+    {% if paper.github %} <a href="{{ paper.github }}">GitHub</a>&nbsp; {%endif %}
+
     <a href="{{ paper.url | relative_url }}">Bibtex</a><br>
 
   </div> <!-- .post-review -->

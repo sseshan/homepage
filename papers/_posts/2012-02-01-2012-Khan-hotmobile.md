@@ -6,12 +6,10 @@ venue: "Workshop on Mobile Computing Systems &amp; Applications (HotMobile)"
 authors: Azeem J. Khan, Vigneshwaran Subbaraju, Archan Misra and Srinivasan Seshan
 webpage: https://doi.org/10.1145/2162081.2162083
 categories: LARC
+localpdf: papers/2012-Khan-hotmobile/2012-Khan-hotmobile.pdf
 ---
 
-URL: https://doi.org/10.1145/2162081.2162083
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2012-Khan-hotmobile,
     author = "Khan, Azeem J. and Subbaraju, Vigneshwaran and Misra, Archan and Seshan, Srinivasan",
     title = "Mitigating the True Cost of Advertisement-Supported 'Free' Mobile Applications",
@@ -31,3 +29,4 @@ Bibtex Entry:
     series = "HotMobile '12"
 }
 
+</pre>

@@ -6,12 +6,11 @@ venue: "ACM Conference on Mobile Computing and Networking (Mobicom)"
 authors: Aditya Akella, Glenn Judd, Srinivasan Seshan and Peter Steenkiste
 webpage: https://doi.org/10.1145/1080829.1080849
 categories: Chaotic
+localpdf: papers/2005-Akella-mobicom/2005-Akella-mobicom.pdf
+localppt: papers/2005-Akella-mobicom/2005-Akella-mobicom.ppt
 ---
 
-URL: https://doi.org/10.1145/1080829.1080849
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2005-Akella-mobicom,
     author = "Akella, Aditya and Judd, Glenn and Seshan, Srinivasan and Steenkiste, Peter",
     title = "Self-Management in Chaotic Wireless Deployments",
@@ -32,3 +31,4 @@ Bibtex Entry:
     series = "MobiCom '05"
 }
 
+</pre>

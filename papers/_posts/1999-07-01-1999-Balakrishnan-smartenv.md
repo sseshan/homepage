@@ -7,8 +7,7 @@ authors: Hari Balakrishnan, Srinivasan Seshan, Pravin Bhagwat and Frans Kaashoek
 categories: [Mobile]
 ---
 
-Bibtex Entry:
-
+<pre>
 @inproceedings{1999-Balakrishnan-smartenv,
     author = "Balakrishnan, Hari and Seshan, Srinivasan and Bhagwat, Pravin and Kaashoek, Frans",
     title = "Self-Organizing Collaborative Environments",
@@ -20,3 +19,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>

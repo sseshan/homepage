@@ -6,12 +6,10 @@ venue: IEEE/ACM Transactions on Networking
 authors: Hari Balakrishnan, Venkata N. Padmanabhan, Srinivasan Seshan and Randy H. Katz
 webpage: https://doi.org/10.1109/90.650137
 categories: [Mobile, Wireless, TCP]
+localpdf: papers/1997-Balakrishnan-ton/1997-Balakrishnan-ton.pdf
 ---
 
-URL: https://doi.org/10.1109/90.650137
-
-Bibtex Entry:
-
+<pre>
 @article{1997-Balakrishnan-ton,
     author = "Balakrishnan, Hari and Padmanabhan, Venkata N. and Seshan, Srinivasan and Katz, Randy H.",
     title = "A Comparison of Mechanisms for Improving TCP Performance over Wireless Links",
@@ -32,3 +30,4 @@ Bibtex Entry:
     keywords = "computer networks, wireless networks, TCP, internetworking, link-layer protocols"
 }
 
+</pre>

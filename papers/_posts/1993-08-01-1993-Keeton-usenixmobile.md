@@ -8,10 +8,7 @@ webpage: https://www.usenix.org/conference/usenix-mobile-location-independent-co
 categories: [Mobile, Video]
 ---
 
-URL: https://www.usenix.org/conference/usenix-mobile-location-independent-computing-symposium/providing-connection-oriented
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{1993-Keeton-usenixmobile,
     author = "Keeton, Kimberly and Mah, Bruce and Seshan, Srinivasan. and Katz, Randy H. and Ferrari, D.",
     category = "[Mobile, Video]",
@@ -25,3 +22,4 @@ Bibtex Entry:
     month = "August"
 }
 
+</pre>

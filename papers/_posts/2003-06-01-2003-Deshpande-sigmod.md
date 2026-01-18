@@ -6,12 +6,10 @@ venue: "ACM SIGMOD International Conference on Management of Data (SIGMOD)"
 authors: Amol Deshpande, Suman Nath, Phillip B. Gibbons and Srinivasan Seshan
 webpage: https://doi.org/10.1145/872757.872818
 categories: [Sensor Networks]
+localpdf: papers/2003-Deshpande-sigmod/2003-Deshpande-sigmod.pdf
 ---
 
-URL: https://doi.org/10.1145/872757.872818
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2003-Deshpande-sigmod,
     author = "Deshpande, Amol and Nath, Suman and Gibbons, Phillip B. and Seshan, Srinivasan",
     title = "Cache-and-Query for Wide Area Sensor Databases",
@@ -31,3 +29,4 @@ Bibtex Entry:
     series = "SIGMOD '03"
 }
 
+</pre>

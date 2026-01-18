@@ -6,12 +6,10 @@ venue: "Workshop on Hot Topics in Networking (HotNets)"
 authors: Athula Balachandran, Vyas Sekar, Aditya Akella, Srinivasan Seshan, Ion Stoica and Hui Zhang
 webpage: https://doi.org/10.1145/2390231.2390248
 categories: Video
+localpdf: papers/2012-Balachandran-hotnets/2012-Balachandran-hotnets.pdf
 ---
 
-URL: https://doi.org/10.1145/2390231.2390248
-
-Bibtex Entry:
-
+<pre>
 @inproceedings{2012-Balachandran-hotnets,
     author = "Balachandran, Athula and Sekar, Vyas and Akella, Aditya and Seshan, Srinivasan and Stoica, Ion and Zhang, Hui",
     title = "A Quest for an Internet Video Quality-of-Experience Metric",
@@ -31,3 +29,4 @@ Bibtex Entry:
     series = "HotNets-XI"
 }
 
+</pre>

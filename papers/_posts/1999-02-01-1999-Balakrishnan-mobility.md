@@ -6,8 +6,7 @@ authors: Hari Balakrishnan, V. N. Padmanabhan, Srinivasan Seshan, Mark Stemm and
 categories: [Mobile, Wireless, TCP]
 ---
 
-Bibtex Entry:
-
+<pre>
 @InBook{1999-Balakrishnan-mobility,
     author = "Balakrishnan, Hari and Padmanabhan, V. N. and Seshan, Srinivasan and Stemm, Mark and Katz, Randy H.",
     editor = "Milojicic, Dejan and Douglis, Frederic and Wheeler, Richard",
@@ -23,3 +22,4 @@ Bibtex Entry:
     summary = ""
 }
 
+</pre>
