@@ -1,2 +1,7 @@
+
+source ~/venv/homepage/bin/activate.csh
+rbenv global 3.4.8
+bundle exec jekyll serve
+
 setenv JEKYLL_ENV production
 bundle exec jekyll build

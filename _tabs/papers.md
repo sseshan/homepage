@@ -25,12 +25,12 @@ order: 1
     {{paper.venue}}<br>
     {{paper.authors}}<br>
     {% if paper.award %} <b>{{ paper.award }}</b> <br> {% endif %}
-    {% if paper.webpage %} <a href="{{ paper.webpage }}">Official Site</a> &nbsp; {%endif %}
-    {% if paper.localpdf %} <a href="{{ paper.localpdf }}">PDF</a>&nbsp; {%endif %}
-    {% if paper.localslides %} <a href="{{ paper.localslides }}">Slides (PDF)</a>&nbsp; {%endif %}
-    {% if paper.localppt %} <a href="{{ paper.localppt }}">Slides (PPT)</a>&nbsp; {%endif %}
-    {% if paper.video %} <a href="{{ paper.video }}">Video</a>&nbsp; {%endif %}
-    {% if paper.github %} <a href="{{ paper.github }}">GitHub</a>&nbsp; {%endif %}
+    {% if paper.webpage %} <a href="{{ paper.webpage }}">Official Site</a>&nbsp;&nbsp; {%endif %}
+    {% if paper.localpdf %} <a href="{{ paper.localpdf }}">Paper (PDF)</a>&nbsp;&nbsp; {%endif %}
+    {% if paper.localslides %} <a href="{{ paper.localslides }}">Slides (PDF)</a>&nbsp;&nbsp; {%endif %}
+    {% if paper.localppt %} <a href="{{ paper.localppt }}">Slides (PPT)</a>&nbsp;&nbsp; {%endif %}
+    {% if paper.video %} <a href="{{ paper.video }}">Video</a>&nbsp;&nbsp; {%endif %}
+    {% if paper.github %} <a href="{{ paper.github }}">GitHub</a>&nbsp;&nbsp; {%endif %}
 
     <a href="{{ paper.url | relative_url }}">Bibtex</a><br>
 
